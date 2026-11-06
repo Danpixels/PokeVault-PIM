@@ -1,0 +1,9 @@
+{
+  "dataUtc": "2026-11-03T22:54:17.3455510Z",
+  "estado": "NOVA_VERSAO_PRONTA_CACHE_VALIDADO_SNAPSHOT_ANTERIOR_EM_USO_PRESERVADO",
+  "porta5188": "processo proprio anterior encerrado",
+  "observado": "6E6884E7FF60266D7403AF490B96A9C0E36B6869B82FE63B8309B21C44516863",
+  "esperado": "A68A5FA77DA7D8F0E529F7DB7F9D95052AE29D2DD2C339B051EF0908AF65C805",
+  "resultado": "Recusado antes de processo/regressao; nao e defeito funcional",
+  "tipo": "Gate de versao antes da regressao"
+}

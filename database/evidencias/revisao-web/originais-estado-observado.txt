@@ -1,0 +1,9 @@
+﻿Codigo CartaId Numero Nome Conservacao Raridade Preco QuantidadeEstoque Ativo
+------ ------- ------ ---- ----------- -------- ----- ----------------- -----
+MEW-151 1 025 Pikachu NEAR_MINT Comum 30.00 2 1
+MEW-151 2 025 Pikachu SLIGHTLY_PLAYED Comum 20.00 3 1
+MEW-151 3 004 Charmander NEAR_MINT Comum 15.50 1 1
+UsuarioId Saldo
+--------- -----
+2 100.00
+3 10.00

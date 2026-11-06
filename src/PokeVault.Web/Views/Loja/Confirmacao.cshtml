@@ -1,0 +1,16 @@
+@model CompraModel
+@using System.Globalization
+@{ ViewData["Title"] = "Confirmar compra"; var moeda=CultureInfo.GetCultureInfo("pt-BR"); var nomes=ViewBag.Nomes as Dictionary<int,string>; var total=Model.Itens.Sum(i=>i.Quantidade*i.PrecoConfirmado); }
+<div class="eyebrow">COMPRA SIMULADA</div><h1>Confirme sua seleção</h1><p>Somente estas linhas serão compradas. O servidor validará o preço, o saldo e o estoque novamente.</p>
+@if(ViewBag.Erro is string erro) { <div class="alert error" role="alert">@erro</div> }
+<div class="panel"><ul>
+@foreach(var item in Model.Itens) { <li>@(nomes?.GetValueOrDefault(item.OfertaId) ?? $"Carta #{item.OfertaId}") · @item.Quantidade × @item.PrecoConfirmado.ToString("C",moeda)</li> }
+</ul><p class="price">Total: @total.ToString("C",moeda)</p>
+@if(ViewBag.Saldo is decimal saldo) { <p>Saldo fictício atual: @saldo.ToString("C",moeda) · após compra: @((saldo-total).ToString("C",moeda))</p> }
+<form action="/comprar" method="post">@Html.AntiForgeryToken()<input type="hidden" name="ChaveOperacao" value="@Model.ChaveOperacao" />
+@for(var i=0;i<Model.Itens.Count;i++) {
+<input type="hidden" name="Itens[@i].OfertaId" value="@Model.Itens[i].OfertaId" /><input type="hidden" name="Itens[@i].Quantidade" value="@Model.Itens[i].Quantidade" />
+<input type="hidden" name="Itens[@i].PrecoConfirmado" value="@Model.Itens[i].PrecoConfirmado.ToString(CultureInfo.InvariantCulture)" />
+}
+@if(ViewBag.Erro is null || ViewBag.PodeRepetir == true) { <button type="submit">@(ViewBag.PodeRepetir == true ? "Repetir a mesma operação" : "Confirmar compra com saldo fictício")</button> }
+</form><p><a href="/carrinho">Voltar ao carrinho e fazer nova seleção</a></p><small>Em caso de falha de comunicação, repita esta confirmação. A chave da operação será preservada.</small></div>

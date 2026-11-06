@@ -1,0 +1,36 @@
+{
+  "execucoes": [
+    {
+      "arquivo": "database/007_verificar.sql",
+      "saida": [
+        "Contexto do banco de dados alterado para 'PokeVaultTests'.",
+        "PokeVaultTests DESKTOP-641C55N\\SQLEXPRESS 17.0.1000.7 Express Edition (64-bit)",
+        "1 2026-10-21 17:49:14.066",
+        "2 2026-10-21 17:49:14.701",
+        "3 2026-10-21 17:49:14.828",
+        "4 2026-10-21 17:54:38.108",
+        "usp_AjustarCarta",
+        "usp_AjustarCartaVersionado",
+        "usp_CadastrarCarta",
+        "usp_CancelarCompra",
+        "usp_ConcluirCompra",
+        "usp_CriarUsuario",
+        "usp_DefinirItemCarrinho",
+        "usp_DefinirSaldo",
+        "usp_DefinirSaldoVersionado",
+        "usp_DefinirUsuarioAtivo"
+      ],
+      "exitCode": 0
+    },
+    {
+      "arquivo": "tests/Sprint2/Verificar-Integridade.sql",
+      "saida": [
+        "Contexto do banco de dados alterado para 'PokeVaultTests'.",
+        "{\"Banco\":\"PokeVaultTests\",\"Servidor\":\"DESKTOP-641C55N\\\\SQLEXPRESS\",\"SaldosDivergentes\":0,\"EstoquesDivergentes\":0,\"TotaisDivergentes\":0,\"TriggersTesteRestantes\":0,\"VersoesInstaladas\":4,\"ComprasPreservadas\":90,\"UsuariosTeste\":134,\"CartasTeste\":189}"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "dataUtc": "2026-11-03T22:15:50.1030741Z",
+  "base": "PokeVaultTests"
+}

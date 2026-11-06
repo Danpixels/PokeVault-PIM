@@ -1,0 +1,15 @@
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Controllers\LojaApiController.cs(53,1): error CS1519: Token inválido "/" em uma declaração de membro [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Controllers\LojaApiController.cs(53,11): error CS1519: Token inválido ""), Authorize(Roles = "" em uma declaração de membro [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Controllers\LojaApiController.cs(53,41): error CS1519: Token inválido "")]" em uma declaração de membro [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Controllers\LojaApiController.cs(53,41): error CS1010: Newline em constante [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+
+FALHA da compilação.
+
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Controllers\LojaApiController.cs(53,1): error CS1519: Token inválido "/" em uma declaração de membro [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Controllers\LojaApiController.cs(53,11): error CS1519: Token inválido ""), Authorize(Roles = "" em uma declaração de membro [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Controllers\LojaApiController.cs(53,41): error CS1519: Token inválido "")]" em uma declaração de membro [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Controllers\LojaApiController.cs(53,41): error CS1010: Newline em constante [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+    0 Aviso(s)
+    4 Erro(s)
+
+Tempo Decorrido 00:00:01.63

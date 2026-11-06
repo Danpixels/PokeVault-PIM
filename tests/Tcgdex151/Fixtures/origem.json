@@ -1,0 +1,18 @@
+{
+  "documentacao": "https://tcgdex.dev/markets-prices",
+  "fixturesSinteticas": "Ausencia de pricing/variante nova/falha serao identificadas no teste, nao tratadas como dados reais",
+  "dataUtcRegistro": "2026-11-03T22:30:21.0167917Z",
+  "tipo": "Respostas reais gravadas por Banco como base de fixtures; nao execucao de importacao por Testes",
+  "fontes": [
+    {
+      "arquivo": "set-pt-gravado.json",
+      "origemLocal": "database/evidencias/tcgdex151/set-pt.json",
+      "endpoint": "https://api.tcgdex.net/v2/pt/sets/sv03.5"
+    },
+    {
+      "arquivo": "pikachu-en-gravado.json",
+      "origemLocal": "database/evidencias/tcgdex151/pikachu-en.json",
+      "endpoint": "https://api.tcgdex.net/v2/en/cards/sv03.5-025"
+    }
+  ]
+}

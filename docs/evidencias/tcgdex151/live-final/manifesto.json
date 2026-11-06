@@ -1,0 +1,62 @@
+{
+  "produto": "D226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C",
+  "dataUtc": "2026-11-03T22:56:41.8111150Z",
+  "forcarRede": true,
+  "motivo": "NovaDLLD226 corrige validacao do cache e rotulo historico; FX10/11 acrescentadas e reteste de rotulo sem espera artificial",
+  "harness": "0B9D2103DDBD358E075618E017193B8FA207C9D20ABDBD87B0369A4BFEE48E26",
+  "base": "PokeVaultTests",
+  "fontes": [
+    {
+      "nome": "BusinessSnapshot.cs",
+      "sha256": "711F19EC1A536423E5209FA71001E1F40DB2336054CC1E73D7FE2BA59276D25B"
+    },
+    {
+      "nome": "CacheValidationFixtures.cs",
+      "sha256": "3AF11B993ABFBAA8B67A4FAAC40D4C8AC0B2C3D38029BAF109AA47A3FBD27417"
+    },
+    {
+      "nome": "ClientFixtures.cs",
+      "sha256": "8821E5AE7B62B360C6E96C027CFA9F6472D838E720CB0AAB827BC8D2779D7CA7"
+    },
+    {
+      "nome": "FixtureEnvironment.cs",
+      "sha256": "7856DB14D22CEAA15C65AB7A046B840C35C5E7F22E329E446D7CAA6CF183C3CE"
+    },
+    {
+      "nome": "FixtureHttpHandler.cs",
+      "sha256": "CEB4052E18BD18DE17096DBC7412194822AA7E17A6E61917D4BA4B05B67A4EC7"
+    },
+    {
+      "nome": "HttpHelpers.cs",
+      "sha256": "75190F78E8DB9E3ED6413397BE719AE65A3AEFFAE6D9431676698DB22CC4C24B"
+    },
+    {
+      "nome": "IdentityTests.cs",
+      "sha256": "389CD86DC0A819B19B0C3C6B72550D7764E030E333A1202A0EA14B97AAC8ABF3"
+    },
+    {
+      "nome": "ImporterFixture.cs",
+      "sha256": "0504311D7510F5A913EAFA434A58F4F5913F887C8B6579D1CF1E57610D43C7B4"
+    },
+    {
+      "nome": "ImportTests.cs",
+      "sha256": "BEFA03F36F9B108741075CC26E2F3CB8EEECB172A61F0F859E96BDAA74D5D146"
+    },
+    {
+      "nome": "PokeVault.TcgdexTests.csproj",
+      "sha256": "A97D5FFD2EC1C3FD4E15174657F0F62870E9295CFB17BBA2636ECFC57614EA6A"
+    },
+    {
+      "nome": "Program.cs",
+      "sha256": "6C0C27F75A546432228C4D9F1783284B71A429392AA9A8AE196E05D79B133C5E"
+    },
+    {
+      "nome": "README.md",
+      "sha256": "85E58F39DDD80EDC4C967F662F750FAD4158A1B5222561AD8E80BC83631C4A24"
+    },
+    {
+      "nome": "SqlTests.cs",
+      "sha256": "CA70EC3D17C5616F03E428D14BECC7AEB407634DE47513F33C3A9DDC630160CF"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "RegistradoEmUtc": "2026-10-21T17:49:35.1674967Z",
+  "Banco": "PokeVault",
+  "TabelasComerciais": 11,
+  "ConteudoAntesDepoisIdentico": true,
+  "Observacao": "Comparação das contagens e SHA256 ordenados; exclui tokens rowversion novos e SchemaVersao."
+}

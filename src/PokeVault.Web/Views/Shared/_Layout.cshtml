@@ -1,0 +1,43 @@
+@using PokeVault.Web.Domain
+@using System.Globalization
+@{
+    var moeda = CultureInfo.GetCultureInfo("pt-BR");
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] · PokéVault</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para conteúdo</a>
+<header><nav aria-label="Navegação principal"><a class="brand" href="/">◈ PokéVault</a><a href="/">Catálogo</a>
+
+@if (User.IsInRole("CLIENTE") || User.IsInRole("ADMINISTRADOR")) { <a href="/compras">Compras</a> }
+@if (User.IsInRole("ADMINISTRADOR")) { <a href="/admin/clientes">Clientes</a><a href="/admin/funcionarios">Atendentes</a> }
+@if (User.IsInRole("ADMINISTRADOR") || User.IsInRole("ATENDENTE")) { <a href="/gestao/tcgdex151">Gestão de Catálogo</a> }
+<span class="spacer"></span>
+@if (User.Identity?.IsAuthenticated == true)
+{
+    <a href="/conta" title="Minha conta">@User.Identity.Name</a>
+    @if(User.IsInRole("CLIENTE")){<a class="bag-link" href="/carrinho" aria-label="Meu carrinho" title="Meu carrinho"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg><span class="sr-only">Carrinho</span></a>}<form action="/sair" method="post">@Html.AntiForgeryToken()<button class="quiet" type="submit">Sair</button></form>
+}
+else { <a href="/criar-conta">Criar conta</a><a class="button quiet" href="/entrar">Entrar</a> }
+</nav></header>
+<main id="conteudo">
+@if (TempData["Erro"] is string erro) { <div role="alert" class="alert error">@erro</div> }
+@if (TempData["Sucesso"] is string sucesso) { <div role="status" class="alert">@sucesso</div> }
+@RenderBody()
+</main>
+<footer>PokéVault · Demonstração acadêmica local · Compras com saldo fictício</footer>
+
+<script src="~/js/password-toggle.js" asp-append-version="true" defer></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+
+
+

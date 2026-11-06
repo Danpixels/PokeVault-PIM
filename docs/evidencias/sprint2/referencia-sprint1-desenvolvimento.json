@@ -1,0 +1,157 @@
+{
+  "dataUtc": "2026-10-21T17:23:59.6017076Z",
+  "base": "PokeVault",
+  "url": "http://localhost:5187",
+  "resultados": [
+    {
+      "verificacao": "Carrinho anônimo bloqueado",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Catálogo público com três ofertas",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Filtros combinados",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Login CLIENTE cliente@pokevault.local",
+      "aprovada": true,
+      "detalhe": "HTTP 200"
+    },
+    {
+      "verificacao": "Mutação sem antifalsificação bloqueada",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Put /api/v1/carrinho/itens/1",
+      "aprovada": true,
+      "detalhe": "HTTP 204, esperado 204"
+    },
+    {
+      "verificacao": "Put /api/v1/carrinho/itens/2",
+      "aprovada": true,
+      "detalhe": "HTTP 204, esperado 204"
+    },
+    {
+      "verificacao": "Put /api/v1/carrinho/itens/3",
+      "aprovada": true,
+      "detalhe": "HTTP 204, esperado 204"
+    },
+    {
+      "verificacao": "View Razor carrinho renderiza seleção",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "View Razor confirmação selecionada",
+      "aprovada": true,
+      "detalhe": "HTTP 200"
+    },
+    {
+      "verificacao": "Post /api/v1/compras",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Compra selecionada total 50 saldo 50",
+      "aprovada": true,
+      "detalhe": "CompraId=5"
+    },
+    {
+      "verificacao": "Linha não selecionada preservada",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Post /api/v1/compras",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Reenvio UUID sem novo débito",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Post /api/v1/compras",
+      "aprovada": true,
+      "detalhe": "HTTP 409, esperado 409"
+    },
+    {
+      "verificacao": "UUID com conteúdo divergente",
+      "aprovada": true,
+      "detalhe": "{\"type\":\"https://tools.ietf.org/html/rfc9110#section-15.5.10\",\"title\":\"Esta chave já foi usada para outra seleção. Faça uma nova confirmação.\",\"status\":409,\"codigo\":\"CHAVE_REUTILIZADA\",\"traceId\":\"0HNPFJ03TDLML:0000000D\"}"
+    },
+    {
+      "verificacao": "Login CLIENTE cliente2@pokevault.local",
+      "aprovada": true,
+      "detalhe": "HTTP 200"
+    },
+    {
+      "verificacao": "Isolamento de histórico",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Post /api/v1/compras/5/cancelamento",
+      "aprovada": true,
+      "detalhe": "HTTP 403, esperado 403"
+    },
+    {
+      "verificacao": "Login ADMINISTRADOR ",
+      "aprovada": true,
+      "detalhe": "HTTP 200"
+    },
+    {
+      "verificacao": "View Razor administrativa de cancelamento",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Post /api/v1/compras/5/cancelamento",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Post /api/v1/compras/5/cancelamento",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Cancelamento integral e único",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Estoque original restaurado",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Delete /api/v1/carrinho/itens/3",
+      "aprovada": true,
+      "detalhe": "HTTP 204, esperado 204"
+    },
+    {
+      "verificacao": "Login ATENDENTE ",
+      "aprovada": true,
+      "detalhe": "HTTP 200"
+    },
+    {
+      "verificacao": "Post /api/v1/compras",
+      "aprovada": true,
+      "detalhe": "HTTP 403, esperado 403"
+    },
+    {
+      "verificacao": "Atendente impedido de comprar",
+      "aprovada": true,
+      "detalhe": ""
+    }
+  ]
+}

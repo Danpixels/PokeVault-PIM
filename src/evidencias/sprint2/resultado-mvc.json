@@ -1,0 +1,118 @@
+{
+  "dataUtc": "2026-10-21T17:55:27.0097042Z",
+  "base": "PokeVault",
+  "atendenteId": 9,
+  "ofertaId": 6,
+  "checks": [
+    {
+      "verificacao": "Post /api/v1/sessao",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /api/v1/admin/clientes/7",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /admin/clientes/7/saldo",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "POST MVC /admin/clientes/7/saldo",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /api/v1/admin/clientes/7",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "MVC saldo decimal correto",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "POST MVC /admin/clientes/7/saldo",
+      "aprovada": true,
+      "detalhe": "HTTP 409, esperado 409"
+    },
+    {
+      "verificacao": "MVC saldo antigo exige recarga e desabilita envio",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "POST MVC /admin/clientes/7/saldo",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "POST MVC /admin/funcionarios/novo",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "MVC cadastro redireciona para listagem sem senha",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "POST MVC /admin/funcionarios/novo",
+      "aprovada": true,
+      "detalhe": "HTTP 409, esperado 409"
+    },
+    {
+      "verificacao": "MVC erro de duplicidade limpa senha inicial",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Get /api/v1/admin/funcionarios",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "POST MVC /admin/funcionarios/9/ativo",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /api/v1/gestao/ofertas/colecoes",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "POST MVC /gestao/ofertas/nova",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /api/v1/gestao/ofertas",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "MVC cadastro de carta decimal correto",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "POST MVC /gestao/ofertas/6/ajustar",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /api/v1/gestao/ofertas/6",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "MVC ajuste de carta preserva identidade e inativa",
+      "aprovada": true,
+      "detalhe": ""
+    }
+  ]
+}

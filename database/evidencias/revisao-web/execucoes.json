@@ -1,0 +1,30 @@
+[
+  {
+    "Banco": "PokeVault",
+    "Consulta": "database/evidencias/revisao-web/estado-e-permissoes-leitura.sql",
+    "InicioEmUtc": "2026-11-03T22:09:30.3242139Z",
+    "ExitCode": 0,
+    "Resultado": "database/evidencias/revisao-web/PokeVault-estado-e-permissoes-leitura.txt"
+  },
+  {
+    "Banco": "PokeVault",
+    "Consulta": "database/007_verificar.sql",
+    "InicioEmUtc": "2026-11-03T22:09:30.7012668Z",
+    "ExitCode": 0,
+    "Resultado": "database/evidencias/revisao-web/PokeVault-007_verificar.txt"
+  },
+  {
+    "Banco": "PokeVaultTests",
+    "Consulta": "database/evidencias/revisao-web/estado-e-permissoes-leitura.sql",
+    "InicioEmUtc": "2026-11-03T22:09:30.9440935Z",
+    "ExitCode": 0,
+    "Resultado": "database/evidencias/revisao-web/PokeVaultTests-estado-e-permissoes-leitura.txt"
+  },
+  {
+    "Banco": "PokeVaultTests",
+    "Consulta": "database/007_verificar.sql",
+    "InicioEmUtc": "2026-11-03T22:09:31.1651128Z",
+    "ExitCode": 0,
+    "Resultado": "database/evidencias/revisao-web/PokeVaultTests-007_verificar.txt"
+  }
+]

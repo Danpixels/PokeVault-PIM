@@ -1,0 +1,10 @@
+{
+  "dataUtc": "2026-11-03T22:55:19.2917704Z",
+  "estado": "VERSAO_FINAL_PRONTA_SNAPSHOT_ISOLADO_NOVO_SEM_SUBSTITUIR_TESTES_ATIVOS",
+  "schema": 10,
+  "dll": "D226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C",
+  "snapshot": "D226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C",
+  "caminhoSnapshot": ".local/testapp-tcgdex151-final",
+  "api": "/api/v1/gestao/tcgdex151",
+  "observacao": "A68 antigo pode estar em5188 e foi preservado. Nova versão corrige validação antes de gravar cache e rótulo histórico em qualquer diferença de data. Testes para seu próprio processo antes de mudar DLL; pode usar novo caminho direto, sem copia sobre processo ativo."
+}

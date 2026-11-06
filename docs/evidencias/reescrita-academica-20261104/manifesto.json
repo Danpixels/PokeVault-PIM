@@ -1,0 +1,20 @@
+{
+  "data_local": "2026-11-04",
+  "documento": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\output\\documents\\PokeVault_trabalho_reescrito_2026-11-04.docx",
+  "paginas": 36,
+  "tabelas": 8,
+  "diagramas": 4,
+  "sha256": "afa139f402d07009e1ac116c2fb6d9bcc7deca3b8ace12e24749513681651c0a",
+  "renderizacao": "Microsoft Word COM oculto para PDF e Poppler para PNG",
+  "revisao_visual": "36 páginas inspecionadas; ajustes finais limitados às tabelas, com comparação pixel a pixel e reinspeção das páginas alteradas",
+  "original_pdf": "C:/Users/Intel/Desktop/Daniel/Dev/Unip/PIM POKEVAULT/Pim Parte 2/PIM IV Em Desenvolvimento.pdf",
+  "original_sha256": "e575b219ec519365d42eb8e8729fbedf84fa05e0757c27180aec7266759a4b05",
+  "drive_original": "https://docs.google.com/document/d/1o8YF_JAcOOCXBm_UjFSTxEmodSgwhrPXrnT9C8uZ5WU/edit",
+  "drive_alterado": false,
+  "pendencias": [
+    "conclusões individuais fornecidas pelos integrantes",
+    "capturas finais de interface",
+    "conferência do manual acadêmico e da grade oficial",
+    "implementação mobile posterior"
+  ]
+}

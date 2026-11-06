@@ -1,0 +1,16 @@
+@model AjusteCartaModel
+@using PokeVault.Web.Domain
+@using System.Globalization
+@{var carta=(CartaGestao)ViewBag.Carta; ViewData["Title"]="Ajustar carta";}
+<section class="panel narrow"><div class="eyebrow">OPERAÇÃO DA LOJA</div><h1>Ajustar carta</h1><h2>@carta.Nome</h2><p>@carta.Colecao · #@carta.Numero<br/>@carta.Conservacao.Replace('_',' ') · @carta.Raridade</p>
+<p>Consulta atual: @carta.Preco.ToString("C",CultureInfo.GetCultureInfo("pt-BR")) · @carta.Estoque unidade(s) · @(carta.Ativo?"ativa":"inativa").</p>
+<p>Preço e estoque são valores absolutos. Não é possível reaproveitar esta identidade para outra carta ou conservação.</p>
+<form action="/gestao/ofertas/@carta.OfertaId/ajustar" method="post">@Html.AntiForgeryToken()<div asp-validation-summary="All" role="alert" class="validation"></div><input asp-for="VersaoEsperada" type="hidden"/>
+<label>Preço em reais<input asp-for="Preco" type="number" min="0.01" max="9999999999.99" step="0.01" required/></label>
+<label>Novo estoque<input asp-for="NovoEstoque" type="number" min="0" max="2147483647" required/></label>
+<label>Situação<select asp-for="Ativo" required><option value="true">Ativa</option><option value="false">Inativa</option></select></label>
+<button type="submit" disabled="@(ViewBag.Conflito==true)">Confirmar ajuste</button></form>
+@if(ViewBag.Conflito==true){<p role="alert">Nada foi sobrescrito. Recarregue os dados antes de uma nova confirmação.</p><a class="button" href="/gestao/ofertas/@carta.OfertaId/ajustar">Recarregar carta e versão</a>}
+<p><a href="/gestao/ofertas">Voltar ao catálogo operacional</a></p></section>
+
+

@@ -1,0 +1,17 @@
+{
+  "dataUtc": "2026-11-03T22:50:04.9963379Z",
+  "mesmaImportacaoId": true,
+  "resultado": {
+    "emExecucao": false,
+    "importacaoId": 1,
+    "processados": 207,
+    "importados": 207,
+    "ausentes": 0,
+    "imagensLocais": 207,
+    "fallbackIngles": 0,
+    "modoOffline": true,
+    "mensagem": "207 referências processadas com cache; API indisponível/rede desabilitada. Nenhuma oferta comercial alterada.",
+    "inicioUtc": "2026-11-03T22:50:01.942134Z",
+    "fimUtc": "2026-11-03T22:50:04.4540367Z"
+  }
+}

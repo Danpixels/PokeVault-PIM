@@ -1,0 +1,11 @@
+{
+  "exitCode": 0,
+  "motivoReteste": "Tipos da CTE de medicao corrigidos; somente leitura, nao reexecuta cenarios aprovados",
+  "dataUtc": "2026-11-03T23:00:08.3216783Z",
+  "arquivo": "tests/Tcgdex151/Medicao.sql",
+  "saida": [
+    "Contexto do banco de dados alterado para 'PokeVaultTests'.",
+    "{\"ReferenciasLogicas\":207,\"Detalhadas\":207,\"TraducoesFisicas\":207,\"SemPricing\":0,\"ReferenciasComCampoNumerico\":207,\"CamposNumericos\":3940,\"CamposNulos\":344,\"ZerosRecebidosDaFonte\":54,\"PrecosSemOrigemData\":0,\"ForaDoAlvo\":0}",
+    "[{\"TriggersTesteRestantes\":0}]"
+  ]
+}

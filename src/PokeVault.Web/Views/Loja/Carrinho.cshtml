@@ -1,0 +1,27 @@
+@model PokeVault.Web.Domain.Carrinho
+@using PokeVault.Web.Domain
+@using System.Globalization
+@{ ViewData["Title"] = "Carrinho"; var moeda=CultureInfo.GetCultureInfo("pt-BR"); }
+<div class="eyebrow">SUA SELEÇÃO</div><h1>Carrinho</h1><p class="lead">Saldo fictício: <strong>@Model.Saldo.ToString("C",moeda)</strong></p>
+<p>Marque as linhas que deseja comprar. As demais permanecem no carrinho. O carrinho não reserva estoque.</p>
+@if(Model.Itens.Count == 0) { <div class="panel"><h2>Seu carrinho está vazio</h2><a href="/">Explorar catálogo</a></div> }
+else
+{
+<form id="selecionar" action="/carrinho/confirmar" method="post">@Html.AntiForgeryToken()</form>
+<div class="table-wrap"><table><thead><tr><th>Comprar</th><th>Carta</th><th>Preço unitário</th><th>Quantidade</th><th>Subtotal</th><th>Ações</th></tr></thead><tbody>
+@foreach(var item in Model.Itens)
+{
+<tr><td><input aria-label="Selecionar @item.Nome @item.Conservacao" checked data-subtotal="@item.Subtotal.ToString(CultureInfo.InvariantCulture)" type="checkbox" name="selecionados" value="@item.OfertaId" form="selecionar" /></td>
+<td><div class="cart-product">@if(item.ImagemUrl is not null){<img src="@item.ImagemUrl" alt="" width="52" height="73"/>}<div><a href="/cartas/@item.OfertaId"><strong>@item.Nome</strong></a><br/><small>#@item.Numero/165 · @item.Colecao<br/>@Variantes.Estado(item.Conservacao)<br/>@Variantes.Idioma(item.Idioma) · @Variantes.Acabamento(item.Acabamento)<br/>@item.Estoque un. em estoque</small></div></div></td><td>@item.Preco.ToString("C",moeda)</td>
+<td><form action="/carrinho/item" method="post" class="inline">@Html.AntiForgeryToken()<input type="hidden" name="ofertaId" value="@item.OfertaId" />
+<input aria-label="Quantidade de @item.Nome @item.Conservacao" name="quantidade" type="number" min="1" max="10000" value="@item.Quantidade" required /><button type="submit" class="quiet">Atualizar</button></form></td>
+<td>@item.Subtotal.ToString("C",moeda)</td><td><form action="/carrinho/item" method="post">@Html.AntiForgeryToken()<input type="hidden" name="ofertaId" value="@item.OfertaId" /><input type="hidden" name="quantidade" value="0" /><button type="submit" class="quiet">Remover</button></form></td></tr>
+}
+</tbody></table></div><div class="cart-total panel"><strong>Total selecionado: <span id="total-selecionado">@Model.Itens.Sum(i=>i.Subtotal).ToString("C",moeda)</span></strong><p>Atualize as quantidades antes de prosseguir.</p></div><button form="selecionar" type="submit">Revisar itens selecionados →</button>
+}
+
+@section Scripts {<script>
+const linhas = document.querySelectorAll('input[name="selecionados"]');
+function totalSelecionado(){ let total=0;linhas.forEach(l=>{if(l.checked)total+=Number(l.dataset.subtotal)});const campo=document.getElementById('total-selecionado');if(campo)campo.textContent=total.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}); }
+linhas.forEach(l=>l.addEventListener('change',totalSelecionado));
+</script>}

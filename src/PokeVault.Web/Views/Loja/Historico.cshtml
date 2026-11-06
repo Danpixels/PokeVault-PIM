@@ -1,0 +1,8 @@
+@model IReadOnlyList<PokeVault.Web.Domain.CompraResumo>
+@using System.Globalization
+@{ ViewData["Title"] = "Compras"; var moeda=CultureInfo.GetCultureInfo("pt-BR"); }
+<div class="eyebrow">HISTÓRICO</div><h1>@(User.IsInRole("ADMINISTRADOR") ? "Compras da demonstração" : "Minhas compras")</h1><p>Até 100 compras mais recentes. Valores pagos com saldo fictício.</p>
+@if(Model.Count == 0) { <div class="panel">Nenhuma compra registrada.</div> }
+else { <div class="table-wrap"><table><thead><tr><th>Compra</th><th>Data (UTC)</th><th>Status</th><th>Total</th><th></th></tr></thead><tbody>
+@foreach(var compra in Model) { <tr><td>#@compra.CompraId</td><td>@compra.CriadaEmUtc.ToString("dd/MM/yyyy HH:mm")</td><td><span class="tag">@compra.Status</span></td><td>@compra.Total.ToString("C",moeda)</td><td><a href="/compras/@compra.CompraId">Ver detalhe →</a></td></tr> }
+</tbody></table></div> }

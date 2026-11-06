@@ -1,0 +1,42 @@
+{
+  "RegistradoEmUtc": "2026-11-03T22:13:22.6907258Z",
+  "Banco": "PokeVault",
+  "ValidadeDaVerificacao": true,
+  "Metodo": "DPAPI CurrentUser e PasswordHasher<object> da plataforma em memória; sem rehash, escrita SQL ou login HTTP",
+  "ContasConferidas": 4,
+  "Resultados": [
+    {
+      "UsuarioId": 1,
+      "PerfilEsperado": "ADMINISTRADOR",
+      "CadastroEncontrado": true,
+      "PerfilCompativel": true,
+      "Ativo": true,
+      "SenhaCompativelComArquivoProtegido": true
+    },
+    {
+      "UsuarioId": 2,
+      "PerfilEsperado": "CLIENTE",
+      "CadastroEncontrado": true,
+      "PerfilCompativel": true,
+      "Ativo": true,
+      "SenhaCompativelComArquivoProtegido": true
+    },
+    {
+      "UsuarioId": 3,
+      "PerfilEsperado": "CLIENTE",
+      "CadastroEncontrado": true,
+      "PerfilCompativel": true,
+      "Ativo": true,
+      "SenhaCompativelComArquivoProtegido": true
+    },
+    {
+      "UsuarioId": 4,
+      "PerfilEsperado": "ATENDENTE",
+      "CadastroEncontrado": true,
+      "PerfilCompativel": true,
+      "Ativo": true,
+      "SenhaCompativelComArquivoProtegido": true
+    }
+  ],
+  "Limite": "Compatibilidade presente com arquivo protegido atual; não prova igualdade de senhas/hashes ao longo de todo histórico."
+}

@@ -1,0 +1,82 @@
+{
+  "RegistradoEmUtc": "2026-10-21T17:59:44.7809443Z",
+  "Escopo": "Banco sprint2; artefatos finais publicados; SQL008-010/013 executado conforme logs; wrapper final somente parser após complementos",
+  "Arquivos": [
+    {
+      "Arquivo": "database/000_preparar_base.sql",
+      "SHA256": "F2E3F5486ED8DDA86BEC5D5DC80F20D45FED238554535698A13B586766CB140B"
+    },
+    {
+      "Arquivo": "database/001_schema.sql",
+      "SHA256": "3E25BDAC29A092E0C73601517D5F2A368A528D2A576AB999B934018F3087507D"
+    },
+    {
+      "Arquivo": "database/002_tipos.sql",
+      "SHA256": "ABD862EC8C2C03C09D01B7203B0B9C514DEEB68898E2AAD81DB21A94477CD20C"
+    },
+    {
+      "Arquivo": "database/003_procedures_compra.sql",
+      "SHA256": "546F70BD0AC8F075B5C799DC6DDABBD20EE3C630B1E9F85D4758EF2EB192E599"
+    },
+    {
+      "Arquivo": "database/004_procedures_operacao.sql",
+      "SHA256": "7FAB76DC5C619D2035C8F9B74B53A01A4650CDA08C963976886F9900402D93CC"
+    },
+    {
+      "Arquivo": "database/005_seed.sql",
+      "SHA256": "2BD932F5E4CD922041F79134C212B1A0C1CFBC89130BB1004D4789DBC290602A"
+    },
+    {
+      "Arquivo": "database/006_permissoes.sql",
+      "SHA256": "0B873AFEABE6FFF4246B0C84BB3B271D6304E33B49549CBF3A46BFA634CA1DE3"
+    },
+    {
+      "Arquivo": "database/007_verificar.sql",
+      "SHA256": "3A78BF9EFE3AEABAE8326F4F9E216127E2FD1CF5E1052616A72D3274961EC119"
+    },
+    {
+      "Arquivo": "database/008_sprint2_versoes.sql",
+      "SHA256": "D0E5BCFD8F72D38B02D2C53C514F29C40CB9ECDE75E5529228D4986ED8422F48"
+    },
+    {
+      "Arquivo": "database/009_sprint2_ajustes.sql",
+      "SHA256": "456D5A42F8C0068C8E3F90E52A65A1254E0F45EBF410D9F7695F80E06C54C803"
+    },
+    {
+      "Arquivo": "database/010_sprint2_runtime.sql",
+      "SHA256": "60A1F28E13CED3F538675912AE3B5A71CE7EE8AD5542D2A849820F2902293320"
+    },
+    {
+      "Arquivo": "database/011_sprint2_verificar.sql",
+      "SHA256": "9F73EE7FDC02E6DB6F48CF91EFB2097BF5A9B04B19B731431227F2CFDEB1305D"
+    },
+    {
+      "Arquivo": "database/012_sprint2_preservacao.sql",
+      "SHA256": "812CC556F47D194FFF0D1665FA21AD02E57DAA25A9AC36259B822AD482EEC064"
+    },
+    {
+      "Arquivo": "database/013_sprint2_auditoria_carta.sql",
+      "SHA256": "81805777D104E74D353CEDC2E1E27C98265A951D688ED9F722AF5789A860736A"
+    },
+    {
+      "Arquivo": "database/Preparar.ps1",
+      "SHA256": "5EF78BA730FB1CF9F9F33B4DF30BB60E9B9BEA98975D25222D33A0D95E4D4151"
+    },
+    {
+      "Arquivo": "database/README.md",
+      "SHA256": "6626B7F822F216578073AB47AEBAE1E5E660C18E422B958C0A424183DC46BDAD"
+    },
+    {
+      "Arquivo": "docs/contrato-sprint2.md",
+      "SHA256": "0AFBD25F6AA70709DC28F96F5A6CE1EB941AE82E40994ECD68D203671CAAB90F"
+    },
+    {
+      "Arquivo": "docs/entrega-sprint2-banco.md",
+      "SHA256": "C67690AF8BCDA72E785795487F0471CF5231D9D9AB97FA0FC42C2E12B9EEF953"
+    },
+    {
+      "Arquivo": "docs/plano-banco.md",
+      "SHA256": "C6DA4B7C810416E82F4D2EBDCC019604C0635A8552527C0D84B96110CB663E82"
+    }
+  ]
+}

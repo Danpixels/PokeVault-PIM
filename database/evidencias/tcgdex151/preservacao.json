@@ -1,0 +1,19 @@
+{
+  "RegistradoEmUtc": "2026-11-03T22:37:47.3935092Z",
+  "Resultados": [
+    {
+      "Banco": "PokeVault",
+      "TabelasComparadas": 12,
+      "ConteudoIntegralPreexistenteIdentico": true,
+      "IncluiRowversion": true,
+      "Observacao": "SHA256 por tabela sobre JSON ordenado de todas as colunas, inclusive dados privados apenas dentro da impressão; nenhuma senha/hash individual exibido."
+    },
+    {
+      "Banco": "PokeVaultTests",
+      "TabelasComparadas": 12,
+      "ConteudoIntegralPreexistenteIdentico": true,
+      "IncluiRowversion": true,
+      "Observacao": "SHA256 por tabela sobre JSON ordenado de todas as colunas, inclusive dados privados apenas dentro da impressão; nenhuma senha/hash individual exibido."
+    }
+  ]
+}

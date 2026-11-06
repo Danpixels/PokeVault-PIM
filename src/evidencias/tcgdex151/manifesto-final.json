@@ -1,0 +1,1249 @@
+{
+  "dataUtc": "2026-11-03T23:01:13.6565532Z",
+  "dll": "D226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C",
+  "snapshot": "D226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C",
+  "schema": 10,
+  "fontes": [
+    {
+      "arquivo": "src\\PokeVault.Web\\Application\\GestaoService.cs",
+      "sha256": "E104333587FF289595F048F973A38E2028A7B92D34C650287404B9CEB67CA2D4"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Application\\LojaService.cs",
+      "sha256": "96A7822706F02ED124F9C822F28B613EECEF451F8331F7C54659A9FFB71249A1"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Application\\TcgDexService.cs",
+      "sha256": "C16D3E84FD0DC75E2004F403FDC4C68573426893FC678000B73E6B148DAFA093"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Domain\\GestaoModels.cs",
+      "sha256": "921F45B09F9B2F8C51018C121199DE98295EAA4BC2FEE235A7BF21FDD9EEDD50"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Domain\\Models.cs",
+      "sha256": "089419958054B6B28D43A55E7ED2BE47F4BF459FBFD0788B69BAD04FDA87262B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Domain\\TcgDexModels.cs",
+      "sha256": "14C42D8577415B6563D6AEBC625426336C96242CB24155AB9AECA95D8530FEBC"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\AntiforgeryProblemFilter.cs",
+      "sha256": "0DAA341631D4B96B24089F297990F2D580A5E5B598033002B02F0B9D5A4CBFAE"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\Bootstrap.cs",
+      "sha256": "31A2B3AE1436ACA257AB56E0AB029D8F13F6B24FC488C8D1FED58A47EBEAB3D3"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\LocalReadiness.cs",
+      "sha256": "4362A5AD5255E7274B04790A6FF4334B728D1171E114A08FA40811ED99E792A6"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\Sessao.cs",
+      "sha256": "6FE88802AC21504E34B5259867A099F4785ADB12FC69AAE63E97BF84309C4124"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\SqlGestaoRepository.cs",
+      "sha256": "4668C161E970B369AE57A944B36C6B21266FEB126DE8AC74041AE09A4ACAC272"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\SqlLojaRepository.cs",
+      "sha256": "640FF8041550BC4B7DBF6C463AD744E6E2345E18BC89D321B6A9BC0D49B52F63"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\SqlTcgDexStore.cs",
+      "sha256": "5556D10DA179138A3298AE3E5B3B0C13C1D644AD60524523955DE2302195FAE0"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\TcgDexClient.cs",
+      "sha256": "8F8C5ABB5B502AF3D02C99174FD2DEA784ECE5E0F0F46A29FA1808A625E0BF35"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\TcgLocalImages.cs",
+      "sha256": "E4BBC303D57BD42E8D80136CE325CB187BD946BD760F461EF72D0FF866F4CF3C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Controllers\\GestaoApiController.cs",
+      "sha256": "511CFA02DF45AA9E0D4DB009BEDBA5346BA31A77F7153DCBCD59A0C532840741"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Controllers\\GestaoController.cs",
+      "sha256": "180E82B4D14201C74E459EDBE13A5F6008458573E73D8A0F024769A6630528EF"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Controllers\\LojaApiController.cs",
+      "sha256": "EAACC94BCA4528401A57526F43437C174859F8E15E200A5D1000B5B40C59A329"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Controllers\\LojaController.cs",
+      "sha256": "402E9DFD0801E83B9A8D8CEB8EF808414B207914E5F3384B0FFEFA1C807DA06B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Controllers\\TcgDexController.cs",
+      "sha256": "2E8E14DFCE46ED2FF04CCF8CA94EE9C4D41EBA12BCF095F4989FB94DC1B6E5B4"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Models\\ErrorViewModel.cs",
+      "sha256": "5EC8AE445D68FEA9A54E9BA58441AE8C7B8FED4F6290C9CB995A29625653460A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Models\\FluxoModels.cs",
+      "sha256": "8E8F0A397DCF4802B11F01EFBFCB339FA862F280658207E378DAB02A8B7F616E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Models\\GestaoModels.cs",
+      "sha256": "D8F5E66A87E84D974FCCC205EC58282907B72D7A6497BA2D167F63C066BE2D4F"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Models\\TcgDexModels.cs",
+      "sha256": "1CB06D6CD4A7B9AFB3107DA2516E371BB9B62CD0057900C1CD9978A31B3A6307"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\_ViewImports.cshtml",
+      "sha256": "63D8A59465FFA2A7C7B8BF84321A9584701FE8A261D6233BDBADF5D24122086C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\_ViewStart.cshtml",
+      "sha256": "47E02B4DA20D198892B7B1B00B12944068797C438EF2E82D20FF70B4D56BAD39"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\Ajustar.cshtml",
+      "sha256": "DE9785F6E007CAA0C8AEBCE9C48326ACFB1C5B4BBE9C4D95400AADB48E21D5BF"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\Cartas.cshtml",
+      "sha256": "B2FAF16B905DD1BEB945B2CA4168D75E6F5241A08A3737C97DFD039E42B2F089"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\NovaCarta.cshtml",
+      "sha256": "58112EB22CBC23B8CF02B3C6A3C8CFBD2A359BCA478D20CD62D365A565B9272D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\Saldo.cshtml",
+      "sha256": "E761FD2AEF1BB0A0D10B7AC5997F26948543434BD9F75A92A6523652DA0C0A99"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\UsuarioNovo.cshtml",
+      "sha256": "E0C68D893D46F2041F676EAEFD54CF43D4AF8AE1DC8D632244403DA594E9D616"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\Usuarios.cshtml",
+      "sha256": "D637008215E7E5DC1033FB76484C3B2668B2B0E377775A0B67A61B97C597EE80"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Carrinho.cshtml",
+      "sha256": "8D4642B244685366A2DACFB0FED70C9CFE1738B763CDBE0955E3286AF0B9F963"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Catalogo.cshtml",
+      "sha256": "E00E131E2CA45120A3C7B06C190EB77D9C30E5C7EB6EB858F12839A86B1C5D28"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Compra.cshtml",
+      "sha256": "BD6E485D2EC2E2A764875658169017AB10966F35F60F4A50C8B039B73D6EBED1"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Confirmacao.cshtml",
+      "sha256": "697021420F956B4D509FC85771D23C65B016604EA54C52BD5CB9E6E13D8AEB38"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Historico.cshtml",
+      "sha256": "88CF6DF3065B38262F10FA1BBADA48BF42CD031A4167821463913D1EF69E56B1"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Login.cshtml",
+      "sha256": "5F58F3B472B43ED2BC79644056595B95AA116E755177057D15680975BF0E25FB"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Shared\\_Layout.cshtml",
+      "sha256": "0FBB458CA0795FEF03AE658DBD24E4BCF0B0B5CA0B300F7BB13C416C7DE4DC5B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Shared\\_Layout.cshtml.css",
+      "sha256": "A50AD1AF0709E4A2CCA3FED34A257FAD983E2D8A8C344F2B417D6B0C8BA27532"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "sha256": "574F31F5A9A43CD72F4E0BC199FFFDB27204B0D0B537AC9CD5FAD49D8203DFD5"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Shared\\Error.cshtml",
+      "sha256": "5DBF98B6B9394AD78206EDCE40CAB1D7A238AA69CFEFA41BAB0EBC6AA22488AA"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\TcgDex\\Detalhe.cshtml",
+      "sha256": "7FE6087A3E56B95A5A4ADB00A6059B3CC0D2A6F6E97E96A195B56365FD25E5A2"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\TcgDex\\Index.cshtml",
+      "sha256": "8E3D1E7113C1380C37F2339A9112CED4225C1C348627C3DA9671B3DDCFB24907"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\TcgDex\\Oferta.cshtml",
+      "sha256": "61E4546AEFA488C4A5447921FACB1ACA1770F713900451363E0612C644A7F034"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\TcgDex\\Progresso.cshtml",
+      "sha256": "2A28F01CB9CFFD79CA3E0AE40218A0B3A841C8495BA65EA2B485506E9F108C6F"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Program.cs",
+      "sha256": "8225616D85B678D9F5D2F9252F6BC0DDB60CB2E367B875948F3A354E3153D6C2"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\PokeVault.Web.csproj",
+      "sha256": "83E7DCCB371E96DA36EC07C46A863D218CC36852ACB9FE2C84C07EE1FBDBC569"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\css\\site.css",
+      "sha256": "0EC03505E443B109254F9ED9832F73DA0C950B0B780C10C32B291D86306CD2BF"
+    },
+    {
+      "arquivo": "Abrir-PokeVault.ps1",
+      "sha256": "A0A2DFA482170ABFAE31A6CA1C7F1918A3F1607C2DCAF0D4FD9A4696672531E3"
+    },
+    {
+      "arquivo": "README.md",
+      "sha256": "24A415F64E968096C716866DF184DAE8848C30E414854FC353962EFD7F3F500D"
+    }
+  ],
+  "imagens": [
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-001.webp",
+      "bytes": 14968,
+      "sha256": "90595201DDBFE0FD58C67FF3F3E3C3FAF412363885D597D8676122D7B7EB171D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-002.webp",
+      "bytes": 18020,
+      "sha256": "A47F30CED0DBEEB14E0AF4C562C6F8CBD52E148017AA4A8E7105154301D2CC9F"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-003.webp",
+      "bytes": 25944,
+      "sha256": "51906EDEE1F4C7C2001E8DEF74CBB57EB100F974A88F137AE6D6E1772B8A5083"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-004.webp",
+      "bytes": 17862,
+      "sha256": "3A4E0E53692D08CCEC8B7EB314EC03287862E3B08CB291522DE3AB3370E2D86C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-005.webp",
+      "bytes": 19090,
+      "sha256": "EDDA40A2CC06C14A0DCF4B779E1F4F962A8435776AD0AF7BF599417EFF1F5691"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-006.webp",
+      "bytes": 27144,
+      "sha256": "F7F9A73BC87674400A32407F25AE1D20F582173FACD6C77E7939843974F404BA"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-007.webp",
+      "bytes": 18600,
+      "sha256": "CCD274A02D56276DD4FD3DBCBA85190B0F91F1AF1FFDBA4766A022F069A541FB"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-008.webp",
+      "bytes": 17468,
+      "sha256": "7634F0A83BAC0B68751976E1EBB56E0A40247A049E5D08C44810F46A8F7A8C9B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-009.webp",
+      "bytes": 26988,
+      "sha256": "C56A7F578D243A7B3FFBB84802D415226A7FA85E3E15AAF3CDDC06BBFEC832D5"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-010.webp",
+      "bytes": 17846,
+      "sha256": "91D8A3392D9D6DDB3FADBA07E64502B2A4D2778D4CD685C5A25A70DAD9E6F10E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-011.webp",
+      "bytes": 19784,
+      "sha256": "EAC79854B165CC2116A1EF32851CB2FC9A89999F1007177B68B3F683F071630B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-012.webp",
+      "bytes": 23040,
+      "sha256": "AE4E93A113262F4A98E144F3B4FA9E965987BEFC96B6E96EAF32C806984C75E4"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-013.webp",
+      "bytes": 15294,
+      "sha256": "0D585C7270B9C368A900C894DB812024D50F9E586578193C469EB54146719B3E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-014.webp",
+      "bytes": 18098,
+      "sha256": "FEC1243793AA7058A691F541AAFBF01CEDD36D892D251724461E7A1E22D5A9AC"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-015.webp",
+      "bytes": 18948,
+      "sha256": "D3613A2F17125D2877376C97B5A3FD12C7F8C92BAA057FED78188872FFC6D2E9"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-016.webp",
+      "bytes": 16400,
+      "sha256": "E606BBC6FD2CDBC18411B45C8AF3DB4DE94E5F02C929F3B6726822C426D3CCEF"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-017.webp",
+      "bytes": 12278,
+      "sha256": "CE97434BB31339D3ADEC594DFFF0BD3B2E7D84C337CAA475F1AC85E21FAD7253"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-018.webp",
+      "bytes": 15064,
+      "sha256": "E178C056DC43A329FC97F7D3E74BD193A2E9436B63BDF40151735D0860E62BB7"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-019.webp",
+      "bytes": 16926,
+      "sha256": "A6EA9724AD12E7FD602C30C3B57C6A8E6F231B2E9C992AD3A9C26286A0F0664A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-020.webp",
+      "bytes": 17106,
+      "sha256": "5929B5580E5F1FCF33DC1CC797CDFD23B82A3398C6149AFDA861F2B3765CCC84"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-021.webp",
+      "bytes": 16410,
+      "sha256": "ACD46A2F64297FB95973BDF6B6348ABC6C5CC510AC4052B0816CA70200B61F89"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-022.webp",
+      "bytes": 15892,
+      "sha256": "4B14FD6ECBD35455A2A02C56A8E2EAB24DE67B3CF5AC3318C1629C79B9403B7C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-023.webp",
+      "bytes": 17236,
+      "sha256": "D9C294122031BFA2656769520C351C5871319B6BD9528FDD4010646D3D0792DC"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-024.webp",
+      "bytes": 22054,
+      "sha256": "302C12028056C155A03C7C494E6DB6F8A520FCB7A6958B4FFDBA472996D0920D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-025.webp",
+      "bytes": 16042,
+      "sha256": "CD72CADDD0B08F2CC30AC602F22BDB901CD35780513427C1E33C66C9C6B1AC78"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-026.webp",
+      "bytes": 18460,
+      "sha256": "2A98776BBFF34408A8DDCA968940761EA322301995C4A67CC3ADCF14544F3B9D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-027.webp",
+      "bytes": 17052,
+      "sha256": "30B0AB382C5B667227D0CEF655B5F034D85739B8A95EB3C6593E594C93C2FA5E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-028.webp",
+      "bytes": 19494,
+      "sha256": "86457617924F7ED8CC5B413B2DF678853C4FA833D50FE11C3C53F032871FF8DC"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-029.webp",
+      "bytes": 17566,
+      "sha256": "8E6327B909821DB8549B5627A77A7E46BC101B7299EDC5FB3F117E236321E59E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-030.webp",
+      "bytes": 19156,
+      "sha256": "F8D582BC3D57FAE8D0E65946FD186383F777E120004C14A2BE3878FF515FA983"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-031.webp",
+      "bytes": 19310,
+      "sha256": "DF6E236ED9342A37D6D0EA00234DE49E3A26FF1B5AD40FA715BA1CBB2CD0986B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-032.webp",
+      "bytes": 16300,
+      "sha256": "16AFC532BD80DB930A4117F8DDE6E360CE8AF048AE6F8D48A24A7D7AAAA9AF7E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-033.webp",
+      "bytes": 17414,
+      "sha256": "E953F7534AFF1B288D2D9340B94C69A10E11405ACA9A40362E7A86FC70D16BCB"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-034.webp",
+      "bytes": 20636,
+      "sha256": "A93695DA1025C1D2D79C5361AA4B9A2A09A185E0D70E3AC6E0C5A7BF0C77D32C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-035.webp",
+      "bytes": 15842,
+      "sha256": "68B5759F993FD1672DBE0F1E42E77E9690EEBC1A648B8C89763990D99C604B6D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-036.webp",
+      "bytes": 18138,
+      "sha256": "3A8E9D78602D3DA0238FEB06EFD8750560C0B3CC9306DC7DF321C63B209EEA79"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-037.webp",
+      "bytes": 16764,
+      "sha256": "EF5D1C9242DD96FA8C213096D51D1B907217F6C6B2B7A5D6BC3870D34CEBADE9"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-038.webp",
+      "bytes": 23932,
+      "sha256": "30AB0944D147D60DB9D9E47F42B8E82250626C2C26B6FC02C7D30F21BAB0540C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-039.webp",
+      "bytes": 18482,
+      "sha256": "04CC692CBC43ABB7C94B4B52374ED40FA6624A3A5B36D25B921DEB41A234640C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-040.webp",
+      "bytes": 18566,
+      "sha256": "24DF65E4C7ECD70AD9B678288EDC720E15125D53D4E7A3E58EC866A0DFB20D9B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-041.webp",
+      "bytes": 18030,
+      "sha256": "64885CC1B62279A035788153153699260504DC8AB83AF0EF6A8904903DFC3267"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-042.webp",
+      "bytes": 19730,
+      "sha256": "1EB7081121B9500A0170055185F4528BC292E5F39253B874C90933A53CF9BDDF"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-043.webp",
+      "bytes": 14686,
+      "sha256": "4BA0EADD488978B58F066F07B8A2EF85D11C660DC541ABF490E00C44F677AF6E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-044.webp",
+      "bytes": 21174,
+      "sha256": "09E847D27D4048D25351A2B6589CA0EAE4BD595C37047BC602470CA74383400A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-045.webp",
+      "bytes": 21626,
+      "sha256": "E02A00DEF7329F6BF5963B8BC593F5715C5099BB564C8BB032C99030F1F2C836"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-046.webp",
+      "bytes": 18266,
+      "sha256": "10D79AD08AD64C064A01EA5E623A5C1EF4F2F4F426EA280AECA69D62FCF67FD3"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-047.webp",
+      "bytes": 19992,
+      "sha256": "BBE051D1B2F177E2048B42CD1D2FF2EE02BD43C806AD19E2773BC2FDB8B345F7"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-048.webp",
+      "bytes": 14848,
+      "sha256": "CF5CBB095ECBDDF3FC45109C64ADE9D9ECDCFAB55A467F885B344249AF1645CF"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-049.webp",
+      "bytes": 19998,
+      "sha256": "957766777CB62E507160D9E81B6447B7696A3F15D9DC96D292CBA583CA7EBEF5"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-050.webp",
+      "bytes": 13788,
+      "sha256": "C31510BDF057859DCCC16C019F7AE1E921E43F837E92CC01307E1808597313B7"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-051.webp",
+      "bytes": 15666,
+      "sha256": "18FD58DE93E95BEE09D7AE33584460E62DF155B9E28E8A2A752DD6A456E3933B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-052.webp",
+      "bytes": 18408,
+      "sha256": "946A68AF16F0BCFE296EB85B116E5C2B6374D71DE08D581A17918D28947570A2"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-053.webp",
+      "bytes": 18978,
+      "sha256": "945746E4607D7E2B79C524FCC804604E5E581F1D7389F5197D213CF6ED9BC86D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-054.webp",
+      "bytes": 18796,
+      "sha256": "6BB403EF90C9A8BD6024681B0DF8D1430E34C196904E1347CF44B6B4337C5DAD"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-055.webp",
+      "bytes": 18802,
+      "sha256": "E382CD3443194B83AE425B872318FAE31871B2F4E7F2EE6473506C9C764C16B6"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-056.webp",
+      "bytes": 19146,
+      "sha256": "97000754711F7181BA1176091CFEDCC72846ABFB49A34D0313BC99FF1E34EE7A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-057.webp",
+      "bytes": 20106,
+      "sha256": "7528241B365D87A2BD265C456023A8124E5F637D565C643117DBB65B362B5F47"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-058.webp",
+      "bytes": 16788,
+      "sha256": "0E483B7D81352C78B902CF6D88AB794716034ABB1B3B85AFFF115C875FFE7953"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-059.webp",
+      "bytes": 18136,
+      "sha256": "3E902D1D007F19F07B7971DF940CA98EB2014B6696ABC807066E1354733149B5"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-060.webp",
+      "bytes": 17106,
+      "sha256": "76CF1FBCC8FA3F5CE7CCB124C5C09243FAAB980837A56B55823092CD6D8782BC"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-061.webp",
+      "bytes": 18298,
+      "sha256": "1D74F5C50523150655C9E70CEF1E40478ACAEE0A147EA8DBFCDB644085533EED"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-062.webp",
+      "bytes": 20688,
+      "sha256": "653DE0E1AC0FA94B4F1E911C2243B2A2426096E392709BBC51497A29EA85F8C2"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-063.webp",
+      "bytes": 12788,
+      "sha256": "054FF4F100739EC89C63577E660DA30FF18EFD3B70ADBB4C27E1F68AC3CFC63C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-064.webp",
+      "bytes": 14822,
+      "sha256": "51ADC9EE93C7FD78043CD55BC5B224C91697D677D8570E8D58C3AB3C9241DC13"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-065.webp",
+      "bytes": 19760,
+      "sha256": "DF6994BB67DFDB881107E7783371D7BB4C15DC6F73265AD352568EAE0BF1E881"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-066.webp",
+      "bytes": 16810,
+      "sha256": "F81767EF3596E79518C3E3A636C172B588B62F3C0E0104777B06560DE66A1EB4"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-067.webp",
+      "bytes": 18978,
+      "sha256": "CE50B3CC127E248F4D34044EC7854D742AA739C92D5FDD43434A674214E54D3B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-068.webp",
+      "bytes": 22074,
+      "sha256": "A15261E9DDA3FE77DA91C1DF5BF0FABBB5C201D6616E828101DAE59C0B070B76"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-069.webp",
+      "bytes": 17194,
+      "sha256": "08199265A99B7F18854224D4426EA9A2E632B08895DDAD020D44387E55633F12"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-070.webp",
+      "bytes": 15286,
+      "sha256": "AD1A03BEFBEF4033B1D6CE8C5BE217118013CA81302F9DDE295E4D04A8C8C07F"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-071.webp",
+      "bytes": 18444,
+      "sha256": "894C9DA9F1174A51C76F465AB13A3650A2F9FD3142CB447F68A1C412F29B1993"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-072.webp",
+      "bytes": 15376,
+      "sha256": "21D722372CD38A73849799BB00BD7B96DC7EA59984CEDD057073E731D38D622D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-073.webp",
+      "bytes": 19982,
+      "sha256": "AD32A96C4B644CDE624DE0EC504DCAED805BC5CD63F1769FF4EA03B7755DDB3C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-074.webp",
+      "bytes": 17674,
+      "sha256": "54A72CAFF53F2FFB0B3EC4AFE70536DBA0D4A2B3F9443EBF951266EA342CC007"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-075.webp",
+      "bytes": 17564,
+      "sha256": "7CDC4711F3A0621F52E7AF3452B8B617DB8711B105ECB48BF318D7370E6CDE44"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-076.webp",
+      "bytes": 24240,
+      "sha256": "5253B40772BD4F12A42AE55DD16379430D11061E5C6B091F7705E81FAC15B518"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-077.webp",
+      "bytes": 15634,
+      "sha256": "B762B1BF095EA4DD2CCC52242452030BFE8C3ECE3AEAC4CC388FFD3AD531FB09"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-078.webp",
+      "bytes": 18102,
+      "sha256": "96959E9A66F70A962BFC63105EC165DE7C22ACDE269C1246F7FC868B70702FBF"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-079.webp",
+      "bytes": 15026,
+      "sha256": "54EC447933F3B4A8646F52A3DF29690D9ADE9AC7B955F23150A94A5B35F596AC"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-080.webp",
+      "bytes": 15744,
+      "sha256": "6EF2B9980829A31E8734903C5749BC9D6E89F1B844C1D3D0FF3FB9DA988B8D95"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-081.webp",
+      "bytes": 14126,
+      "sha256": "891A65362186C2C90593A25D70C1032954CBBED9CD226EA781A120D7A4D6729A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-082.webp",
+      "bytes": 16580,
+      "sha256": "4F3306066D4B4277819EA46341DCD4CE6F010801F3448C9A941ECE2AD5AC5978"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-083.webp",
+      "bytes": 18592,
+      "sha256": "871ADD8E16676D9701CD3F397852FF426C3C9390CA76FDF702719C8F620A2800"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-084.webp",
+      "bytes": 15354,
+      "sha256": "37EB18F794DDD086EC57B6C53334916A841873394B77B7F3B3203673F780EF6A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-085.webp",
+      "bytes": 20024,
+      "sha256": "596051122F8E37D3382AF173F500CAC6BE24EDA7DC0F85C6A0F37D69EABF02CA"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-086.webp",
+      "bytes": 14364,
+      "sha256": "0B1FEB9AC0E04343CB175A20C49428C39D44FD41F68ABAD4B8D149C3B05BE365"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-087.webp",
+      "bytes": 18482,
+      "sha256": "BF12C3FC4AE1B5DE9A8D6661A24B5F1F9157EB60D653769503592236A1FFF86B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-088.webp",
+      "bytes": 16168,
+      "sha256": "C5238249B80A309BA327DD98C9AC09D8D53AAF6B4A6F007F11D42A9C4E11D7C4"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-089.webp",
+      "bytes": 19332,
+      "sha256": "8DF775626C98E9ED733FAA29D7A5687FBEB3DB7F7ECB8F5B41D1B3F355C5F46D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-090.webp",
+      "bytes": 18724,
+      "sha256": "6FB2E3E60DF48C18415CA30E6CB5DD528C24FA529FCED1F7847D650529200B38"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-091.webp",
+      "bytes": 21828,
+      "sha256": "567C44F3C8CBB5924BFFEFF6CB784FAEBAAD1D54613677AD33C8492239EAA3D6"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-092.webp",
+      "bytes": 19826,
+      "sha256": "DD8368D9A2443F3FFCDECD95A085EDB8362AAA7B2E094D961DC5760FC5C23C91"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-093.webp",
+      "bytes": 23028,
+      "sha256": "A94F75BC5E180BEF039C06F4065E23DFDB5261F95CDEA7C2D338280387663F67"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-094.webp",
+      "bytes": 22660,
+      "sha256": "774749881433BC958E8874553078B01FC8A6DCCCC3A5CBE2E480C44405B12449"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-095.webp",
+      "bytes": 18158,
+      "sha256": "ACE881C4DE67679A1F5827621D92C080E0904708DB33D345E482243C73DF0930"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-096.webp",
+      "bytes": 13464,
+      "sha256": "E5FDDCCE28DFCA8A682E34E15A0E6E565BDA6F65475E576FDDEAFB1C6B4E1F6D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-097.webp",
+      "bytes": 18568,
+      "sha256": "89A59C3DE9494285E379F456A696E80ADFB983EE2DA70D6F5032C5882454D7C1"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-098.webp",
+      "bytes": 19856,
+      "sha256": "2E4D7D7146E6063949CE0F51DD7B223E8D7E9EBCF670D737BE5FE7466E64570B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-099.webp",
+      "bytes": 19272,
+      "sha256": "2B49DA995798CA844C1284AD6826B5CF3AB2E480949DBFA46A9E74FB2D65BC11"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-100.webp",
+      "bytes": 18414,
+      "sha256": "EC8D3E770968C9BC95104AB16CFF2FF3CA6C994D4AD913D532CD4C6D4E11A910"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-101.webp",
+      "bytes": 20688,
+      "sha256": "8E28581DC84F6AFF1EB126AFE30FA0738A92601319CFB469FA2D9E60C29A8F09"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-102.webp",
+      "bytes": 18764,
+      "sha256": "ACA13DE00DBD05BA7719B708403800DFE7CD7D64A0ECB806E4418E81FF19F378"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-103.webp",
+      "bytes": 22118,
+      "sha256": "3DB14C5D9E648EA0F5132DED146F5729C3D2C75034E83E425CCDDF5A06158D87"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-104.webp",
+      "bytes": 21402,
+      "sha256": "F86183D65327AF5654D36BE85616E1CFF8A821BB3F0354A1ED3FCC9296B43178"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-105.webp",
+      "bytes": 24104,
+      "sha256": "83D22BA2661DB192F738655D06E968D17AF4B750B8DA8A1E349E4B3B3AEC898A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-106.webp",
+      "bytes": 19996,
+      "sha256": "09AB4063A3E56F77A7C2BA19370EB51C9B01032778176FC844424122098B6E29"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-107.webp",
+      "bytes": 24532,
+      "sha256": "5D338CA079AF6A9238B8470E5CB8B13AA2D0A9BC8073FD28D38524D107F948C0"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-108.webp",
+      "bytes": 16580,
+      "sha256": "537575D79E69E164F04908652015E84101D295922A72D10AC49DBB00ADEE5406"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-109.webp",
+      "bytes": 16522,
+      "sha256": "B70E4BD6D9245BBA574BF10B858CAC9CFB6BD258E191A969649E6AC9EA6D5A15"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-110.webp",
+      "bytes": 24370,
+      "sha256": "49ABCCA84E23143F008F695922A92EF33668744FB3686B75509CD3944E0CD6CE"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-111.webp",
+      "bytes": 18700,
+      "sha256": "7820010BE11F3754DF64B2C60651B165AF3E1D2259F291FB7891D00868119AA4"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-112.webp",
+      "bytes": 21460,
+      "sha256": "99B4CA42C06F1D63B31FEF91968A3F1EF5568D715379C553C2E9D3E790C70197"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-113.webp",
+      "bytes": 20036,
+      "sha256": "39377E4221C6D1ED9BD77A1EDE5768E5BEFFA946C6B0D1E666F24EBF0B0F41D3"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-114.webp",
+      "bytes": 15938,
+      "sha256": "CC7C087039BACB3D4543D7D78EF758D0E5AB464ECB78664ECB3AE5B670A329D1"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-115.webp",
+      "bytes": 21578,
+      "sha256": "F8907F11181753F9FB3961D3885357AE7088EE9599A599DAB14629BC1707058E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-116.webp",
+      "bytes": 16490,
+      "sha256": "1A30F6B5717C580956C74A07DD19AEF145E4852916A381F280BE28B32924179F"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-117.webp",
+      "bytes": 19106,
+      "sha256": "C4E8F1501328B6308148912905FECC24C081E2E27BE2CA1BDBCF50992A182F89"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-118.webp",
+      "bytes": 16836,
+      "sha256": "3688E88136E9A2FADBF9E0C2F48E76BB744BD587FCDFEF7592DDC7E570417656"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-119.webp",
+      "bytes": 21674,
+      "sha256": "99E6C76F850D7B21DA8C3AD17C1907BE9DE13B1237F4EC243672F774DDEF19CF"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-120.webp",
+      "bytes": 24646,
+      "sha256": "E2698BE5C4E57996D9C8A406901F8D67F2B624481DE30FBB86F605E7ADB128C7"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-121.webp",
+      "bytes": 26562,
+      "sha256": "FD4809708409982652908B85B8E410EA946FE9C69D8951D7DBFAF6D569A046F8"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-122.webp",
+      "bytes": 23078,
+      "sha256": "25FB38B310A30E290751B579502C49B2563DE671300BAAC3745DE74CB8F92677"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-123.webp",
+      "bytes": 18514,
+      "sha256": "D3EA2947590A34793994CD8DFBD1346D42246A5CB0AEC29881A79401F6226302"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-124.webp",
+      "bytes": 22474,
+      "sha256": "17C9302735B175B007A407924D4F9BF3CF3E30C5A969F2BE965E3B2F828D07B5"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-125.webp",
+      "bytes": 20522,
+      "sha256": "55358CE72A7D820551F2588264ED37A61B5DFF09460F1E0317B751655DCF6720"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-126.webp",
+      "bytes": 19252,
+      "sha256": "D569A99A4DC3EAD2B60A58ED84452FA1B6E042C4FEC568F5784CB4D94855D400"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-127.webp",
+      "bytes": 18834,
+      "sha256": "91F0BAB65367ADD257B9ED99BDF3E5665C57958EA48818DC7A4B61994D0297B2"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-128.webp",
+      "bytes": 15374,
+      "sha256": "D6DBBCB8972B84082EBECC69BB49C2BF0938D50E69C5C9306BEB53694D9FC069"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-129.webp",
+      "bytes": 18290,
+      "sha256": "C34DD421AB66F49F43117004A3B36D49C19446402F0BD33034B7FB35C370A8D2"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-130.webp",
+      "bytes": 21918,
+      "sha256": "CBDE5822B3FDC78AA55EB355B4BEECDBBBA81A11914EC2D5062F6F9503615159"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-131.webp",
+      "bytes": 18158,
+      "sha256": "3BC60315624492E0CB41BFF096B5BFBB7F15B41D48F855B01C1E53C02159B815"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-132.webp",
+      "bytes": 21364,
+      "sha256": "A5594517A5A6852BAFC74CC1ADF9398ACA9F98169B9C4F2CD2D653A34B98F45C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-133.webp",
+      "bytes": 17140,
+      "sha256": "5D5FA273E082C172F9BDFC2C62B75B962317ECF10504D9B868E6205B7E13D5C4"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-134.webp",
+      "bytes": 22292,
+      "sha256": "0BB60197114301BF3FBAC8E8050FD159F5E25306F9F56F18ABA1A83A033FCEB2"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-135.webp",
+      "bytes": 20952,
+      "sha256": "0E014FC65188A545043F6E63D07C7FD8792A31EBFFBDE06DFF9682B4623DE8B4"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-136.webp",
+      "bytes": 21888,
+      "sha256": "4F59D093D8270CF744039CB75F3B12FD6F20B2773AA6E4050518634B04F8DFBA"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-137.webp",
+      "bytes": 13838,
+      "sha256": "9DF29E45F8F05579D43223129D4BFCBD06418EA018A42FEC9C285620A4A4B6C2"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-138.webp",
+      "bytes": 18148,
+      "sha256": "5CDAF3001A21C0FCCC084101F9A2D32944AD9849E0161FCDC0FF8AAACBAA0FB8"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-139.webp",
+      "bytes": 23110,
+      "sha256": "B26D3F39BE9CD1F275C73957E8F5A41834C9B8C14585613A386DDE1C02FF8983"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-140.webp",
+      "bytes": 16724,
+      "sha256": "FD0B841B86E31A1978E8D825BF7138C5F3C186419AD72C5E45A81E13B33C2FE6"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-141.webp",
+      "bytes": 20974,
+      "sha256": "474A1D5E5897727E8316EB179E53B3F7493838027F426E4D71A158812556B032"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-142.webp",
+      "bytes": 22520,
+      "sha256": "092F6819030D5540924266FFE9D05C25187E8F935BED1868A2C9BD1FC9FC9490"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-143.webp",
+      "bytes": 18192,
+      "sha256": "4B09A3135923FB1A3D6DCC65C9309B31EA25BE3525998D90FBCB361C6F0F8C57"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-144.webp",
+      "bytes": 21392,
+      "sha256": "D8DCEEEF1A05B7E1A0BB100025F36E95725A46237B435E6AA3B08E9CF029AB48"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-145.webp",
+      "bytes": 25686,
+      "sha256": "CB690AA1E9FD33E745EBEE503A2007566D39276994498F27185ABAC6D05A2F79"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-146.webp",
+      "bytes": 19622,
+      "sha256": "205EA20E03135BE9D08B834F33CD0A3EB3EE28C695FF3D35E0E78BB628526A1C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-147.webp",
+      "bytes": 16536,
+      "sha256": "43E58CEE8C1C3A4200F595B08E83DE711F1106D708AE083D525F302725AFE1FD"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-148.webp",
+      "bytes": 17908,
+      "sha256": "BC618FDAE447228C978083BB8A717FB21A2A0FAC109292FC106FFD670CC2CC0F"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-149.webp",
+      "bytes": 19622,
+      "sha256": "1C643CFB7116D3BBB2509917DB92DD1F6E9846858D1E56AEE0A1DE730571CFF6"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-150.webp",
+      "bytes": 22022,
+      "sha256": "C4560463182DC8BFC177BD05F6208EA3ABAE917B5A32B147EEAD4C38D748E1D7"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-151.webp",
+      "bytes": 22308,
+      "sha256": "8C740F65759D2A20D8A870B462FFF87544DF881A8D54F28C2B1ACF5B5FA32A12"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-152.webp",
+      "bytes": 21496,
+      "sha256": "EF7BADC8071C786A3AB9FBD7316022265CC405666191C3E83708944CB4689200"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-153.webp",
+      "bytes": 21164,
+      "sha256": "76D74EB85022EA265172A52FBA91D839149BE3784E0C6898C846456F6AB9EECA"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-154.webp",
+      "bytes": 18682,
+      "sha256": "59C91D3A1A7A54736A75AA8FBFC26C613A5699F2EB0ECF57BFC95C90D0AC13D9"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-155.webp",
+      "bytes": 12388,
+      "sha256": "B1E93EDADD158BC47E1188E462D5B9848123115D2EC1A516A656166E2DA47347"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-156.webp",
+      "bytes": 16028,
+      "sha256": "148A1FFA3BD35C0DA5CA3506383226E4C5754BD797A5ACE8225CABAA802E81C9"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-157.webp",
+      "bytes": 14374,
+      "sha256": "9287D51F0ECB46100ED271EE001DDF48477C1A9EB490F2763C22C263418C4821"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-158.webp",
+      "bytes": 12964,
+      "sha256": "B6AF1A4ACA5841D617A991DC809A78974DE0E69FE3E3016B6F194696EAED0F4A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-159.webp",
+      "bytes": 14128,
+      "sha256": "8943D4194F19F0CB11DD10DEE6CD8B99693419C0F7DAD16D1C73A2E2F6E12426"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-160.webp",
+      "bytes": 19486,
+      "sha256": "B98DC5FEF6E42D3E051C2E47DB17618468A25726824FEC707BF8C48F87B6DC93"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-161.webp",
+      "bytes": 13986,
+      "sha256": "58CEA75901B2C91E4163AD305CDD393B0505CD2C490A379ABEF25D63242A3484"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-162.webp",
+      "bytes": 14286,
+      "sha256": "CE30C5B52B5D9B1CAF005CB67B61759C379A3E971897971A56D3150C9CB4CC83"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-163.webp",
+      "bytes": 13290,
+      "sha256": "1B2587FCA1F236C0F6561527E6EBD55F9C26275EC93A697720B379E03BE4662D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-164.webp",
+      "bytes": 13430,
+      "sha256": "4102C179D1D929C66C7009ECC94FD552DCBBC7CE52AE7D54A82796BBFD065A45"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-165.webp",
+      "bytes": 15510,
+      "sha256": "2FB2F673A073DE59044ACF390B514DB5901E94969C95635E155E1422FE1ABD30"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-166.webp",
+      "bytes": 26848,
+      "sha256": "D7434D47B12E2567F67BBA330A80831BF51866109C9D92F0CC88F504655A3775"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-167.webp",
+      "bytes": 25320,
+      "sha256": "A2DFD04329CB39260C2047FE063A324B71550299518921C8911C1FF709B641AE"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-168.webp",
+      "bytes": 16576,
+      "sha256": "6BC3F8316CCCD4CF0ECA673642D4D099951923B48A95AA2F69CA96A0DA7FD37E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-169.webp",
+      "bytes": 15574,
+      "sha256": "3007C0264D251399FAD504B1058F21A07014066535F6B83E0F3839F58C033E5C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-170.webp",
+      "bytes": 23442,
+      "sha256": "38DAC5A7C8F9E762E2F669978111F3903FC3C79257043AC191490B56FEAC32FF"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-171.webp",
+      "bytes": 19016,
+      "sha256": "6FCE0185DF2280C9D51DE0C6E4AC579E1E6A698F57F649363DE5277D8C8D286B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-172.webp",
+      "bytes": 21844,
+      "sha256": "B677676D729EA747BE521123961C21766EE1AA0F9507A071A3804BFB9C38A81A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-173.webp",
+      "bytes": 25218,
+      "sha256": "FB20E99275E0DE8A1BA445598EB9CF428942491D90FA772F6A1D9D873A2A1E13"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-174.webp",
+      "bytes": 26216,
+      "sha256": "80755E4A3880FB8C9908EEA8C9034FDA8D394DC699DC4380CEBC1E03ACC0D1EE"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-175.webp",
+      "bytes": 25566,
+      "sha256": "9DD9B4B3A929E4075D11B28BEAAA20C701DADF9FE5FFAE4287D26A9D9859B79B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-176.webp",
+      "bytes": 27092,
+      "sha256": "B71ACEE97DD4BB64194C66B30284A6224D1749E2D4CF314CE685D7A74F708C21"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-177.webp",
+      "bytes": 26432,
+      "sha256": "55E15AC9F7A37548F250A9B412CA4708DB8C191EDCCE0F0474C9706261F987A6"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-178.webp",
+      "bytes": 25282,
+      "sha256": "9F6BEA104A3285AFE3B1709BDC10052AD636528D40D33B677D1E6719DBBC2544"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-179.webp",
+      "bytes": 21494,
+      "sha256": "FF3AB1ED1169D6F271D5F9531FDB447E41FA7BF1D66D18D8C3CB45CB47330906"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-180.webp",
+      "bytes": 21104,
+      "sha256": "007BF26166A2A7B485281AFE3C8610252978E99E05FE07E5740196EB002E7041"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-181.webp",
+      "bytes": 24190,
+      "sha256": "40CD28B42B81EB348D288E47D02F90611949F55C902B74497AA36362B1961E32"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-182.webp",
+      "bytes": 22032,
+      "sha256": "3F7A938C6910F0496C5EF03061F2EF0E3144F20A13BF4CC1B92754808EA61E97"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-183.webp",
+      "bytes": 22496,
+      "sha256": "6E1517DEE87A49AA038232CA0E5DD46778DE19B3399BF48F0DE68FFFF58F6A5A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-184.webp",
+      "bytes": 23528,
+      "sha256": "B94415CB54B868451985ADC039A8CD5C73CA8FEEBF099CEEE6C3D811FAA23AB2"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-185.webp",
+      "bytes": 22740,
+      "sha256": "24784B002D4293B4D2FE08080F258F47FC4F43056AA4E78DBBE6496427F2933D"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-186.webp",
+      "bytes": 23498,
+      "sha256": "C728D469ABBA3BE35E49B1B52504CA5EC8D412523CC99408FF02706EED09DB80"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-187.webp",
+      "bytes": 20270,
+      "sha256": "B23BC22C5165FA81F3B692E63E256F4F7D180BFA5D115D544CAC36381FBDFCD0"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-188.webp",
+      "bytes": 24286,
+      "sha256": "192B53C47EFF27BC8A8EF3D4FA54547298E8497AB3860FB6055F461C6978446E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-189.webp",
+      "bytes": 22898,
+      "sha256": "98999630F18DB775DB95280B6AE34506B87541162B0848335877988CB8FACF62"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-190.webp",
+      "bytes": 18116,
+      "sha256": "51C337B3B8008E06C257773EFFB7A333146502B745142EC15A988AFAC03F55DA"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-191.webp",
+      "bytes": 21710,
+      "sha256": "E725A2741999A126B2F6EA15C14DDFA0B25982AAAA46CDF2FCC25A5D23BBC336"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-192.webp",
+      "bytes": 24078,
+      "sha256": "23A051D3E7030E2EF8BAAC894EB14113E23EDC77B99A6D14636699CE6735C323"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-193.webp",
+      "bytes": 19372,
+      "sha256": "CC2316C5E6EED067EF11AA8235537CBE9D74B5B609C267F69C2F10B1C6BE76CA"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-194.webp",
+      "bytes": 20782,
+      "sha256": "B8FDF000DF84E0F8D0203F916FF88B69DEF223D41F734383452A0F5614FF184A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-195.webp",
+      "bytes": 19610,
+      "sha256": "E5A75F396C5866CFB44B754850A373DAAA850290844920E19021E03443A58831"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-196.webp",
+      "bytes": 22568,
+      "sha256": "D7F467087124AFB3DAD78113AC11D67474C3C2B073F0BE96CF731228E1FE143C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-197.webp",
+      "bytes": 18314,
+      "sha256": "F3872F308EC77E106D1A360622FE0850AAEC7FCA4D55FB241B685F53D5054D6A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-198.webp",
+      "bytes": 28638,
+      "sha256": "D4085E0AE9AF1AAC9B674A5C82A419194D18B0688F626632C6B1121803C0BB8B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-199.webp",
+      "bytes": 17712,
+      "sha256": "84A231B95360B98052DDFC7DE5464FCD9D31038488432A3101694B91EDFB32BE"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-200.webp",
+      "bytes": 21350,
+      "sha256": "D557EADF2C2FD923EE3998DFFECA0C49D077B26E954A1DEE64B54B82BB6029D9"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-201.webp",
+      "bytes": 29556,
+      "sha256": "3D66D6DC2842D52A9DEFF0B5A2D2D73FC3849C36EA3CF6C7F66B07340DD3FC17"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-202.webp",
+      "bytes": 28624,
+      "sha256": "E2FE79469E06ED4D7F7F1EC162FF8E96D338840A8E0A2E6BBE821966BC633D6B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-203.webp",
+      "bytes": 24666,
+      "sha256": "06AE7479E289721696E4CBAAD49BA285FD15E7B3A6FB4DEA6F541E46C312C688"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-204.webp",
+      "bytes": 19696,
+      "sha256": "3B7B91CB25DF8FCB1FFFE58B02CF98CA6E2DC74F526C3236ED82E7193FC8EDC8"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-205.webp",
+      "bytes": 20418,
+      "sha256": "EA874DA183F8E71F8C6093B904A41E6221E778D66FC633DECA5B7173C0F0D3FD"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-206.webp",
+      "bytes": 19720,
+      "sha256": "444D174E4A520ADC4CEBF54C0E74930C80CEF550F9AC72E31B8EB9F8149DD7B7"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\cache\\tcgdex151\\PokeVault\\pt\\sv03.5-207.webp",
+      "bytes": 10448,
+      "sha256": "F67869F02865DA05E2A4F921D3FE53E5933CC3EAE7A0A79567949D013052A3B1"
+    }
+  ]
+}

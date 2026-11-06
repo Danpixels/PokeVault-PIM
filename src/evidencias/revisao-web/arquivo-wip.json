@@ -1,0 +1,9 @@
+{
+  "dataUtc": "2026-11-03T22:07:50.8642696Z",
+  "pasta": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\arquivo-wip\\complemento-web-20261103-190746",
+  "zip": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\arquivo-wip\\complemento-web-20261103-190746.zip",
+  "zipSha256": "67CEBE7AB8230560CB18C2EC5638B6470BE627115D41D764F320EE91375554EB",
+  "arquivos": 117,
+  "fontesConferidas": 109,
+  "segredosExcluidos": "appsettings.Local.json, .local, .keys; bin/obj excluidos exceto DLL WIP expressamente copiada"
+}

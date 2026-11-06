@@ -1,0 +1,43 @@
+{
+  "dataUtc": "2026-11-03T22:52:14.5009238Z",
+  "baseSql": "PokeVaultTests",
+  "rodada": "tcg38e0af693",
+  "resultados": [
+    {
+      "id": "DB-04/identidade-remota-divergente",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:52:14.0054257Z",
+      "fimUtc": "2026-11-03T22:52:14.2824365Z",
+      "esperado": "Nome remoto divergente em referencia ja vinculada recusa51022 sem mudar comercio/vinculo",
+      "observado": {
+        "carta": 1,
+        "referencia": 25,
+        "erro": 51022,
+        "vinculoPreservado": true,
+        "comercioPreservado": true,
+        "fixture": "nome remoto sintetico temporario; restaurado no finally"
+      }
+    },
+    {
+      "id": "HTML-01/prefill-sem-valores-comerciais",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:52:14.2837461Z",
+      "fimUtc": "2026-11-03T22:52:14.4583775Z",
+      "esperado": "Inputs deBRL/estoque estao efetivamente vazios, nao apenas campo generico",
+      "observado": {
+        "card": "sv03.5-003",
+        "precoVazio": true,
+        "quantidadeVazia": true,
+        "limite": "HTML; nao visual"
+      }
+    },
+    {
+      "id": "HTML-02/precos-historicos-cache",
+      "status": "reprovado",
+      "inicioUtc": "2026-11-03T22:52:14.4584015Z",
+      "fimUtc": "2026-11-03T22:52:14.4993245Z",
+      "esperado": "Novo snapshot sem pricing mostra precos anteriores com rotulo historico,EUR/USD e nao zeros sinteticos",
+      "observado": "Preco historico/rotulo ausente"
+    }
+  ]
+}

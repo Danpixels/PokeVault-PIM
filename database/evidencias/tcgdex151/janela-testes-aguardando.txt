@@ -1,0 +1,5 @@
+# TCGdex151 — estado da frente de Testes
+
+03/11/2026. Preparação iniciada; aguardando contrato e liberação de schema/binário. Nenhum cenário/importação/fixture executado. Janela da base livre para Banco publicar upgrade autorizado antes dos cenários mutantes; Testes não aplicaDDL nem toca demo5187. Matriz inicial em testes-tcgdex151.md. Este relatório será completado com execuções reais quando as dependências forem liberadas.
+
+Atualização de preparação: contrato-tcgdex151.md lido; auxiliares BusinessSnapshot/FixtureHttpHandler/FixtureEnvironment, respostas reais gravadas por Banco e cenários ClientFixtures escritos em tests/Tcgdex151. Sem execução de harness/fixture mutante e sem aprovação funcional. Schema019+ e binário integrado ainda aguardam liberação. O código de Testes referencia o produto por DLL e não recompila fonte da outra frente.

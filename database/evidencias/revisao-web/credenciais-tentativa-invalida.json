@@ -1,0 +1,43 @@
+{
+  "RegistradoEmUtc": "2026-11-03T22:11:12.6324099Z",
+  "Banco": "PokeVault",
+  "Metodo": "DPAPI CurrentUser e PasswordHasher<object> em memória, sem login HTTP, rehash ou alteração SQL",
+  "ContasConferidas": 4,
+  "Resultados": [
+    {
+      "UsuarioId": null,
+      "PerfilEsperado": "ADMINISTRADOR",
+      "CadastroEncontrado": false,
+      "PerfilCompativel": false,
+      "Ativo": false,
+      "SenhaCompativelComArquivoProtegido": false
+    },
+    {
+      "UsuarioId": null,
+      "PerfilEsperado": "CLIENTE",
+      "CadastroEncontrado": false,
+      "PerfilCompativel": false,
+      "Ativo": false,
+      "SenhaCompativelComArquivoProtegido": false
+    },
+    {
+      "UsuarioId": null,
+      "PerfilEsperado": "CLIENTE",
+      "CadastroEncontrado": false,
+      "PerfilCompativel": false,
+      "Ativo": false,
+      "SenhaCompativelComArquivoProtegido": false
+    },
+    {
+      "UsuarioId": null,
+      "PerfilEsperado": "ATENDENTE",
+      "CadastroEncontrado": false,
+      "PerfilCompativel": false,
+      "Ativo": false,
+      "SenhaCompativelComArquivoProtegido": false
+    }
+  ],
+  "Limite": "Compatibilidade presente com arquivo protegido atual; não prova igualdade de senhas/hashes ao longo de todo histórico.",
+  "ValidadeDaVerificacao": false,
+  "MotivoInvalido": "CLI não retornou JSON por PRINT; coleção SQL vazia foi indevidamente tratada como cadastro ausente. Resultado não indica conta inexistente ou senha incorreta."
+}

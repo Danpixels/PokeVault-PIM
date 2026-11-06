@@ -1,0 +1,32 @@
+@model TcgBibliotecaModel
+@using PokeVault.Web.Domain
+@using System.Globalization
+@{ViewData["Title"]="Gestão de Catálogo";var moeda=CultureInfo.GetCultureInfo("pt-BR");}
+<div class="eyebrow">ADMINISTRAÇÃO · COLEÇÃO 151</div><h1>Gestão de Catálogo</h1>
+<p class="lead">As 207 cartas da coleção. Defina as versões, o estoque e o preço de venda em reais. Zero unidades retira a versão da vitrine.</p>
+<details class="panel"><summary>Atualizar dados da coleção</summary><p role="status">@Model.Estado.Mensagem</p>
+<form action="/gestao/tcgdex151/atualizar" method="post">@Html.AntiForgeryToken()<input name="forcarRede" type="hidden" value="true"/><button type="submit" disabled="@Model.Estado.EmExecucao">Atualizar coleção</button></form><p><small>A atualização mantém os preços e estoques cadastrados.</small></p></details>
+@if(Model.Pagina.Itens.Count==0){<div class="panel"><h2>Nenhuma carta disponível nesta página</h2><p>Atualize os dados da coleção ou volte à primeira página.</p></div>}
+<div class="grid management-grid">
+@foreach(var r in Model.Pagina.Itens){
+var existentes=(Model.Ofertas??[]).Where(o=>o.ReferenciaId==r.Id).ToArray();
+var media=TcgPrecos.Ler("{\"pricing\":"+r.PrecosJson+"}").FirstOrDefault(p=>p.Fornecedor=="Cardmarket" && p.Campo=="avg" && p.Valor is not null);
+<article class="panel card" id="carta-@r.Id">
+@if(r.ImagemLocal is not null){<img class="tcg-card-image" src="@r.ImagemLocal" alt="@r.Nome" width="245" height="342" loading="lazy"/>}
+<div class="eyebrow">#@r.Numero/165</div><h2>@r.Nome</h2>
+@if(media is not null){<p class="market-hint"><small>Média: <strong>@media.Valor?.ToString("0.00",moeda) @media.Moeda</strong></small></p>}
+<details class="stock-menu"><summary>Colocar em estoque</summary>
+@foreach(var o in existentes){<form action="/gestao/tcgdex151/@r.Id/salvar" method="post" class="offer-editor">@Html.AntiForgeryToken()
+<input type="hidden" name="OfertaId" value="@o.OfertaId"/><input type="hidden" name="VersaoEsperada" value="@o.Versao"/><input type="hidden" name="Pagina" value="@Model.Pagina.Pagina"/>
+<input type="hidden" name="Idioma" value="@o.Idioma"/><input type="hidden" name="Conservacao" value="@o.Conservacao"/><input type="hidden" name="Acabamento" value="@o.Acabamento"/>
+<p class="variant-label">@Variantes.Idioma(o.Idioma) · @Variantes.Estado(o.Conservacao) · @Variantes.Acabamento(o.Acabamento)</p>
+<div class="editor-fields"><label>Unidades<input name="Unidades" type="number" min="0" max="2147483647" value="@o.Estoque" required/></label><label>Preço (R$)<input name="Preco" type="number" min="0.01" max="9999999999.99" step="0.01" value="@o.Preco.ToString(CultureInfo.InvariantCulture)" required/></label></div><button type="submit">Concluir</button></form>}
+@if(existentes.Length>0){<h3 class="variant-label">Adicionar outra versão</h3>}
+<form action="/gestao/tcgdex151/@r.Id/salvar" method="post">@Html.AntiForgeryToken()<input name="Pagina" type="hidden" value="@Model.Pagina.Pagina"/>
+<label>Idioma<select name="Idioma">@foreach(var v in Variantes.Idiomas){<option value="@v">@Variantes.Idioma(v)</option>}</select></label>
+<label>Estado<select name="Conservacao">@foreach(var v in Conservacoes.Todas){<option value="@v" selected="@(v=="NEAR_MINT")">@Variantes.Estado(v)</option>}</select></label>
+<label>Acabamento<select name="Acabamento">@foreach(var v in Variantes.Acabamentos){<option value="@v">@Variantes.Acabamento(v)</option>}</select></label>
+<div class="editor-fields"><label>Unidades<input name="Unidades" type="number" min="0" max="2147483647" value="0" required/></label><label>Preço (R$)<input name="Preco" type="number" min="0.01" max="9999999999.99" step="0.01" required/></label></div><button type="submit" disabled="@(!r.Detalhada)">Concluir</button></form></details>
+</article>}
+</div>
+<p><small>@Model.Pagina.Total cartas nesta página.</small></p>

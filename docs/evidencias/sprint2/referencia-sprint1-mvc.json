@@ -1,0 +1,41 @@
+{
+  "dataUtc": "2026-10-21T17:23:33.3826706Z",
+  "base": "PokeVault",
+  "resultados": [
+    {
+      "verificacao": "Login por formulário MVC",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Put /api/v1/carrinho/itens/1",
+      "aprovada": true,
+      "detalhe": "HTTP 204, esperado 204"
+    },
+    {
+      "verificacao": "Confirmação contém UUID e preço",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "POST MVC compra renderiza comprovante",
+      "aprovada": true,
+      "detalhe": "HTTP 200 "
+    },
+    {
+      "verificacao": "Login ADMINISTRADOR ",
+      "aprovada": true,
+      "detalhe": "HTTP 200 "
+    },
+    {
+      "verificacao": "POST MVC cancelamento renderiza estorno",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Logout invalida sessão",
+      "aprovada": true,
+      "detalhe": ""
+    }
+  ]
+}

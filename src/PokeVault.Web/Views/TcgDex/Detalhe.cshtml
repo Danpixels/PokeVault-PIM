@@ -1,0 +1,16 @@
+@model TcgDetalheModel
+@using System.Globalization
+@{var r=Model.Referencia;ViewData["Title"]=r.Nome+" · Referência151";var numero=CultureInfo.GetCultureInfo("pt-BR");}
+<div class="eyebrow">TCGDEX151 · #@r.Numero</div><h1>@r.Nome</h1><div class="reference-detail panel"><div>
+@if(r.ImagemLocal is not null){<img class="tcg-card-image" src="@r.ImagemLocal" alt="@r.Nome em @r.IdiomaImagem" width="245" height="342"/>}else{<p>Imagem não disponível no cache local.</p>}
+</div><div><p>Idioma dos dados: <strong>@r.Idioma</strong>@(r.Idioma=="en"?" — fallback inglês":""). Imagem: @(r.IdiomaImagem??"não disponível")@(r.IdiomaImagem=="en"?" (fallback inglês)":"").</p><p>Raridade da fonte: @(r.Raridade??"Não informada")</p><p>Snapshot coletado em @r.ImportadoEmUtc.ToString("dd/MM/yyyy HH:mm:ss") UTC.</p><p>Fonte: <a href="@r.FonteUrl" rel="noopener noreferrer" target="_blank">TCGdex / @r.Id</a></p>
+@if(r.Detalhada){<a class="button" href="/gestao/tcgdex151/@r.Id/oferta">Usar referência no cadastro de oferta</a>}else{<p>Importe os detalhes antes de cadastrar uma oferta.</p>}
+<p><small>A referência não possui conservação, preçoBRL ou estoque. Esses valores são definidos pela loja.</small></p></div></div>
+<h2>Preços de referência externos</h2><p>Cardmarket em EUR e TCGplayer em USD, conforme a resposta da fonte. Sem conversão para reais ou equivalência por conservação. Não alteram o preço de venda.</p>
+@if(r.PrecosColetadosUtc is DateTime data){<p>Coleta dos preços: @data.ToString("dd/MM/yyyy HH:mm:ss") UTC.@if(data<r.ImportadoEmUtc){<strong> Preços preservados de uma coleta anterior; o último detalhe não trouxe pricing substituto.</strong>}</p>}
+@if(Model.Precos.Count==0){<div class="panel">Preços não informados no snapshot disponível. Ausência não representa valor zero.</div>}
+else{<div class="table-wrap"><table><thead><tr><th>Fornecedor</th><th>Moeda</th><th>Variante externa</th><th>Campo da fonte</th><th>Valor</th><th>Atualização informada pela fonte</th></tr></thead><tbody>
+@foreach(var p in Model.Precos){<tr><td>@p.Fornecedor</td><td>@p.Moeda</td><td>@p.Variante</td><td>@p.Campo</td><td>@(p.Valor?.ToString("0.00####",numero)??"Não informado")</td><td>@(p.Atualizado??"Não informada")</td></tr>}
+</tbody></table></div>}
+<p><a href="/gestao/tcgdex151">← Biblioteca151</a></p>
+

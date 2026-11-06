@@ -1,0 +1,12 @@
+{
+  "dataUtc": "2026-11-04T00:19:55.5165841Z",
+  "ready": {
+    "aplicacao": "PokeVault",
+    "status": "pronto",
+    "schemaRequerido": 11
+  },
+  "loginHTTP": 200,
+  "controleSenha": true,
+  "scriptHTTP": 200,
+  "sha256": "FDCE50AF5C3FE42F82A394C2980A300FA8E6886EB9B316E375E6F66706D165EF"
+}

@@ -1,0 +1,48 @@
+{
+  "preservaFalhaRotuloA68": true,
+  "dataUtc": "2026-11-03T23:03:51.6668754Z",
+  "schema": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    9,
+    10
+  ],
+  "regressao": {
+    "aprovados": 45,
+    "casos": 45
+  },
+  "retetFinalSemEsperaSegundos": 0.028,
+  "tcgdex": {
+    "offline": 2,
+    "online": 23,
+    "onlineAprovados": 23,
+    "offlineAprovados": 2
+  },
+  "coleta": {
+    "pt": 207,
+    "camposNulos": 344,
+    "imagensLocais": 207,
+    "detalhadas": 207,
+    "zerosRecebidos": 54,
+    "camposNumericos": 3940,
+    "semPricing": 0,
+    "fallbackReal": 0,
+    "referencias": 207,
+    "imagensAusentes": 0
+  },
+  "produtoSHA256": "D226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C",
+  "limites": [
+    "HTMLHTTP nao e visual; bloqueioCUA respeitado",
+    "Fallbackingles emfixture; nao na coleta real",
+    "WarningNU1900; auditoriaNuGet indisponivel"
+  ],
+  "reconciliacao": {
+    "script022": 0,
+    "medicaoReteste": 0,
+    "triggersTesteRestantes": 0,
+    "script007": 0
+  }
+}

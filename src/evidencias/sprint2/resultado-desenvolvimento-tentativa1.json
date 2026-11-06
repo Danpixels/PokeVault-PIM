@@ -1,0 +1,245 @@
+{
+  "dataUtc": "2026-10-21T17:53:41.7412154Z",
+  "base": "PokeVault",
+  "url": "http://localhost:5187",
+  "clienteId": 5,
+  "atendenteId": 6,
+  "ofertaId": 4,
+  "checks": [
+    {
+      "verificacao": "Post /api/v1/sessao",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /admin/clientes",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /admin/clientes/novo",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /admin/funcionarios",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /admin/funcionarios/novo",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /gestao/ofertas",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /gestao/ofertas/nova",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /api/v1/admin/clientes",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Listagem sem propriedades de segredo",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Post /api/v1/admin/clientes",
+      "aprovada": true,
+      "detalhe": "HTTP 201, esperado 201"
+    },
+    {
+      "verificacao": "Get /api/v1/admin/clientes/5",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Cliente novo tem saldo zero e versão de 8 bytes",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Post /api/v1/sessao",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /api/v1/carrinho",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Cliente novo tem carrinho vazio",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Post /api/v1/admin/clientes",
+      "aprovada": true,
+      "detalhe": "HTTP 409, esperado 409"
+    },
+    {
+      "verificacao": "Post /api/v1/admin/clientes",
+      "aprovada": true,
+      "detalhe": "HTTP 400, esperado 400"
+    },
+    {
+      "verificacao": "Get /api/v1/admin/clientes",
+      "aprovada": true,
+      "detalhe": "HTTP 403, esperado 403"
+    },
+    {
+      "verificacao": "Put /api/v1/admin/clientes/5/saldo",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Saldo absoluto definido",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Put /api/v1/admin/clientes/5/saldo",
+      "aprovada": true,
+      "detalhe": "HTTP 409, esperado 409"
+    },
+    {
+      "verificacao": "Saldo antigo retorna conflito de versão",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Put /api/v1/admin/clientes/5/saldo",
+      "aprovada": true,
+      "detalhe": "HTTP 400, esperado 400"
+    },
+    {
+      "verificacao": "Put /api/v1/admin/clientes/5/saldo",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Patch /api/v1/admin/funcionarios/5",
+      "aprovada": true,
+      "detalhe": "HTTP 403, esperado 403"
+    },
+    {
+      "verificacao": "Get /api/v1/sessao",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Patch /api/v1/admin/funcionarios/1",
+      "aprovada": true,
+      "detalhe": "HTTP 403, esperado 403"
+    },
+    {
+      "verificacao": "Post /api/v1/admin/funcionarios",
+      "aprovada": true,
+      "detalhe": "HTTP 201, esperado 201"
+    },
+    {
+      "verificacao": "Post /api/v1/sessao",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /api/v1/admin/clientes",
+      "aprovada": true,
+      "detalhe": "HTTP 403, esperado 403"
+    },
+    {
+      "verificacao": "Get /api/v1/gestao/ofertas/colecoes",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Post /api/v1/gestao/ofertas",
+      "aprovada": true,
+      "detalhe": "HTTP 201, esperado 201"
+    },
+    {
+      "verificacao": "Post /api/v1/gestao/ofertas",
+      "aprovada": true,
+      "detalhe": "HTTP 409, esperado 409"
+    },
+    {
+      "verificacao": "Get /api/v1/gestao/ofertas/4",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Patch /api/v1/gestao/ofertas/4",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Ajuste sem alteração preserva versão",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Patch /api/v1/gestao/ofertas/4",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Ajuste de preço/estoque atualiza versão",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Patch /api/v1/gestao/ofertas/4",
+      "aprovada": true,
+      "detalhe": "HTTP 409, esperado 409"
+    },
+    {
+      "verificacao": "MVC desatualizado exige recarga",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Patch /api/v1/gestao/ofertas/4",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Get /api/v1/ofertas?nome=Carta%20de%20verifica",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Oferta inativa fora do catálogo público",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Get /api/v1/gestao/ofertas",
+      "aprovada": true,
+      "detalhe": "HTTP 200, esperado 200"
+    },
+    {
+      "verificacao": "Oferta inativa na gestão",
+      "aprovada": true,
+      "detalhe": ""
+    },
+    {
+      "verificacao": "Get /api/v1/gestao/ofertas",
+      "aprovada": true,
+      "detalhe": "HTTP 403, esperado 403"
+    },
+    {
+      "verificacao": "Mutação administrativa sem CSRF recusada",
+      "aprovada": false,
+      "detalhe": ""
+    }
+  ]
+}

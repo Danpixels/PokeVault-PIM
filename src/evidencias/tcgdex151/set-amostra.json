@@ -1,0 +1,19 @@
+{
+  "id": "sv03.5",
+  "nome": "151",
+  "contagens": {
+    "firstEd": 0,
+    "holo": 90,
+    "normal": 135,
+    "official": 165,
+    "reverse": 158,
+    "total": 207
+  },
+  "cartas": 207,
+  "primeira": {
+    "id": "sv03.5-001",
+    "image": "https://assets.tcgdex.net/pt/sv/sv03.5/001",
+    "localId": "001",
+    "name": "Bulbasaur"
+  }
+}

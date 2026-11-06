@@ -1,0 +1,22 @@
+SCRIPT=013_sprint2_auditoria_carta.sql BANCO=PokeVault UTC=2026-10-21T17:54:37.8355073Z
+Contexto do banco de dados alterado para 'PokeVault'.
+Banco Versao AplicadaEmUtc
+----- ------ -------------
+PokeVault 1 2026-10-21 17:17:13.599
+PokeVault 2 2026-10-21 17:49:06.450
+PokeVault 3 2026-10-21 17:49:06.514
+PokeVault 4 2026-10-21 17:54:37.965
+AlteracoesCartas
+----------------
+0
+SCRIPT=013_sprint2_auditoria_carta.sql BANCO=PokeVaultTests UTC=2026-10-21T17:54:38.0396816Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+Banco Versao AplicadaEmUtc
+----- ------ -------------
+PokeVaultTests 1 2026-10-21 17:49:14.066
+PokeVaultTests 2 2026-10-21 17:49:14.701
+PokeVaultTests 3 2026-10-21 17:49:14.828
+PokeVaultTests 4 2026-10-21 17:54:38.108
+AlteracoesCartas
+----------------
+0

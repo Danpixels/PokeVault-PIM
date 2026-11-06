@@ -1,0 +1,175 @@
+{
+  "dataUtc": "2026-11-03T22:17:44.1253885Z",
+  "dllLiberada": "177F24F52C71190AC3420CD62E34F741B73DD1B7DD4ABF5FA64A392547E33CE4",
+  "schemaRequerido": 4,
+  "fontes": [
+    {
+      "arquivo": "src\\PokeVault.Web\\Application\\GestaoService.cs",
+      "sha256": "E104333587FF289595F048F973A38E2028A7B92D34C650287404B9CEB67CA2D4"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Application\\LojaService.cs",
+      "sha256": "96A7822706F02ED124F9C822F28B613EECEF451F8331F7C54659A9FFB71249A1"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Domain\\GestaoModels.cs",
+      "sha256": "921F45B09F9B2F8C51018C121199DE98295EAA4BC2FEE235A7BF21FDD9EEDD50"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Domain\\Models.cs",
+      "sha256": "85D64FE50701F98C96C10EC12C17B57E851A8B2348A7DC05D483975C17D6AFC7"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\AntiforgeryProblemFilter.cs",
+      "sha256": "0DAA341631D4B96B24089F297990F2D580A5E5B598033002B02F0B9D5A4CBFAE"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\Bootstrap.cs",
+      "sha256": "31A2B3AE1436ACA257AB56E0AB029D8F13F6B24FC488C8D1FED58A47EBEAB3D3"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\LocalReadiness.cs",
+      "sha256": "5A9C1A939F159F8C0E6B06C73DB06FDDCD04CCC0ED3B30F1237985C6F23A55BB"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\Sessao.cs",
+      "sha256": "6FE88802AC21504E34B5259867A099F4785ADB12FC69AAE63E97BF84309C4124"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\SqlGestaoRepository.cs",
+      "sha256": "4668C161E970B369AE57A944B36C6B21266FEB126DE8AC74041AE09A4ACAC272"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Infrastructure\\SqlLojaRepository.cs",
+      "sha256": "0E442C0C99A5C62F25ACD1C324A3E76BB47CE57F137F7C89008523999C27FBD2"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Controllers\\GestaoApiController.cs",
+      "sha256": "511CFA02DF45AA9E0D4DB009BEDBA5346BA31A77F7153DCBCD59A0C532840741"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Controllers\\GestaoController.cs",
+      "sha256": "180E82B4D14201C74E459EDBE13A5F6008458573E73D8A0F024769A6630528EF"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Controllers\\LojaApiController.cs",
+      "sha256": "EAACC94BCA4528401A57526F43437C174859F8E15E200A5D1000B5B40C59A329"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Controllers\\LojaController.cs",
+      "sha256": "402E9DFD0801E83B9A8D8CEB8EF808414B207914E5F3384B0FFEFA1C807DA06B"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Models\\ErrorViewModel.cs",
+      "sha256": "5EC8AE445D68FEA9A54E9BA58441AE8C7B8FED4F6290C9CB995A29625653460A"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Models\\FluxoModels.cs",
+      "sha256": "8E8F0A397DCF4802B11F01EFBFCB339FA862F280658207E378DAB02A8B7F616E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Models\\GestaoModels.cs",
+      "sha256": "D8F5E66A87E84D974FCCC205EC58282907B72D7A6497BA2D167F63C066BE2D4F"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\_ViewImports.cshtml",
+      "sha256": "63D8A59465FFA2A7C7B8BF84321A9584701FE8A261D6233BDBADF5D24122086C"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\_ViewStart.cshtml",
+      "sha256": "47E02B4DA20D198892B7B1B00B12944068797C438EF2E82D20FF70B4D56BAD39"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\Ajustar.cshtml",
+      "sha256": "DE9785F6E007CAA0C8AEBCE9C48326ACFB1C5B4BBE9C4D95400AADB48E21D5BF"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\Cartas.cshtml",
+      "sha256": "B2FAF16B905DD1BEB945B2CA4168D75E6F5241A08A3737C97DFD039E42B2F089"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\NovaCarta.cshtml",
+      "sha256": "F14674E2920F9120C430380FE1371F63152FAF1A880A65F143C70528086ACA74"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\Saldo.cshtml",
+      "sha256": "E761FD2AEF1BB0A0D10B7AC5997F26948543434BD9F75A92A6523652DA0C0A99"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\UsuarioNovo.cshtml",
+      "sha256": "E0C68D893D46F2041F676EAEFD54CF43D4AF8AE1DC8D632244403DA594E9D616"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Gestao\\Usuarios.cshtml",
+      "sha256": "D637008215E7E5DC1033FB76484C3B2668B2B0E377775A0B67A61B97C597EE80"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Carrinho.cshtml",
+      "sha256": "8D4642B244685366A2DACFB0FED70C9CFE1738B763CDBE0955E3286AF0B9F963"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Catalogo.cshtml",
+      "sha256": "6CE40B1B3132E777F2B1663F07241C94989F2BEA2B1E59B79021208F2591AE3E"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Compra.cshtml",
+      "sha256": "BD6E485D2EC2E2A764875658169017AB10966F35F60F4A50C8B039B73D6EBED1"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Confirmacao.cshtml",
+      "sha256": "697021420F956B4D509FC85771D23C65B016604EA54C52BD5CB9E6E13D8AEB38"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Historico.cshtml",
+      "sha256": "88CF6DF3065B38262F10FA1BBADA48BF42CD031A4167821463913D1EF69E56B1"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Loja\\Login.cshtml",
+      "sha256": "5F58F3B472B43ED2BC79644056595B95AA116E755177057D15680975BF0E25FB"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Shared\\_Layout.cshtml",
+      "sha256": "7B7B2350DF017633CAC9E72801E9CFB462EAEF16B6807B16C2088D7EF0A81259"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Shared\\_Layout.cshtml.css",
+      "sha256": "A50AD1AF0709E4A2CCA3FED34A257FAD983E2D8A8C344F2B417D6B0C8BA27532"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "sha256": "574F31F5A9A43CD72F4E0BC199FFFDB27204B0D0B537AC9CD5FAD49D8203DFD5"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Views\\Shared\\Error.cshtml",
+      "sha256": "5DBF98B6B9394AD78206EDCE40CAB1D7A238AA69CFEFA41BAB0EBC6AA22488AA"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\Program.cs",
+      "sha256": "60D3317028733525FC9CAE153F4F17C1E2EA6C85F4696F997EE4FDCB19978647"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\PokeVault.Web.csproj",
+      "sha256": "83E7DCCB371E96DA36EC07C46A863D218CC36852ACB9FE2C84C07EE1FBDBC569"
+    },
+    {
+      "arquivo": "src\\PokeVault.Web\\wwwroot\\css\\site.css",
+      "sha256": "66AAA68FAF80339EA60CD3F2085B54004C55CD9DAD357B644C34BB30800FF1E4"
+    },
+    {
+      "arquivo": "dev.ps1",
+      "sha256": "21B7E00326F85D2C21698BEEE6D9F4B3A14BCBE0EEAC47CD05559CE6DBDABCC8"
+    },
+    {
+      "arquivo": "Abrir-PokeVault.ps1",
+      "sha256": "FB980369D0B80949E85FCFE15024A38DAF087D5303EC1E0C27B3EB5748EB7C88"
+    },
+    {
+      "arquivo": "Abrir-PokeVault.cmd",
+      "sha256": "29A9C4A2DC12833E9C83FDE5DF628A35A877D76375145F979D5913B8DEB6C510"
+    },
+    {
+      "arquivo": "README.md",
+      "sha256": "2BB2053FBF6D27A8525336C93D34473F1EFFFF0D890F3E5CC254180ADBF2FF74"
+    }
+  ]
+}

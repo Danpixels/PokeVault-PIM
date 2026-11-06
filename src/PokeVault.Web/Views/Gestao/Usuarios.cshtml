@@ -1,0 +1,14 @@
+@model IReadOnlyList<PokeVault.Web.Domain.UsuarioGestao>
+@using System.Globalization
+@{ var cliente=(string)ViewBag.Perfil=="CLIENTE"; var titulo=cliente?"Clientes":"Atendentes"; var rota=cliente?"/admin/clientes":"/admin/funcionarios"; ViewData["Title"]=titulo; int pagina=ViewBag.Pagina; }
+<div class="eyebrow">ADMINISTRAÇÃO</div><h1>@titulo</h1>
+<p>Contas ativas e inativas. Credenciais não são exibidas na listagem.</p><p><a class="button" href="@rota/novo">Cadastrar @(cliente?"cliente":"atendente")</a></p>
+@if(cliente){<p>Clientes novos começam com saldo fictício zero e carrinho vazio.</p>}
+<div class="table-wrap"><table><thead><tr><th>Nome / email</th><th>Situação</th>@if(cliente){<th>Saldo fictício</th>}<th>Ações</th></tr></thead><tbody>
+@foreach(var u in Model){<tr><td><strong>@u.Nome</strong><br/>@u.Email</td><td>@(u.Ativo?"Ativo":"Inativo")</td>
+@if(cliente){<td>@u.Saldo?.ToString("C",CultureInfo.GetCultureInfo("pt-BR"))</td><td><a href="/admin/clientes/@u.UsuarioId/saldo">Definir saldo</a></td>}
+else{<td><form action="/admin/funcionarios/@u.UsuarioId/ativo" method="post">@Html.AntiForgeryToken()<input type="hidden" name="Ativo" value="@((!u.Ativo).ToString().ToLowerInvariant())"/><button class="quiet" type="submit">@(u.Ativo?"Desativar":"Reativar")</button></form></td>}
+</tr>}
+</tbody></table></div>
+@if(Model.Count==0){<p>Nenhuma conta nesta página.</p>}
+<nav class="pagination" aria-label="Páginas">@if(pagina>1){<a href="@rota?pagina=@(pagina-1)">← Anterior</a>}<span>Página @pagina · até 50 contas</span>@if(Model.Count==50){<a href="@rota?pagina=@(pagina+1)">Próxima →</a>}</nav>

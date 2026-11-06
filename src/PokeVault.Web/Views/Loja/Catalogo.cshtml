@@ -1,0 +1,12 @@
+@model IReadOnlyList<PokeVault.Web.Domain.CartaVitrine>
+@using System.Globalization
+@{ ViewData["Title"]="Catálogo"; var moeda=CultureInfo.GetCultureInfo("pt-BR"); }
+<div class="eyebrow">POKÉMON TCG · COLEÇÃO 151</div>
+<h1>Encontre sua próxima carta.</h1><p class="lead">Cartas disponíveis em estoque. Abra uma carta para escolher sua versão.</p>
+@if(Model.Count==0){<div class="panel"><h2>Nenhuma carta em estoque no momento</h2><p>Volte em breve para conferir as novidades.</p></div>}
+<div class="grid storefront">
+@foreach(var carta in Model){<article class="panel card">
+<a class="card-open" href="/cartas/@carta.OfertaId">@if(carta.ImagemUrl is not null){<img class="tcg-card-image" src="@carta.ImagemUrl" alt="@carta.Nome" width="245" height="342" loading="lazy"/>}else{<div class="card-symbol" aria-hidden="true">◈</div>}<h2>@carta.Nome</h2></a>
+<div class="stock-price"><span>@carta.Estoque un.</span><strong>@(carta.VariosPrecos?"A partir de ":"")@carta.PrecoMinimo.ToString("C",moeda)</strong></div>
+</article>}
+</div>

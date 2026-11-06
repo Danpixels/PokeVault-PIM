@@ -1,0 +1,11 @@
+{
+  "tabelasPreservadas": 12,
+  "dataUtc": "2026-11-04T00:01:07.4655687Z",
+  "base": "PokeVault",
+  "ready": {
+    "aplicacao": "PokeVault",
+    "status": "pronto",
+    "schemaRequerido": 11
+  },
+  "sha256": "1F34AC2895889603D276A39C971AD2ADBE7847A27B8663C02966D03389C6C089"
+}

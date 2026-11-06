@@ -1,0 +1,566 @@
+{
+  "dataUtc": "2026-10-21T17:59:04.5394641Z",
+  "fuso": "America/Sao_Paulo",
+  "baseSql": "PokeVaultTests",
+  "instancia": ".\\SQLEXPRESS",
+  "rodada": "s258701c2df9",
+  "executor": "Codex com apoio de IA",
+  "resultados": [
+    {
+      "id": "SQL-01/T10,T08",
+      "status": "aprovado",
+      "esperado": "Compra NM30; SP e B remanescentes; saldo70",
+      "observado": {
+        "u": 66,
+        "a": 86,
+        "sp": 87,
+        "b": 88,
+        "compra": {
+          "CompraId": 49,
+          "Status": "CONCLUIDO",
+          "Total": 30.00,
+          "SaldoAtual": 70.00,
+          "Repetida": false
+        }
+      }
+    },
+    {
+      "id": "SQL-02/T13,T14,T15",
+      "status": "aprovado",
+      "esperado": "Recusas 51008/51009 sem debito/compra/limpeza parcial",
+      "observado": {
+        "u": 67,
+        "a": 89,
+        "b": 90,
+        "erros": [
+          51008,
+          51009
+        ]
+      }
+    },
+    {
+      "id": "SQL-03/T27",
+      "status": "aprovado",
+      "esperado": "Preco30\u219240 recusa51007, depois novo aceite40",
+      "observado": {
+        "u": 68,
+        "a": 91,
+        "compra": {
+          "CompraId": 50,
+          "Status": "CONCLUIDO",
+          "Total": 40.00,
+          "SaldoAtual": 60.00,
+          "Repetida": false
+        }
+      }
+    },
+    {
+      "id": "SQL-04/T28,T29,T19",
+      "status": "aprovado",
+      "esperado": "UUID retorna mesma compra apos limpeza/cancelamento; divergente51004",
+      "observado": {
+        "u": 69,
+        "a": 92,
+        "key": "66088a77-6b74-41b0-bb34-dbb19f1d04d2",
+        "compra": 51,
+        "reenvio": {
+          "CompraId": 51,
+          "Status": "CANCELADO",
+          "Total": 30.00,
+          "SaldoAtual": 100.00,
+          "Repetida": true
+        }
+      }
+    },
+    {
+      "id": "SQL-05/T21",
+      "status": "aprovado",
+      "esperado": "Ultima unidade duas conexoes; uma aprova outra51008",
+      "observado": {
+        "u": 70,
+        "v": 71,
+        "a": 93,
+        "codes": [
+          0,
+          51008
+        ],
+        "saldos": [
+          84.50,
+          100.00
+        ]
+      }
+    },
+    {
+      "id": "SQL-06/T22",
+      "status": "aprovado",
+      "esperado": "Saldo30 disputado por duas cartas30; um51009",
+      "observado": {
+        "u": 72,
+        "a": 94,
+        "b": 95,
+        "codes": [
+          0,
+          51009
+        ],
+        "saldo": 0.00
+      }
+    },
+    {
+      "id": "SQL-07/T30",
+      "status": "aprovado",
+      "esperado": "Mesmo UUID simultaneo cria uma compra e um debito",
+      "observado": {
+        "u": 73,
+        "a": 96,
+        "key": "0ffc0af1-70e2-419a-9f86-b7177374de60",
+        "codes": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "SQL-08/T20",
+      "status": "aprovado",
+      "esperado": "Cancelamento simultaneo um estorno efetivo",
+      "observado": {
+        "u": 74,
+        "a": 97,
+        "compra": 55,
+        "codes": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "SQL-09/T25,T35",
+      "status": "aprovado",
+      "esperado": "Estorno30 original apos preco40 e saldo definido40 resulta70",
+      "observado": {
+        "u": 75,
+        "a": 98,
+        "compra": 56,
+        "saldo": 70.00
+      }
+    },
+    {
+      "id": "SQL-10/T16",
+      "status": "aprovado",
+      "esperado": "Quantidade parcial da linha recusada51005",
+      "observado": {
+        "u": 76,
+        "a": 99,
+        "erro": 51005
+      }
+    },
+    {
+      "id": "SQL-11/T23-compra",
+      "status": "aprovado",
+      "esperado": "Falha51999 apos movimentos/baixas; rollback integral sem transacao externa",
+      "observado": {
+        "u": 77,
+        "a": 100,
+        "compra": 0,
+        "falha": 51999,
+        "pontoAposEscrita": 1,
+        "transacaoExterna": false,
+        "recuperacao": "sucesso apos retirar flag"
+      }
+    },
+    {
+      "id": "SQL-12/T23-estorno",
+      "status": "aprovado",
+      "esperado": "Falha51999 apos credito/reposicao; rollback integral e posterior sucesso",
+      "observado": {
+        "u": 78,
+        "a": 101,
+        "compra": 59,
+        "falha": 51999,
+        "pontoAposEscrita": 1,
+        "transacaoExterna": false,
+        "recuperacao": "sucesso apos retirar flag"
+      }
+    },
+    {
+      "id": "SQL-13/S2-saldo",
+      "status": "aprovado",
+      "esperado": "Definir100\u219240 delta-60; repetir40 mesma versao sem UPDATE/movimento",
+      "observado": {
+        "u": 79,
+        "antes": 100,
+        "depois": 40,
+        "delta": -60,
+        "semDuplicacao": true
+      }
+    },
+    {
+      "id": "SQL-14/S2-saldo-venda",
+      "status": "aprovado",
+      "esperado": "Venda invalida formulario saldo;51012 preserva70",
+      "observado": {
+        "u": 80,
+        "a": 102,
+        "saldo": 70,
+        "erro": 51012
+      }
+    },
+    {
+      "id": "SQL-15/S2-estoque-venda",
+      "status": "aprovado",
+      "esperado": "Venda invalida formulario estoque;51012 preserva1",
+      "observado": {
+        "u": 81,
+        "a": 103,
+        "estoque": 1,
+        "erro": 51012
+      }
+    },
+    {
+      "id": "SQL-16/S2-ajustes-concorrentes",
+      "status": "aprovado",
+      "esperado": "Mesmo rowversion em dois ajustes estoque: um51012",
+      "observado": {
+        "a": 104,
+        "codes": [
+          51012,
+          0
+        ],
+        "estoque": 9
+      }
+    },
+    {
+      "id": "SQL-17/S2-runtime",
+      "status": "aprovado",
+      "esperado": "EXECUTE AS usuario restrito permite SELECT/EXEC versionado e nega DML/legado",
+      "observado": {
+        "select": 1,
+        "exec": 1,
+        "write": 0,
+        "legacy": 0,
+        "nivel": "principal de banco via impersonacao; nao conexao externa runtime"
+      }
+    },
+    {
+      "id": "SQL-18/T04-limpeza",
+      "status": "aprovado",
+      "esperado": "ADM fixo protegido51011 e zero triggers de falha remanescentes",
+      "observado": {
+        "administradorFixo": 21,
+        "erro": 51011,
+        "triggersTesteRestantes": 0
+      }
+    },
+    {
+      "id": "SQL-19/S2-auditoria-sem-delta",
+      "status": "aprovado",
+      "esperado": "Somente preco/ativacao registra autor,motivo,antes/depois; no-op/conflito sem auditoria extra ou estoque0",
+      "observado": {
+        "a": 105,
+        "autor": 65,
+        "motivo": "s258701c2df9",
+        "preco": [
+          30,
+          40
+        ],
+        "ativo": [
+          true,
+          false
+        ],
+        "estoque": [
+          2,
+          2
+        ],
+        "auditorias": 2,
+        "movimentosEstoque": 1
+      }
+    },
+    {
+      "id": "SQL-20/S2-rollback-auditoria",
+      "status": "aprovado",
+      "esperado": "Falha apos INSERT AlteracaoCarta reverte preco/token/auditoria sem backdoor demo",
+      "observado": {
+        "a": 106,
+        "falha": 51999,
+        "pontoAposEscrita": 1,
+        "precoRevertido": 30,
+        "tokenRevertido": true,
+        "auditoriaResidual": 0
+      }
+    },
+    {
+      "id": "SQL-21/S2-limpeza-final",
+      "status": "aprovado",
+      "esperado": "Zero triggers temporarias apos todos os casos SQL",
+      "observado": {
+        "triggersTesteRestantes": 0
+      }
+    },
+    {
+      "id": "HTTP-01/T01,T09",
+      "status": "aprovado",
+      "esperado": "Catalogo publico200; protegido401; ADM login valido",
+      "observado": {
+        "catalogo": 200,
+        "protegido": 401
+      }
+    },
+    {
+      "id": "HTTP-02/T03,T05",
+      "status": "aprovado",
+      "esperado": "ADM cria cliente saldo0/carrinho vazio e atendente; listagens sem segredo",
+      "observado": {
+        "cliente": 82,
+        "atendente": 83,
+        "saldoInicial": 0,
+        "carrinhoInicial": 0,
+        "listagemSemSegredo": true,
+        "hashValidadoSemExposicao": true
+      }
+    },
+    {
+      "id": "HTTP-03/T06",
+      "status": "aprovado",
+      "esperado": "Saldo substitui0\u2192100\u219240; repetir40 sem movimento/UPDATE",
+      "observado": {
+        "id": 82,
+        "saldo": 40,
+        "movimentos": 2,
+        "semDuplicacao": true
+      }
+    },
+    {
+      "id": "HTTP-04/T04",
+      "status": "aprovado",
+      "esperado": "Desativacao invalida cookie; reativacao exige novo login",
+      "observado": {
+        "id": 83,
+        "inativo": 401,
+        "cookieAnterior": 401,
+        "novoLogin": 200
+      }
+    },
+    {
+      "id": "HTTP-05/T36",
+      "status": "aprovado",
+      "esperado": "Atendente cadastra/ajusta preco/estoque; duplicidade409",
+      "observado": {
+        "id": 107,
+        "preco": 35,
+        "estoque": 4,
+        "duplicidade": 409
+      }
+    },
+    {
+      "id": "HTTP-06/T02,T36",
+      "status": "aprovado",
+      "esperado": "Cliente/atendente negados em saldo,usuarios,estorno; cliente nao cadastra carta",
+      "observado": {
+        "negacoes": "401/403",
+        "saldo": 40
+      }
+    },
+    {
+      "id": "HTTP-07/T26",
+      "status": "aprovado",
+      "esperado": "Mutacoes sem CSRF ou token de outra identidade recusadas400",
+      "observado": {
+        "recusas": 5,
+        "saldo": 40
+      }
+    },
+    {
+      "id": "HTTP-08/T07",
+      "status": "aprovado",
+      "esperado": "Saldo negativo,escala3,overflow,versao invalida e motivo vazio recusados400",
+      "observado": {
+        "recusas": 7,
+        "saldo": 40
+      }
+    },
+    {
+      "id": "HTTP-09/T05",
+      "status": "aprovado",
+      "esperado": "Email normalizado duplicado409; cliente/admin nao sao alvo de desativacao",
+      "observado": {
+        "duplicidade": 409,
+        "alvosProtegidos": [
+          82,
+          65
+        ]
+      }
+    },
+    {
+      "id": "HTTP-10/T11,T17,T24,T28",
+      "status": "aprovado",
+      "esperado": "Compra selecionada50/remanescente,UUID,isolamento e estorno unico",
+      "observado": {
+        "cliente": 82,
+        "a": 108,
+        "b": 109,
+        "rem": 110,
+        "key": "39171279-4283-465b-8a71-aadc5895997f",
+        "compra": 62,
+        "total": 50,
+        "saldoFinal": 100
+      }
+    },
+    {
+      "id": "HTTP-11/T27",
+      "status": "aprovado",
+      "esperado": "Preco alterado409 sem efeito; novo aceite cobra40",
+      "observado": {
+        "a": 111,
+        "erro": "PRECO_ALTERADO",
+        "totalConfirmado": 40
+      }
+    },
+    {
+      "id": "HTTP-12/S2-edicao-desatualizada",
+      "status": "aprovado",
+      "esperado": "Venda invalida saldo/estoque;API409 preserva venda",
+      "observado": {
+        "a": 112,
+        "saldo": 30,
+        "estoque": 1,
+        "conflitos": 2
+      }
+    },
+    {
+      "id": "MVC-01/S2-telas",
+      "status": "aprovado",
+      "esperado": "Listagens/formularios administrativos renderizam200 sem hash",
+      "observado": {
+        "rotas": [
+          "/admin/clientes",
+          "/admin/funcionarios",
+          "/admin/clientes/novo",
+          "/admin/funcionarios/novo",
+          "/admin/clientes/82/saldo",
+          "/gestao/ofertas",
+          "/gestao/ofertas/nova"
+        ],
+        "status": 200,
+        "limite": "HTML/HTTP, sem inspecao visual"
+      }
+    },
+    {
+      "id": "MVC-02/S2-saldo-conflito",
+      "status": "aprovado",
+      "esperado": "Formulario desatualizado409 exige recarga sem sobrescrever saldo",
+      "observado": {
+        "user": 82,
+        "status": 409,
+        "saldo": 45,
+        "limite": "HTML/HTTP"
+      }
+    },
+    {
+      "id": "HTTP-14/S2-valores-catalogo",
+      "status": "aprovado",
+      "esperado": "Escala3/preco0/estoque-negativo,fracionario/conservacao invalida recusados400 sem cadastro",
+      "observado": {
+        "recusas": 5,
+        "cadastros": 0
+      }
+    },
+    {
+      "id": "HTTP-15/S2-ativacao-catalogo",
+      "status": "aprovado",
+      "esperado": "Atendente inativa carta; publico oculta,gestao preserva; ajuste sem mudanca sem movimento/token",
+      "observado": {
+        "a": 113,
+        "ativo": false,
+        "movimentos": 1,
+        "noOpSemEfeito": true
+      }
+    },
+    {
+      "id": "HTTP-16/S2-auditoria",
+      "status": "aprovado",
+      "esperado": "Ajuste saldo registra autor/motivo/delta e nenhum segredo em detalhe",
+      "observado": {
+        "user": 82,
+        "autor": 65,
+        "delta": 5,
+        "motivo": "Testes Sprint2",
+        "movimentosCorrespondentes": 1
+      }
+    },
+    {
+      "id": "MVC-03/S2-cadastro-cliente",
+      "status": "aprovado",
+      "esperado": "Formulario MVC cria cliente com saldo0/carrinho vazio e hash",
+      "observado": {
+        "id": 85,
+        "status": 302,
+        "saldo": 0
+      }
+    },
+    {
+      "id": "MVC-04/S2-cadastro-atendente",
+      "status": "aprovado",
+      "esperado": "Formulario cria atendente e desativa/reativa sem exclusao",
+      "observado": {
+        "id": 86,
+        "ativoFinal": true,
+        "status": 302
+      }
+    },
+    {
+      "id": "MVC-05/S2-catalogo",
+      "status": "aprovado",
+      "esperado": "Atendente cadastra carta MVC e ajusta decimal/preco/estoque com versao",
+      "observado": {
+        "id": 114,
+        "preco": 20.5,
+        "estoque": 4,
+        "desatualizado": 409
+      }
+    },
+    {
+      "id": "MVC-06/S2-saldo",
+      "status": "aprovado",
+      "esperado": "Formulario saldo absoluto funciona sem repetir credito",
+      "observado": {
+        "user": 82,
+        "saldo": 60.5,
+        "status": 302
+      }
+    },
+    {
+      "id": "HTTP-18/S2-identidade-perfil",
+      "status": "reprovado",
+      "esperado": "Anonimo com CSRF valido nao cria conta; campo perfil extra nao eleva cliente",
+      "observado": "HTTP esperado201, observado400"
+    },
+    {
+      "id": "HTTP-17/S2-auditoria-sem-delta",
+      "status": "aprovado",
+      "esperado": "Atendente altera so preco/ativacao; SQL confirma autor/motivo/valores sem movimento0",
+      "observado": {
+        "a": 115,
+        "atendente": 83,
+        "motivo": "s258701c2df9",
+        "precoAnterior": 30,
+        "precoNovo": 40,
+        "ativoAnterior": true,
+        "ativoNovo": false,
+        "estoqueAnterior": 2,
+        "estoqueNovo": 2,
+        "auditorias": 2,
+        "movimentosEstoque": 1
+      }
+    },
+    {
+      "id": "HTTP-13/T01",
+      "status": "aprovado",
+      "esperado": "Logout invalida sessao; senha errada401",
+      "observado": {
+        "logout": 204,
+        "aposLogout": 401,
+        "senhaErrada": 401
+      }
+    }
+  ]
+}

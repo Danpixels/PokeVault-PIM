@@ -1,0 +1,414 @@
+{
+  "dataUtc": "2026-10-21T17:53:19.148747Z",
+  "fuso": "America/Sao_Paulo",
+  "baseSql": "PokeVaultTests",
+  "instancia": ".\\SQLEXPRESS",
+  "rodada": "s2531463a1ef",
+  "executor": "Codex com apoio de IA",
+  "resultados": [
+    {
+      "id": "SQL-01/T10,T08",
+      "status": "aprovado",
+      "esperado": "Compra NM30; SP e B remanescentes; saldo70",
+      "observado": {
+        "u": 2,
+        "a": 4,
+        "sp": 5,
+        "b": 6,
+        "compra": {
+          "CompraId": 1,
+          "Status": "CONCLUIDO",
+          "Total": 30.00,
+          "SaldoAtual": 70.00,
+          "Repetida": false
+        }
+      }
+    },
+    {
+      "id": "SQL-02/T13,T14,T15",
+      "status": "aprovado",
+      "esperado": "Recusas 51008/51009 sem debito/compra/limpeza parcial",
+      "observado": {
+        "u": 3,
+        "a": 7,
+        "b": 8,
+        "erros": [
+          51008,
+          51009
+        ]
+      }
+    },
+    {
+      "id": "SQL-03/T27",
+      "status": "aprovado",
+      "esperado": "Preco30\u219240 recusa51007, depois novo aceite40",
+      "observado": {
+        "u": 4,
+        "a": 9,
+        "compra": {
+          "CompraId": 2,
+          "Status": "CONCLUIDO",
+          "Total": 40.00,
+          "SaldoAtual": 60.00,
+          "Repetida": false
+        }
+      }
+    },
+    {
+      "id": "SQL-04/T28,T29,T19",
+      "status": "aprovado",
+      "esperado": "UUID retorna mesma compra apos limpeza/cancelamento; divergente51004",
+      "observado": {
+        "u": 5,
+        "a": 10,
+        "key": "7a8760f4-84fa-4e39-ab71-6aac86945933",
+        "compra": 3,
+        "reenvio": {
+          "CompraId": 3,
+          "Status": "CANCELADO",
+          "Total": 30.00,
+          "SaldoAtual": 100.00,
+          "Repetida": true
+        }
+      }
+    },
+    {
+      "id": "SQL-05/T21",
+      "status": "aprovado",
+      "esperado": "Ultima unidade duas conexoes; uma aprova outra51008",
+      "observado": {
+        "u": 6,
+        "v": 7,
+        "a": 11,
+        "codes": [
+          0,
+          51008
+        ],
+        "saldos": [
+          84.50,
+          100.00
+        ]
+      }
+    },
+    {
+      "id": "SQL-06/T22",
+      "status": "aprovado",
+      "esperado": "Saldo30 disputado por duas cartas30; um51009",
+      "observado": {
+        "u": 8,
+        "a": 12,
+        "b": 13,
+        "codes": [
+          0,
+          51009
+        ],
+        "saldo": 0.00
+      }
+    },
+    {
+      "id": "SQL-07/T30",
+      "status": "aprovado",
+      "esperado": "Mesmo UUID simultaneo cria uma compra e um debito",
+      "observado": {
+        "u": 9,
+        "a": 14,
+        "key": "dbd8901c-dcae-4312-b943-d46f11ae2ede",
+        "codes": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "SQL-08/T20",
+      "status": "aprovado",
+      "esperado": "Cancelamento simultaneo um estorno efetivo",
+      "observado": {
+        "u": 10,
+        "a": 15,
+        "compra": 7,
+        "codes": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "SQL-09/T25,T35",
+      "status": "aprovado",
+      "esperado": "Estorno30 original apos preco40 e saldo definido40 resulta70",
+      "observado": {
+        "u": 11,
+        "a": 16,
+        "compra": 8,
+        "saldo": 70.00
+      }
+    },
+    {
+      "id": "SQL-10/T16",
+      "status": "aprovado",
+      "esperado": "Quantidade parcial da linha recusada51005",
+      "observado": {
+        "u": 12,
+        "a": 17,
+        "erro": 51005
+      }
+    },
+    {
+      "id": "SQL-11/T23-compra",
+      "status": "aprovado",
+      "esperado": "Falha51999 apos movimentos/baixas; rollback integral sem transacao externa",
+      "observado": {
+        "u": 13,
+        "a": 18,
+        "compra": 0,
+        "falha": 51999,
+        "pontoAposEscrita": 1,
+        "transacaoExterna": false,
+        "recuperacao": "sucesso apos retirar flag"
+      }
+    },
+    {
+      "id": "SQL-12/T23-estorno",
+      "status": "aprovado",
+      "esperado": "Falha51999 apos credito/reposicao; rollback integral e posterior sucesso",
+      "observado": {
+        "u": 14,
+        "a": 19,
+        "compra": 11,
+        "falha": 51999,
+        "pontoAposEscrita": 1,
+        "transacaoExterna": false,
+        "recuperacao": "sucesso apos retirar flag"
+      }
+    },
+    {
+      "id": "SQL-13/S2-saldo",
+      "status": "aprovado",
+      "esperado": "Definir100\u219240 delta-60; repetir40 mesma versao sem UPDATE/movimento",
+      "observado": {
+        "u": 15,
+        "antes": 100,
+        "depois": 40,
+        "delta": -60,
+        "semDuplicacao": true
+      }
+    },
+    {
+      "id": "SQL-14/S2-saldo-venda",
+      "status": "aprovado",
+      "esperado": "Venda invalida formulario saldo;51012 preserva70",
+      "observado": {
+        "u": 16,
+        "a": 20,
+        "saldo": 70,
+        "erro": 51012
+      }
+    },
+    {
+      "id": "SQL-15/S2-estoque-venda",
+      "status": "aprovado",
+      "esperado": "Venda invalida formulario estoque;51012 preserva1",
+      "observado": {
+        "u": 17,
+        "a": 21,
+        "estoque": 1,
+        "erro": 51012
+      }
+    },
+    {
+      "id": "SQL-16/S2-ajustes-concorrentes",
+      "status": "aprovado",
+      "esperado": "Mesmo rowversion em dois ajustes estoque: um51012",
+      "observado": {
+        "a": 22,
+        "codes": [
+          0,
+          51012
+        ],
+        "estoque": 5
+      }
+    },
+    {
+      "id": "SQL-17/S2-runtime",
+      "status": "aprovado",
+      "esperado": "EXECUTE AS usuario restrito permite SELECT/EXEC versionado e nega DML/legado",
+      "observado": {
+        "select": 1,
+        "exec": 1,
+        "write": 0,
+        "legacy": 0,
+        "nivel": "principal de banco via impersonacao; nao conexao externa runtime"
+      }
+    },
+    {
+      "id": "HTTP-01/T01,T09",
+      "status": "aprovado",
+      "esperado": "Catalogo publico200; protegido401; ADM login valido",
+      "observado": {
+        "catalogo": 200,
+        "protegido": 401
+      }
+    },
+    {
+      "id": "HTTP-02/T03,T05",
+      "status": "aprovado",
+      "esperado": "ADM cria cliente saldo0/carrinho vazio e atendente; listagens sem segredo",
+      "observado": {
+        "cliente": 18,
+        "atendente": 19,
+        "saldoInicial": 0,
+        "carrinhoInicial": 0,
+        "listagemSemSegredo": true,
+        "hashValidadoSemExposicao": true
+      }
+    },
+    {
+      "id": "HTTP-03/T06",
+      "status": "aprovado",
+      "esperado": "Saldo substitui0\u2192100\u219240; repetir40 sem movimento/UPDATE",
+      "observado": {
+        "id": 18,
+        "saldo": 40,
+        "movimentos": 2,
+        "semDuplicacao": true
+      }
+    },
+    {
+      "id": "HTTP-04/T04",
+      "status": "aprovado",
+      "esperado": "Desativacao invalida cookie; reativacao exige novo login",
+      "observado": {
+        "id": 19,
+        "inativo": 401,
+        "cookieAnterior": 401,
+        "novoLogin": 200
+      }
+    },
+    {
+      "id": "HTTP-05/T36",
+      "status": "aprovado",
+      "esperado": "Atendente cadastra/ajusta preco/estoque; duplicidade409",
+      "observado": {
+        "id": 23,
+        "preco": 35,
+        "estoque": 4,
+        "duplicidade": 409
+      }
+    },
+    {
+      "id": "HTTP-06/T02,T36",
+      "status": "aprovado",
+      "esperado": "Cliente/atendente negados em saldo,usuarios,estorno; cliente nao cadastra carta",
+      "observado": {
+        "negacoes": "401/403",
+        "saldo": 40
+      }
+    },
+    {
+      "id": "HTTP-07/T26",
+      "status": "aprovado",
+      "esperado": "Mutacoes sem CSRF ou token de outra identidade recusadas400",
+      "observado": {
+        "recusas": 5,
+        "saldo": 40
+      }
+    },
+    {
+      "id": "HTTP-08/T07",
+      "status": "aprovado",
+      "esperado": "Saldo negativo,escala3,overflow,versao invalida e motivo vazio recusados400",
+      "observado": {
+        "recusas": 7,
+        "saldo": 40
+      }
+    },
+    {
+      "id": "HTTP-09/T05",
+      "status": "aprovado",
+      "esperado": "Email normalizado duplicado409; cliente/admin nao sao alvo de desativacao",
+      "observado": {
+        "duplicidade": 409,
+        "alvosProtegidos": [
+          18,
+          1
+        ]
+      }
+    },
+    {
+      "id": "HTTP-10/T11,T17,T24,T28",
+      "status": "aprovado",
+      "esperado": "Compra selecionada50/remanescente,UUID,isolamento e estorno unico",
+      "observado": {
+        "cliente": 18,
+        "a": 24,
+        "b": 25,
+        "rem": 26,
+        "key": "0fc17e85-cc7c-4d4e-ac10-227f32804b82",
+        "compra": 14,
+        "total": 50,
+        "saldoFinal": 100
+      }
+    },
+    {
+      "id": "HTTP-11/T27",
+      "status": "aprovado",
+      "esperado": "Preco alterado409 sem efeito; novo aceite cobra40",
+      "observado": {
+        "a": 27,
+        "erro": "PRECO_ALTERADO",
+        "totalConfirmado": 40
+      }
+    },
+    {
+      "id": "HTTP-12/S2-edicao-desatualizada",
+      "status": "aprovado",
+      "esperado": "Venda invalida saldo/estoque;API409 preserva venda",
+      "observado": {
+        "a": 28,
+        "saldo": 30,
+        "estoque": 1,
+        "conflitos": 2
+      }
+    },
+    {
+      "id": "MVC-01/S2-telas",
+      "status": "aprovado",
+      "esperado": "Listagens/formularios administrativos renderizam200 sem hash",
+      "observado": {
+        "rotas": [
+          "/admin/clientes",
+          "/admin/funcionarios",
+          "/admin/clientes/novo",
+          "/admin/funcionarios/novo",
+          "/admin/clientes/18/saldo",
+          "/gestao/ofertas",
+          "/gestao/ofertas/nova"
+        ],
+        "status": 200,
+        "limite": "HTML/HTTP, sem inspecao visual"
+      }
+    },
+    {
+      "id": "MVC-02/S2-saldo-conflito",
+      "status": "aprovado",
+      "esperado": "Formulario desatualizado409 exige recarga sem sobrescrever saldo",
+      "observado": {
+        "user": 18,
+        "status": 409,
+        "saldo": 45,
+        "limite": "HTML/HTTP"
+      }
+    },
+    {
+      "id": "HTTP-13/T01",
+      "status": "aprovado",
+      "esperado": "Logout invalida sessao; senha errada401",
+      "observado": {
+        "logout": 204,
+        "aposLogout": 401,
+        "senhaErrada": 401
+      }
+    }
+  ]
+}

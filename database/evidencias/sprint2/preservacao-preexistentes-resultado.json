@@ -1,0 +1,7 @@
+{
+  "RegistradoEmUtc": "2026-10-21T17:57:04.5563573Z",
+  "Banco": "PokeVault",
+  "PrefixosTabelasComparados": 11,
+  "PrefixosPreexistentesIdenticos": true,
+  "Observacao": "Comparação dos prefixos ordenados por PK com as contagens do snapshot anterior; novos cadastros/movimentos ficam fora desse recorte. Não é comparação integral da base nem prova de origem das escritas concorrentes."
+}

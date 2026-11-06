@@ -1,0 +1,10 @@
+@model IReadOnlyList<PokeVault.Web.Domain.CartaGestao>
+@using System.Globalization
+@{ViewData["Title"]="Gestão do catálogo"; int pagina=ViewBag.Pagina;}
+<div class="eyebrow">OPERAÇÃO DA LOJA</div><h1>Gestão do catálogo</h1><p>Ofertas ativas e inativas. Cada conservação tem identidade, preço e estoque próprios.</p><p><a class="button" href="/gestao/ofertas/nova">Cadastrar carta comercial</a></p>
+<div class="table-wrap"><table><thead><tr><th>Carta</th><th>Conservação</th><th>Preço</th><th>Estoque</th><th>Situação</th><th></th></tr></thead><tbody>
+@foreach(var c in Model){<tr><td><strong>@c.Nome</strong><br/><small>@c.Colecao · #@c.Numero · @c.Raridade</small></td><td>@c.Conservacao.Replace('_',' ')</td><td>@c.Preco.ToString("C",CultureInfo.GetCultureInfo("pt-BR"))</td><td>@c.Estoque</td><td>@(c.Ativo?"Ativa":"Inativa")</td><td><a href="/gestao/ofertas/@c.OfertaId/ajustar">Ajustar</a></td></tr>}
+</tbody></table></div>@if(Model.Count==0){<p>Nenhuma carta nesta página.</p>}
+<nav class="pagination" aria-label="Páginas">@if(pagina>1){<a href="/gestao/ofertas?pagina=@(pagina-1)">← Anterior</a>}<span>Página @pagina · até 50 ofertas</span>@if(Model.Count==50){<a href="/gestao/ofertas?pagina=@(pagina+1)">Próxima →</a>}</nav>
+
+

@@ -1,0 +1,11 @@
+@model LoginModel
+@{ ViewData["Title"] = "Entrar"; }
+<section class="panel narrow"><div class="eyebrow">SUA CONTA</div><h1>Entrar no PokéVault</h1><p>Entre com seu email e senha.</p>
+<form method="post" action="/entrar">@Html.AntiForgeryToken()
+<div asp-validation-summary="All" role="alert" class="validation"></div>
+<input type="hidden" asp-for="ReturnUrl" />
+<label asp-for="Email">Email<input asp-for="Email" type="email" autocomplete="username" required maxlength="254" /></label>
+<label for="Senha">Senha</label><div class="password-field"><input name="Senha" id="Senha" type="password" autocomplete="current-password" required maxlength="256" /><partial name="_PasswordToggle" model='@("Senha")' /></div>
+<button type="submit">Entrar</button></form><p>Ainda não tem conta? <a href="/criar-conta">Criar conta</a></p><p><a href="/">Continuar no catálogo público</a></p></section>
+
+

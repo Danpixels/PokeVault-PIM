@@ -1,0 +1,28 @@
+**/bin/
+**/obj/
+**/.local/
+**/appsettings.Local.json
+**/bootstrap-credentials.json
+**/.keys/
+.vs/
+
+# Saídas e arquivos privados da demonstração local
+tmp/
+output/
+**/*.dpapi
+**/*.pfx
+**/*.p12
+**/*.user
+**/*.suo
+**/*.mdf
+**/*.ldf
+**/*.bak
+**/.runtime/
+**/runtime-sprint2/
+**/wwwroot/cache/
+
+# Implementação interrompida, preservada localmente fora da versão publicada
+src/arquivo-wip/
+
+# Relatório acadêmico integral com identificação dos integrantes, mantido no Drive
+docs/academico/PokeVault_reescrita_2026-11-04.md

@@ -1,0 +1,20 @@
+{
+  "dataUtc": "2026-10-21T17:59:53.3169397Z",
+  "fuso": "America/Sao_Paulo",
+  "baseSql": "PokeVaultTests",
+  "instancia": ".\\SQLEXPRESS",
+  "rodada": "s2409dd9107f",
+  "executor": "Codex com apoio de IA",
+  "resultados": [
+    {
+      "id": "HTTP-18/S2-identidade-perfil",
+      "status": "aprovado",
+      "esperado": "Anonimo com CSRF valido nao cria conta; campos perfil/admin extra recusados400 sem cadastro",
+      "observado": {
+        "anonimo": 401,
+        "camposExtras": 400,
+        "cadastrosCriados": 0
+      }
+    }
+  ]
+}

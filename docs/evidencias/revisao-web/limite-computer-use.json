@@ -1,0 +1,9 @@
+{
+  "limite": "Sem revisao visual desktop/estreita; sem tentativa de contorno",
+  "resultado": "Encerrado pelo ambiente",
+  "dataUtc": "2026-11-03T22:10:16.4261815Z",
+  "motivo": "Could not determine the current browser URL on Windows with enough confidence to enforce policy",
+  "acao": "getApp Chrome selecionado do inventario",
+  "ferramenta": "mcp__cua_repl",
+  "interacoesExecutadas": 0
+}

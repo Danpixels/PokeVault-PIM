@@ -1,0 +1,9 @@
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Views\TcgDex\Progresso.cshtml(4,24): error RZ2005: The 'section' directive must appear at the start of the line. [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+
+FALHA da compilação.
+
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Views\TcgDex\Progresso.cshtml(4,24): error RZ2005: The 'section' directive must appear at the start of the line. [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+    0 Aviso(s)
+    1 Erro(s)
+
+Tempo Decorrido 00:00:03.75

@@ -1,0 +1,11 @@
+{
+  "dataUtc": "2026-11-03T22:11:53.9857932Z",
+  "estado": "PRONTO_PARA_REGRESSAO_ISOLADA",
+  "schema": 4,
+  "dll": "177F24F52C71190AC3420CD62E34F741B73DD1B7DD4ABF5FA64A392547E33CE4",
+  "snapshot": "177F24F52C71190AC3420CD62E34F741B73DD1B7DD4ABF5FA64A392547E33CE4",
+  "fonteAtivaSemWip": true,
+  "demo": "5187",
+  "testes": "5188",
+  "observacao": "Não recompilar/copiar por cima de snapshot em execução; Testes controla processo5188"
+}

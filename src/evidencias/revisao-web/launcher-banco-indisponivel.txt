@@ -1,0 +1,1 @@
+O SQL Server ou o banco local nÃ£o estÃ¡ disponÃ­vel no schema4. Verifique o SQL Server e a configuraÃ§Ã£o local indicada no README. O abridor nÃ£o cria nem reseta o banco.

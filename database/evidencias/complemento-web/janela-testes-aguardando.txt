@@ -1,0 +1,7 @@
+# Complemento web — preparação e testes
+
+Registro inicial em 03/11/2026, America/Sao_Paulo. Frente de testes com apoio de IA. Relato de Daniel sobre testes manuais é informação de usuário; não foi convertido em testes desta suíte. Banco e Desenvolvimento trabalham em paralelo; nenhuma escrita mutante nesta preparação antes da liberação do schema.
+
+## Critérios preparados, ainda não executados
+
+| Grupo | Cenários necessários | Aceite |

@@ -1,0 +1,24 @@
+{
+  "identidadeWindowsDedicada": "Recomendacao futura, fora dos criterios obrigatorios desta demonstracao local",
+  "dataUtc": "2026-11-03T22:18:02.8316445Z",
+  "wrapperFonteConfere": true,
+  "produtoSHA256": "177F24F52C71190AC3420CD62E34F741B73DD1B7DD4ABF5FA64A392547E33CE4",
+  "regressao": {
+    "aprovados": 45,
+    "cenarios": 45,
+    "evidencia": "wrapper-final/resultados.json"
+  },
+  "htmlHttp": {
+    "aprovados": 6,
+    "cenarios": 6,
+    "naoVisual": true,
+    "evidencia": "html-01/resultados.json"
+  },
+  "visual": {
+    "motivo": "Computer-use encerrou vinculo Chrome por URL incerta; sem contorno",
+    "executado": false,
+    "evidencia": "limite-computer-use.json"
+  },
+  "naoIniciouComplementoOuMobile": true,
+  "validadorFonteConfere": true
+}

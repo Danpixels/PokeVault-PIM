@@ -1,0 +1,58 @@
+{
+  "dataUtc": "2026-10-21T17:56:21.0302506Z",
+  "base": "PokeVaultTests",
+  "execucoes": [
+    {
+      "exitCode": 0,
+      "saida": [
+        "Contexto do banco de dados alterado para 'PokeVaultTests'.",
+        "PokeVaultTests DESKTOP-641C55N\\SQLEXPRESS 17.0.1000.7 Express Edition (64-bit)",
+        "1 2026-10-21 17:49:14.066",
+        "2 2026-10-21 17:49:14.701",
+        "3 2026-10-21 17:49:14.828",
+        "4 2026-10-21 17:54:38.108",
+        "usp_AjustarCarta",
+        "usp_AjustarCartaVersionado",
+        "usp_CadastrarCarta",
+        "usp_CancelarCompra",
+        "usp_ConcluirCompra",
+        "usp_CriarUsuario",
+        "usp_DefinirItemCarrinho",
+        "usp_DefinirSaldo",
+        "usp_DefinirSaldoVersionado",
+        "usp_DefinirUsuarioAtivo"
+      ],
+      "arquivo": "database/007_verificar.sql"
+    },
+    {
+      "exitCode": 0,
+      "saida": [
+        "Contexto do banco de dados alterado para 'PokeVaultTests'.",
+        "PokeVaultTests DESKTOP-641C55N\\SQLEXPRESS 17.0.1000.7",
+        "1 2026-10-21 17:49:14.066",
+        "2 2026-10-21 17:49:14.701",
+        "3 2026-10-21 17:49:14.828",
+        "4 2026-10-21 17:54:38.108",
+        "SaldoCliente Versao timestamp 8 0",
+        "Carta Versao timestamp 8 0",
+        "usp_DefinirSaldoVersionado 1 1",
+        "usp_AjustarCartaVersionado 1 1",
+        "PokeVaultRuntimeVerificacao 55",
+        "UPDATE_DIRETO_NEGADO 229",
+        "INSERT_DIRETO_NEGADO 229",
+        "DELETE_DIRETO_NEGADO 229",
+        "AJUSTE_LEGADO_NEGADO 229",
+        "EXECUTE_VERSIONADO_PERMITIDO_AUTORIZACAO_RECUSADA 51000"
+      ],
+      "arquivo": "database/011_sprint2_verificar.sql"
+    },
+    {
+      "exitCode": 0,
+      "saida": [
+        "Contexto do banco de dados alterado para 'PokeVaultTests'.",
+        "{\"Banco\":\"PokeVaultTests\",\"Servidor\":\"DESKTOP-641C55N\\\\SQLEXPRESS\",\"SaldosDivergentes\":0,\"EstoquesDivergentes\":0,\"TotaisDivergentes\":0,\"TriggersTesteRestantes\":0,\"VersoesInstaladas\":3,\"ComprasPreservadas\":30,\"UsuariosTeste\":42,\"CartasTeste\":55}"
+      ],
+      "arquivo": "tests/Sprint2/Verificar-Integridade.sql"
+    }
+  ]
+}

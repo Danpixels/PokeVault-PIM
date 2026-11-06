@@ -1,0 +1,27 @@
+{
+  "dataUtc": "2026-10-21T17:55:51.1213896Z",
+  "base": "PokeVaultTests",
+  "execucoes": [
+    {
+      "arquivo": "database/007_verificar.sql",
+      "exitCode": 1,
+      "saida": [
+        "Sqlcmd: as opções -W e -y/-Y são mutuamente exclusivas."
+      ]
+    },
+    {
+      "arquivo": "database/011_sprint2_verificar.sql",
+      "exitCode": 1,
+      "saida": [
+        "Sqlcmd: as opções -W e -y/-Y são mutuamente exclusivas."
+      ]
+    },
+    {
+      "arquivo": "tests/Sprint2/Verificar-Integridade.sql",
+      "exitCode": 1,
+      "saida": [
+        "Sqlcmd: as opções -W e -y/-Y são mutuamente exclusivas."
+      ]
+    }
+  ]
+}

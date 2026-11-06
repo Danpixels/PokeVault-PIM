@@ -1,0 +1,10 @@
+{
+  "dataUtc": "2026-11-04T00:32:47.9710097Z",
+  "cadastroHTTP": 200,
+  "emailSenha": true,
+  "ready": {
+    "aplicacao": "PokeVault",
+    "status": "pronto",
+    "schemaRequerido": 12
+  }
+}

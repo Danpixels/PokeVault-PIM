@@ -1,0 +1,9 @@
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Infrastructure\SqlLojaRepository.cs(34,17): error CS0149: Nome de método esperado [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+
+FALHA da compilação.
+
+C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\Infrastructure\SqlLojaRepository.cs(34,17): error CS0149: Nome de método esperado [C:\Users\Intel\Documents\ChatGPT\PIM\src\PokeVault.Web\PokeVault.Web.csproj]
+    0 Aviso(s)
+    1 Erro(s)
+
+Tempo Decorrido 00:00:03.74

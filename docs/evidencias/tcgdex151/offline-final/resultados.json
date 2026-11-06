@@ -1,0 +1,48 @@
+{
+  "dataUtc": "2026-11-03T22:57:56.4120178Z",
+  "baseSql": "PokeVaultTests",
+  "rodada": "tcgab3ca8846",
+  "resultados": [
+    {
+      "id": "OFF-01/biblioteca-cache-sem-api",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:54.7212698Z",
+      "fimUtc": "2026-11-03T22:57:56.101799Z",
+      "esperado": "RedeTCG desabilitada: biblioteca/detalhe/imagem e reimportacao do cache funcionam",
+      "observado": {
+        "status": {
+          "emExecucao": false,
+          "importacaoId": 1,
+          "processados": 207,
+          "importados": 207,
+          "ausentes": 0,
+          "imagensLocais": 207,
+          "fallbackIngles": 0,
+          "modoOffline": true,
+          "mensagem": "207 refer\u00EAncias processadas com cache; API indispon\u00EDvel/rede desabilitada. Nenhuma oferta comercial alterada.",
+          "inicioUtc": "2026-11-03T22:57:54.754771Z",
+          "fimUtc": "2026-11-03T22:57:55.2300974Z"
+        },
+        "total": 207,
+        "imagem": "local200",
+        "modo": "TcgDex:RedeHabilitada=false; nao desligou rede do SO"
+      }
+    },
+    {
+      "id": "OFF-02/compra-selecao-estorno",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:56.1019313Z",
+      "fimUtc": "2026-11-03T22:57:56.4114667Z",
+      "esperado": "OfflineTCG: oferta referenciada local30 \u002B remanescente; compra/replay/estorno funcionam",
+      "observado": {
+        "card": 194,
+        "remaining": 195,
+        "compra": 98,
+        "key": "88d55759-5983-4601-8113-a293604ab2c1",
+        "total": 30,
+        "saldoFinal": 100,
+        "redeTCG": false
+      }
+    }
+  ]
+}

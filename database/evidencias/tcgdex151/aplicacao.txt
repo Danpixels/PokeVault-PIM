@@ -1,0 +1,172 @@
+Servidor Motor
+-------- -----
+DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7
+JanelaUtc Estado
+--------- ------
+2026-11-03 22:37:34.8351990 SEM_REQUISICOES_TRANSACOES_TESTES
+SCRIPT=019_tcgdex151_schema.sql BANCO=PokeVault UTC=2026-11-03T22:37:35.0678532Z
+Contexto do banco de dados alterado para 'PokeVault'.
+SCRIPT=020_tcgdex151_importacao.sql BANCO=PokeVault UTC=2026-11-03T22:37:35.2588406Z
+Contexto do banco de dados alterado para 'PokeVault'.
+SCRIPT=021_tcgdex151_ofertas.sql BANCO=PokeVault UTC=2026-11-03T22:37:35.3394296Z
+Contexto do banco de dados alterado para 'PokeVault'.
+VERIFICACAO=022_tcgdex151_verificar.sql BANCO=PokeVault
+Contexto do banco de dados alterado para 'PokeVault'.
+ObservadoEmUtc Banco Servidor Motor
+-------------- ----- -------- -----
+2026-11-03 22:37:35.7097659 PokeVault DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7
+Versao AplicadaEmUtc
+------ -------------
+1 2026-10-21 17:17:13.599
+2 2026-10-21 17:49:06.450
+3 2026-10-21 17:49:06.514
+4 2026-10-21 17:54:37.965
+8 2026-11-03 22:37:35.251
+9 2026-11-03 22:37:35.333
+10 2026-11-03 22:37:35.444
+Traducoes CartasLogicas Importacoes Vinculos
+--------- ------------- ----------- --------
+0 0 0 0
+ProcedureNome uses_ansi_nulls uses_quoted_identifier
+------------- --------------- ----------------------
+usp_IniciarImportacaoTCGdex151 1 1
+usp_AtualizarReferenciasTCGdex151 1 1
+usp_RegistrarFalhaTCGdex151 1 1
+usp_VincularOfertaTCGdex151 1 1
+usp_CadastrarOfertaTCGdex151 1 1
+ColunaWip ProceduresWip
+--------- -------------
+0 0
+Principal Resultado
+--------- ---------
+PokeVaultRuntimeVerificacao SELECT_EXECUTE_PERMITIDOS_DML_LEGADO_NEGADOS
+VERIFICACAO=007_verificar.sql BANCO=PokeVault
+Contexto do banco de dados alterado para 'PokeVault'.
+Banco Servidor VersaoMotor Edicao
+----- -------- ----------- ------
+PokeVault DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7 Express Edition (64-bit)
+Versao AplicadaEmUtc
+------ -------------
+1 2026-10-21 17:17:13.599
+2 2026-10-21 17:49:06.450
+3 2026-10-21 17:49:06.514
+4 2026-10-21 17:54:37.965
+8 2026-11-03 22:37:35.251
+9 2026-11-03 22:37:35.333
+10 2026-11-03 22:37:35.444
+name
+----
+usp_AjustarCarta
+usp_AjustarCartaVersionado
+usp_AtualizarReferenciasTCGdex151
+usp_CadastrarCarta
+usp_CadastrarOfertaTCGdex151
+usp_CancelarCompra
+usp_ConcluirCompra
+usp_CriarUsuario
+usp_DefinirItemCarrinho
+usp_DefinirSaldo
+usp_DefinirSaldoVersionado
+usp_DefinirUsuarioAtivo
+usp_IniciarImportacaoTCGdex151
+usp_RegistrarFalhaTCGdex151
+usp_VincularOfertaTCGdex151
+UsuarioId Saldo SaldoPelosMovimentos
+--------- ----- --------------------
+CartaId QuantidadeEstoque EstoquePelosMovimentos
+------- ----------------- ----------------------
+CompraId Total TotalItens
+-------- ----- ----------
+CompraId Status Tipo ValorDelta
+-------- ------ ---- ----------
+CompraId Status ValorDelta
+-------- ------ ----------
+CompraId CartaId Quantidade QuantidadeDelta
+-------- ------- ---------- ---------------
+CompraId CartaId Status QuantidadeDelta
+-------- ------- ------ ---------------
+UsuarioId Codigo Carteira CarrinhoId
+--------- ------ -------- ----------
+SCRIPT=019_tcgdex151_schema.sql BANCO=PokeVaultTests UTC=2026-11-03T22:37:36.0998773Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+SCRIPT=020_tcgdex151_importacao.sql BANCO=PokeVaultTests UTC=2026-11-03T22:37:36.2720840Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+SCRIPT=021_tcgdex151_ofertas.sql BANCO=PokeVaultTests UTC=2026-11-03T22:37:36.3483258Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+VERIFICACAO=022_tcgdex151_verificar.sql BANCO=PokeVaultTests
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+ObservadoEmUtc Banco Servidor Motor
+-------------- ----- -------- -----
+2026-11-03 22:37:36.7123075 PokeVaultTests DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7
+Versao AplicadaEmUtc
+------ -------------
+1 2026-10-21 17:49:14.066
+2 2026-10-21 17:49:14.701
+3 2026-10-21 17:49:14.828
+4 2026-10-21 17:54:38.108
+8 2026-11-03 22:37:36.264
+9 2026-11-03 22:37:36.341
+10 2026-11-03 22:37:36.445
+Traducoes CartasLogicas Importacoes Vinculos
+--------- ------------- ----------- --------
+0 0 0 0
+ProcedureNome uses_ansi_nulls uses_quoted_identifier
+------------- --------------- ----------------------
+usp_IniciarImportacaoTCGdex151 1 1
+usp_AtualizarReferenciasTCGdex151 1 1
+usp_RegistrarFalhaTCGdex151 1 1
+usp_VincularOfertaTCGdex151 1 1
+usp_CadastrarOfertaTCGdex151 1 1
+ColunaWip ProceduresWip
+--------- -------------
+0 0
+Principal Resultado
+--------- ---------
+PokeVaultRuntimeVerificacao SELECT_EXECUTE_PERMITIDOS_DML_LEGADO_NEGADOS
+VERIFICACAO=007_verificar.sql BANCO=PokeVaultTests
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+Banco Servidor VersaoMotor Edicao
+----- -------- ----------- ------
+PokeVaultTests DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7 Express Edition (64-bit)
+Versao AplicadaEmUtc
+------ -------------
+1 2026-10-21 17:49:14.066
+2 2026-10-21 17:49:14.701
+3 2026-10-21 17:49:14.828
+4 2026-10-21 17:54:38.108
+8 2026-11-03 22:37:36.264
+9 2026-11-03 22:37:36.341
+10 2026-11-03 22:37:36.445
+name
+----
+usp_AjustarCarta
+usp_AjustarCartaVersionado
+usp_AtualizarReferenciasTCGdex151
+usp_CadastrarCarta
+usp_CadastrarOfertaTCGdex151
+usp_CancelarCompra
+usp_ConcluirCompra
+usp_CriarUsuario
+usp_DefinirItemCarrinho
+usp_DefinirSaldo
+usp_DefinirSaldoVersionado
+usp_DefinirUsuarioAtivo
+usp_IniciarImportacaoTCGdex151
+usp_RegistrarFalhaTCGdex151
+usp_VincularOfertaTCGdex151
+UsuarioId Saldo SaldoPelosMovimentos
+--------- ----- --------------------
+CartaId QuantidadeEstoque EstoquePelosMovimentos
+------- ----------------- ----------------------
+CompraId Total TotalItens
+-------- ----- ----------
+CompraId Status Tipo ValorDelta
+-------- ------ ---- ----------
+CompraId Status ValorDelta
+-------- ------ ----------
+CompraId CartaId Quantidade QuantidadeDelta
+-------- ------- ---------- ---------------
+CompraId CartaId Status QuantidadeDelta
+-------- ------- ------ ---------------
+UsuarioId Codigo Carteira CarrinhoId
+--------- ------ -------- ----------

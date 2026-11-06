@@ -1,0 +1,16 @@
+{
+  "RegistradoEmUtc": "2026-11-03T22:14:45.8302973Z",
+  "Escopo": "Revisão Banco somente leitura para demonstração acadêmica local",
+  "SchemaPokeVault": 4,
+  "SchemaPokeVaultTests": 4,
+  "ArtefatosComplementoAusentes": true,
+  "Reconciliacao007PokeVaultDivergencias": 0,
+  "Reconciliacao007PokeVaultTestsDivergencias": 0,
+  "ExecucoesSqlRegistradas": 4,
+  "ExecucoesSqlExitZero": 4,
+  "CredenciaisConferidas": 4,
+  "CredenciaisCompativeis": 4,
+  "IgualdadeHistoricaAfirmada": false,
+  "IdentidadeWindowsDedicadaRequisito": false,
+  "DdlDmlFixtureExecutados": false
+}

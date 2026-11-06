@@ -1,0 +1,15 @@
+@model PokeVault.Web.Domain.CartaLoja
+@using PokeVault.Web.Domain
+@using System.Globalization
+@{var carta=Model.Ofertas[0];var moeda=CultureInfo.GetCultureInfo("pt-BR");ViewData["Title"]=carta.Nome;}
+<p><a href="/">← Catálogo</a></p><div class="reference-detail"><div>
+@if(carta.ImagemUrl is not null){<img class="tcg-card-image" src="@carta.ImagemUrl" alt="@carta.Nome" width="245" height="342"/>}
+</div><section><div class="eyebrow">COLEÇÃO 151 · #@carta.Numero/165</div><h1>@carta.Nome</h1>
+<p>Escolha uma versão e a quantidade que deseja adicionar ao carrinho.</p>
+<div class="table-wrap"><table><thead><tr><th>Idioma</th><th>Estado</th><th>Acabamento</th><th>Estoque</th><th>Preço</th><th>Quantidade</th></tr></thead><tbody>
+@foreach(var oferta in Model.Ofertas){<tr><td>@Variantes.Idioma(oferta.Idioma)</td><td>@Variantes.Estado(oferta.Conservacao)</td><td>@Variantes.Acabamento(oferta.Acabamento)</td><td>@oferta.Estoque un.</td><td>@oferta.Preco.ToString("C",moeda)</td><td>
+@if(User.IsInRole("CLIENTE")){<form action="/carrinho/adicionar" method="post" class="buy-form">@Html.AntiForgeryToken()<input name="ofertaId" type="hidden" value="@oferta.OfertaId"/><input aria-label="Quantidade de @oferta.Nome @Variantes.Acabamento(oferta.Acabamento) @Variantes.Estado(oferta.Conservacao)" name="quantidade" type="number" min="1" max="@Math.Min(oferta.Estoque,10000)" value="1" required disabled="@(oferta.Estoque==0)"/><button type="submit" disabled="@(oferta.Estoque==0)">@(oferta.Estoque>0?"Comprar":"Esgotado")</button></form>}
+else if(User.Identity?.IsAuthenticated!=true){<a href="/entrar?returnUrl=%2Fcartas%2F@oferta.OfertaId">Entrar para comprar</a>}
+else{<small>Compra disponível para clientes</small>}
+</td></tr>}
+</tbody></table></div><p><small>Comprar adiciona ao carrinho. A compra só é concluída após sua confirmação com saldo fictício.</small></p></section></div>

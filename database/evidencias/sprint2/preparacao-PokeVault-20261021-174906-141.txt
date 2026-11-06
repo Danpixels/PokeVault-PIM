@@ -1,0 +1,87 @@
+Servidor Versao
+-------- ------
+DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7
+name
+----
+PokeVault
+SCRIPT=008_sprint2_versoes.sql BANCO=PokeVault UTC=2026-10-21T17:49:06.2486742Z
+Contexto do banco de dados alterado para 'PokeVault'.
+SCRIPT=009_sprint2_ajustes.sql BANCO=PokeVault UTC=2026-10-21T17:49:06.4603289Z
+Contexto do banco de dados alterado para 'PokeVault'.
+SCRIPT=010_sprint2_runtime.sql BANCO=PokeVault UTC=2026-10-21T17:49:06.5304458Z
+Contexto do banco de dados alterado para 'PokeVault'.
+VERIFICACAO=007_verificar.sql BANCO=PokeVault
+Contexto do banco de dados alterado para 'PokeVault'.
+Banco Servidor VersaoMotor Edicao
+----- -------- ----------- ------
+PokeVault DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7 Express Edition (64-bit)
+Versao AplicadaEmUtc
+------ -------------
+1 2026-10-21 17:17:13.599
+2 2026-10-21 17:49:06.450
+3 2026-10-21 17:49:06.514
+name
+----
+usp_AjustarCarta
+usp_AjustarCartaVersionado
+usp_CadastrarCarta
+usp_CancelarCompra
+usp_ConcluirCompra
+usp_CriarUsuario
+usp_DefinirItemCarrinho
+usp_DefinirSaldo
+usp_DefinirSaldoVersionado
+usp_DefinirUsuarioAtivo
+UsuarioId Saldo SaldoPelosMovimentos
+--------- ----- --------------------
+CartaId QuantidadeEstoque EstoquePelosMovimentos
+------- ----------------- ----------------------
+CompraId Total TotalItens
+-------- ----- ----------
+CompraId Status Tipo ValorDelta
+-------- ------ ---- ----------
+CompraId Status ValorDelta
+-------- ------ ----------
+CompraId CartaId Quantidade QuantidadeDelta
+-------- ------- ---------- ---------------
+CompraId CartaId Status QuantidadeDelta
+-------- ------- ------ ---------------
+UsuarioId Codigo Carteira CarrinhoId
+--------- ------ -------- ----------
+VERIFICACAO=011_sprint2_verificar.sql BANCO=PokeVault
+Contexto do banco de dados alterado para 'PokeVault'.
+Banco Servidor VersaoMotor
+----- -------- -----------
+PokeVault DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7
+Versao AplicadaEmUtc
+------ -------------
+1 2026-10-21 17:17:13.599
+2 2026-10-21 17:49:06.450
+3 2026-10-21 17:49:06.514
+Tabela Coluna Tipo max_length is_nullable
+------ ------ ---- ---------- -----------
+SaldoCliente Versao timestamp 8 0
+Carta Versao timestamp 8 0
+ProcedureNome uses_ansi_nulls uses_quoted_identifier
+------------- --------------- ----------------------
+usp_DefinirSaldoVersionado 1 1
+usp_AjustarCartaVersionado 1 1
+PrincipalVerificado CartasLidas
+------------------- -----------
+PokeVaultRuntimeVerificacao 3
+Verificacao ErroEsperado
+----------- ------------
+UPDATE_DIRETO_NEGADO 229
+Verificacao ErroEsperado
+----------- ------------
+INSERT_DIRETO_NEGADO 229
+Verificacao ErroEsperado
+----------- ------------
+DELETE_DIRETO_NEGADO 229
+Verificacao ErroEsperado
+----------- ------------
+AJUSTE_LEGADO_NEGADO 229
+Verificacao ErroEsperado
+----------- ------------
+EXECUTE_VERSIONADO_PERMITIDO_AUTORIZACAO_RECUSADA 51000
+PREPARACAO_CONCLUIDA BANCO=PokeVault UTC=2026-10-21T17:49:06.8978227Z

@@ -1,0 +1,380 @@
+{
+  "dataUtc": "2026-11-03T22:57:16.0934193Z",
+  "baseSql": "PokeVaultTests",
+  "rodada": "tcg392b22e8f",
+  "resultados": [
+    {
+      "id": "FX-01/alvo-fixo",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.3587679Z",
+      "fimUtc": "2026-11-03T22:56:46.3694333Z",
+      "esperado": "ID de outra colecao recusado antes de rede",
+      "observado": {
+        "requisicoes": 0,
+        "recusa": 400
+      }
+    },
+    {
+      "id": "FX-02/indisponivel-sem-cache",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.3709847Z",
+      "fimUtc": "2026-11-03T22:56:46.3871597Z",
+      "esperado": "Rede indisponivel sem cache retorna ausencia explicita",
+      "observado": {
+        "ausente": true,
+        "requisicoes": 2
+      }
+    },
+    {
+      "id": "FX-03/timeout-sem-cache",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.3871844Z",
+      "fimUtc": "2026-11-03T22:56:46.3887789Z",
+      "esperado": "Timeout controlado sem cache nao inventa referencia/preco",
+      "observado": {
+        "ausente": true,
+        "requisicoes": 2
+      }
+    },
+    {
+      "id": "FX-04/fallback-en-imagem-ausente",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.388791Z",
+      "fimUtc": "2026-11-03T22:56:46.4263645Z",
+      "esperado": "PT404/EN200 identifica ingles; erro de imagem preserva metadados",
+      "observado": {
+        "idioma": "en",
+        "imagemLocal": null,
+        "requests": [
+          "https://api.tcgdex.net/v2/pt/cards/sv03.5-025",
+          "https://api.tcgdex.net/v2/en/cards/sv03.5-025",
+          "https://assets.tcgdex.net/en/sv/sv03.5/025/low.webp"
+        ],
+        "fonte": "https://api.tcgdex.net/v2/en/cards/sv03.5-025"
+      }
+    },
+    {
+      "id": "FX-05/cache-preservado",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.4263808Z",
+      "fimUtc": "2026-11-03T22:56:46.4417444Z",
+      "esperado": "Falha apos sucesso conserva JSON/cache e retorna Offline/Cache",
+      "observado": {
+        "arquivos": 1,
+        "cache": true,
+        "offline": true,
+        "jsonPreservado": true
+      }
+    },
+    {
+      "id": "FX-06/precos-ausentes",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.4417605Z",
+      "fimUtc": "2026-11-03T22:56:46.4475487Z",
+      "esperado": "Pricing ausente resulta lista vazia, nao preco zero",
+      "observado": {
+        "precos": 0,
+        "significado": "indisponivel; nenhum zero sintetico"
+      }
+    },
+    {
+      "id": "FX-07/variante-dinamica-nulo",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.4475627Z",
+      "fimUtc": "2026-11-03T22:56:46.4494318Z",
+      "esperado": "Variante nova USD preserva nome,valor9.99 e ausencia null",
+      "observado": {
+        "linhas": [
+          {
+            "Fornecedor": "TCGplayer",
+            "Moeda": "USD",
+            "Variante": "Refer\u00EAncia principal / galaxy-new-holo",
+            "Campo": "marketPrice",
+            "Valor": null,
+            "Atualizado": "2026-11-03T00:00:00Z"
+          },
+          {
+            "Fornecedor": "TCGplayer",
+            "Moeda": "USD",
+            "Variante": "Refer\u00EAncia principal / galaxy-new-holo",
+            "Campo": "lowPrice",
+            "Valor": 9.99,
+            "Atualizado": "2026-11-03T00:00:00Z"
+          }
+        ],
+        "tipo": "fixture sintetica, nao preco atual"
+      }
+    },
+    {
+      "id": "FX-08/precos-reais-gravados",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.4494438Z",
+      "fimUtc": "2026-11-03T22:56:46.4529003Z",
+      "esperado": "Amostra real gravada mantem EUR/USD,origem de atualizacao e reverse-holofoil",
+      "observado": {
+        "linhas": 102,
+        "moedas": [
+          "EUR",
+          "USD"
+        ],
+        "reverseHolofoil": true,
+        "fonte": "resposta real gravada por Banco; nao importacao atual"
+      }
+    },
+    {
+      "id": "FX-09/importador-fallback-207",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.4532645Z",
+      "fimUtc": "2026-11-03T22:56:46.6367264Z",
+      "esperado": "Importer real com pt404/en200 persiste207 detalhes em manifestoen, sem servidor/SQL de fixture",
+      "observado": {
+        "status": {
+          "EmExecucao": false,
+          "ImportacaoId": 1,
+          "Processados": 207,
+          "Importados": 207,
+          "Ausentes": 0,
+          "ImagensLocais": 0,
+          "FallbackIngles": 207,
+          "ModoOffline": false,
+          "Mensagem": "207 refer\u00EAncias processadas. Pre\u00E7os externos s\u00E3o informativos; estoque e pre\u00E7oBRL preservados.",
+          "InicioUtc": "2026-11-03T22:56:46.4727937Z",
+          "FimUtc": "2026-11-03T22:56:46.6141504Z"
+        },
+        "detalhesGravados": 207,
+        "idiomas": [
+          "en"
+        ],
+        "manifestos": [
+          "pt",
+          "en"
+        ],
+        "mismatch": 0,
+        "requisicoes": 416,
+        "tipo": "Fixture sintetica, importer real em DI de teste"
+      }
+    },
+    {
+      "id": "FX-10/pricing-malformado-nao-envenena-cache",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.6392264Z",
+      "fimUtc": "2026-11-03T22:56:46.6495706Z",
+      "esperado": "Resposta pricing string invalida nao substitui snapshot valido; sem cache retorna ausencia",
+      "observado": {
+        "cacheValidoPreservado": true,
+        "arquivos": 1,
+        "semCache": "ausencia",
+        "tipo": "fixture sintetica - correcao6E"
+      }
+    },
+    {
+      "id": "FX-11/manifesto-invalido-nao-envenena-cache",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:46.6495868Z",
+      "fimUtc": "2026-11-03T22:56:46.6611769Z",
+      "esperado": "Manifesto com207itens mas IDs duplicados ou contagem206 preserva cache207 valido",
+      "observado": {
+        "tentativasInvalidas": 2,
+        "cache207Preservado": true,
+        "arquivos": 1,
+        "tipo": "fixture sintetica - correcao6E"
+      }
+    },
+    {
+      "id": "LIVE-01/perfis-csrf-alvo",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:47.4313698Z",
+      "fimUtc": "2026-11-03T22:56:47.5010124Z",
+      "esperado": "Cliente403/anonimo401/CSRF400; alvo arbitrario rejeitado400 sem importacao",
+      "observado": {
+        "cliente": 403,
+        "anonimo": 401,
+        "csrf": 400,
+        "alvoExtra": 400
+      }
+    },
+    {
+      "id": "LIVE-02/importacao-real-preservacao",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:56:47.501034Z",
+      "fimUtc": "2026-11-03T22:57:14.1124148Z",
+      "esperado": "Importacao real207 detalhes; zero mudanca nos12 hashes comerciais",
+      "observado": {
+        "status": {
+          "emExecucao": false,
+          "importacaoId": 1,
+          "processados": 207,
+          "importados": 207,
+          "ausentes": 0,
+          "imagensLocais": 207,
+          "fallbackIngles": 0,
+          "modoOffline": false,
+          "mensagem": "207 refer\u00EAncias processadas. Pre\u00E7os externos s\u00E3o informativos; estoque e pre\u00E7oBRL preservados.",
+          "inicioUtc": "2026-11-03T22:56:47.5531983Z",
+          "fimUtc": "2026-11-03T22:57:12.900731Z"
+        },
+        "referenciasLogicas": 207,
+        "detalhadas": 207,
+        "traducoes": 207,
+        "tabelasComerciaisIguais": 12
+      }
+    },
+    {
+      "id": "LIVE-03/repeticao-atendente",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:14.1124823Z",
+      "fimUtc": "2026-11-03T22:57:15.4300865Z",
+      "esperado": "Reimportacao por atendente preserva207 refs/sem duplicar dados comerciais",
+      "observado": {
+        "status": {
+          "emExecucao": false,
+          "importacaoId": 1,
+          "processados": 207,
+          "importados": 207,
+          "ausentes": 0,
+          "imagensLocais": 207,
+          "fallbackIngles": 0,
+          "modoOffline": false,
+          "mensagem": "207 refer\u00EAncias processadas. Pre\u00E7os externos s\u00E3o informativos; estoque e pre\u00E7oBRL preservados.",
+          "inicioUtc": "2026-11-03T22:57:14.1308787Z",
+          "fimUtc": "2026-11-03T22:57:14.7419142Z"
+        },
+        "linhasAntes": 207,
+        "linhasDepois": 207
+      }
+    },
+    {
+      "id": "LIVE-04/biblioteca-precos-imagens",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:15.4301019Z",
+      "fimUtc": "2026-11-03T22:57:15.651575Z",
+      "esperado": "207 cards em9paginas; imagens locais HTTP e metadados de preco/origem/data medidos",
+      "observado": {
+        "referencias": 207,
+        "imagensLocais": 207,
+        "imagensAusentes": 0,
+        "cardmarket": 207,
+        "tcgplayer": 207,
+        "semPricing": 0,
+        "idiomas": {
+          "pt": 207
+        },
+        "detalheHtml": 200,
+        "limite": "HTTP/HTML; nao visual"
+      }
+    },
+    {
+      "id": "LIVE-05/fallback-imagem",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:15.6515982Z",
+      "fimUtc": "2026-11-03T22:57:15.6609544Z",
+      "esperado": "Ausencia temporaria da imagem na copia de teste nao quebra detalhe; arquivo restaurado",
+      "observado": {
+        "http": 200,
+        "arquivosTemporariamenteRenomeados": 1,
+        "fallback": true
+      }
+    },
+    {
+      "id": "DB-01/manifesto-idempotente-escopo",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:15.661557Z",
+      "fimUtc": "2026-11-03T22:57:15.713354Z",
+      "esperado": "Mesmo manifesto/chave retorna mesma importacao; outro set recusado sem cache apagar",
+      "observado": {
+        "importacao": 7,
+        "repetida": true,
+        "referencias": 207,
+        "outroSet": 51020
+      }
+    },
+    {
+      "id": "DB-02/pricing-ausente-cache",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:15.7133893Z",
+      "fimUtc": "2026-11-03T22:57:15.7498437Z",
+      "esperado": "Atualizacao sem pricing preserva ultimo JSON/data/origem; lote invalido atomico",
+      "observado": {
+        "referencia": 25,
+        "idioma": "pt",
+        "pricingPreservado": true,
+        "loteInvalido": 51020,
+        "restauracao": "snapshot real anterior reaplicado no finally"
+      }
+    },
+    {
+      "id": "DB-03/vinculo-seguro-compartilhado",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:15.7498589Z",
+      "fimUtc": "2026-11-03T22:57:15.79977Z",
+      "esperado": "PikachuNM/SP compartilham referencia sem mudarCarta; identidade divergente recusada",
+      "observado": {
+        "cartas": [
+          1,
+          2
+        ],
+        "referencia": 25,
+        "divergente": 3,
+        "erro": 51022,
+        "camposComerciaisPreservados": true
+      }
+    },
+    {
+      "id": "LIVE-06/prefill-comercio-explicito",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:15.7997963Z",
+      "fimUtc": "2026-11-03T22:57:15.929316Z",
+      "esperado": "Metadados locais; camposBRL/estoque/conservacao vazios; cria somente oferta explicitada",
+      "observado": {
+        "cardId": "sv03.5-003",
+        "oferta": 193,
+        "precoBRL": 12.34,
+        "estoque": 2,
+        "criadas": 1,
+        "conservacao": "MINT"
+      }
+    },
+    {
+      "id": "DB-04/identidade-remota-divergente",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:16.0017588Z",
+      "fimUtc": "2026-11-03T22:57:16.0577338Z",
+      "esperado": "Nome remoto divergente em referencia ja vinculada recusa51022 sem mudar comercio/vinculo",
+      "observado": {
+        "carta": 1,
+        "referencia": 25,
+        "erro": 51022,
+        "vinculoPreservado": true,
+        "comercioPreservado": true,
+        "fixture": "nome remoto sintetico temporario; restaurado no finally"
+      }
+    },
+    {
+      "id": "HTML-01/prefill-sem-valores-comerciais",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:16.0577486Z",
+      "fimUtc": "2026-11-03T22:57:16.0636661Z",
+      "esperado": "Inputs deBRL/estoque estao efetivamente vazios, nao apenas campo generico",
+      "observado": {
+        "card": "sv03.5-004",
+        "precoVazio": true,
+        "quantidadeVazia": true,
+        "limite": "HTML; nao visual"
+      }
+    },
+    {
+      "id": "HTML-02/precos-historicos-cache",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:57:16.0641865Z",
+      "fimUtc": "2026-11-03T22:57:16.0924437Z",
+      "esperado": "Novo snapshot sem pricing mostra precos anteriores com rotulo historico,EUR/USD e nao zeros sinteticos",
+      "observado": {
+        "referencia": 25,
+        "historicoIdentificado": true,
+        "fornecedoresMantidos": true,
+        "intervaloColetasSegundos": 0.028,
+        "limite": "Fixture ausencia de pricing; HTML/HTTP; intervalo medido; sem espera artificial por padrao"
+      }
+    }
+  ]
+}

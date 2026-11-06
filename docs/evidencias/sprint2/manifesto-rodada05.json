@@ -1,0 +1,44 @@
+{
+  "dataUtc": "2026-10-21T17:59:48.9844296Z",
+  "baseSql": "PokeVaultTests",
+  "porta": 5188,
+  "schemaEsperado": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "foco": "HTTP18",
+  "dll": "9B717A9B37A733A9213284C93A6DE2FC574CB66D383281AF1C5B20B7175A5EDC",
+  "harness": "270ED27AA02371F24054168703FA84A3F973BC326E85DC0C8462D0F4899DAFA8",
+  "arquivos": [
+    {
+      "nome": "AdditionalTests.cs",
+      "sha256": "63DF3DEDB06F9B296897238CA6F3512AF49396915758E036020A353DC225B547"
+    },
+    {
+      "nome": "AuditTests.cs",
+      "sha256": "D5D7338E5770AE1A7B5A99C0530FE5DFC5A1D69BDA4596B1839EE78B54420ADE"
+    },
+    {
+      "nome": "HttpTests.cs",
+      "sha256": "1C4B22059B5E406F05ACD7684FA394656281F1263B507DB6856101195FB511AF"
+    },
+    {
+      "nome": "PokeVault.Testes.csproj",
+      "sha256": "3571A1320BF4AF2923DF9B944B51181D34300F138B74B492F32B1E7EA034FA3B"
+    },
+    {
+      "nome": "Program.cs",
+      "sha256": "B312021006422C581FB83CE927F2169B31FDCAD10C1D1C968631C09692DA8FA3"
+    },
+    {
+      "nome": "Verificar-Integridade.sql",
+      "sha256": "537AC100DA393F35FD13D71523D74B5313D349626655A22AD8227CE9441A869A"
+    },
+    {
+      "nome": "VersionTests.cs",
+      "sha256": "A8E6B432911AC519DDDD0CC145D21BA1791652B5BB49D0EDB52B953D5CB42F86"
+    }
+  ]
+}

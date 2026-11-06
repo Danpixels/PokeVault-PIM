@@ -1,0 +1,160 @@
+{
+  "dataUtc": "2026-10-21T17:57:35.7915789Z",
+  "dll": "9B717A9B37A733A9213284C93A6DE2FC574CB66D383281AF1C5B20B7175A5EDC",
+  "snapshotTestes": "9B717A9B37A733A9213284C93A6DE2FC574CB66D383281AF1C5B20B7175A5EDC",
+  "mesmoBinario": true,
+  "fontes": [
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Application\\GestaoService.cs",
+      "Hash": "DFC2DE719C4FB9DDB81BC5033F95ADD3770511CC0F5611592C955D577CF0988C"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Application\\LojaService.cs",
+      "Hash": "3CCFB6F6ED98255A68A43BFDB3D869270F6DBB6FD2CB1872C36D8D58F930B7E1"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Domain\\GestaoModels.cs",
+      "Hash": "70164CBD060FA40AED9ECAEAC13D148C27DBB1FF84E9B5F69F99773B01185E60"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Domain\\Models.cs",
+      "Hash": "87DF3622080D033ED512BE14BC13EC6CDDC3AA5CF4A24B3284B7589CB029A542"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Infrastructure\\AntiforgeryProblemFilter.cs",
+      "Hash": "0DAA341631D4B96B24089F297990F2D580A5E5B598033002B02F0B9D5A4CBFAE"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Infrastructure\\Bootstrap.cs",
+      "Hash": "31A2B3AE1436ACA257AB56E0AB029D8F13F6B24FC488C8D1FED58A47EBEAB3D3"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Infrastructure\\Sessao.cs",
+      "Hash": "6FE88802AC21504E34B5259867A099F4785ADB12FC69AAE63E97BF84309C4124"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Infrastructure\\SqlGestaoRepository.cs",
+      "Hash": "3D1C870F5BA4B035D615E5353E468F18A70027896E933EA44D82A392CFA99324"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Infrastructure\\SqlLojaRepository.cs",
+      "Hash": "551AE6EDEB4B7F2C966A744456F0A0D7647B30942A2226FBED9FEC1BC9B359F8"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Controllers\\GestaoApiController.cs",
+      "Hash": "DDC224E159BD8AF2C467C971510497790CB642AD1369E767FAC07722DB9148AC"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Controllers\\GestaoController.cs",
+      "Hash": "75DE332F8EC4D4ECCB38AB393A3836C1549F66A7CD7D7C3597D047860169CC5F"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Controllers\\LojaApiController.cs",
+      "Hash": "292F58C500D750D6A47328442A7F10550D2C69EE65B526898806F459EFD1CE5B"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Controllers\\LojaController.cs",
+      "Hash": "64F2BC9A9DDE9A09347C6CB06874592285E0B12246E336A4553DFF24A07CC362"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Models\\ErrorViewModel.cs",
+      "Hash": "5EC8AE445D68FEA9A54E9BA58441AE8C7B8FED4F6290C9CB995A29625653460A"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Models\\FluxoModels.cs",
+      "Hash": "8E8F0A397DCF4802B11F01EFBFCB339FA862F280658207E378DAB02A8B7F616E"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Models\\GestaoModels.cs",
+      "Hash": "3882B908075DA0736C0CDF5743CB416A73366F7AAE56D587E97BAA3FF9401187"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\_ViewImports.cshtml",
+      "Hash": "63D8A59465FFA2A7C7B8BF84321A9584701FE8A261D6233BDBADF5D24122086C"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\_ViewStart.cshtml",
+      "Hash": "47E02B4DA20D198892B7B1B00B12944068797C438EF2E82D20FF70B4D56BAD39"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Gestao\\Ajustar.cshtml",
+      "Hash": "24B6C044BA79674D0EE64B909AC8E070C9A57CF469806C0DE119D4DFAC2F837D"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Gestao\\Cartas.cshtml",
+      "Hash": "9D626CC02D22EF91B91A6B357CA3D486E356A76C521D6D58E01B75E34A4604D5"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Gestao\\NovaCarta.cshtml",
+      "Hash": "EBA9B9C28FA4503968667E302318A58EE6317363FAADF71829FDC9C0D59A49BA"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Gestao\\Saldo.cshtml",
+      "Hash": "E761FD2AEF1BB0A0D10B7AC5997F26948543434BD9F75A92A6523652DA0C0A99"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Gestao\\UsuarioNovo.cshtml",
+      "Hash": "0A3D87F23BA2619121381AFB39B764788ED7C5C4B460AA1A78D4A3D23795F203"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Gestao\\Usuarios.cshtml",
+      "Hash": "D637008215E7E5DC1033FB76484C3B2668B2B0E377775A0B67A61B97C597EE80"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Loja\\Carrinho.cshtml",
+      "Hash": "8D4642B244685366A2DACFB0FED70C9CFE1738B763CDBE0955E3286AF0B9F963"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Loja\\Catalogo.cshtml",
+      "Hash": "4756F2F2EFA8CB6DC4E200A2D16D8C76391018D81A1BA96942878C8D452D9DCE"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Loja\\Compra.cshtml",
+      "Hash": "BD6E485D2EC2E2A764875658169017AB10966F35F60F4A50C8B039B73D6EBED1"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Loja\\Confirmacao.cshtml",
+      "Hash": "697021420F956B4D509FC85771D23C65B016604EA54C52BD5CB9E6E13D8AEB38"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Loja\\Historico.cshtml",
+      "Hash": "88CF6DF3065B38262F10FA1BBADA48BF42CD031A4167821463913D1EF69E56B1"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Loja\\Login.cshtml",
+      "Hash": "8946470E3ECCCA6062080FDE9AB607FE9B9B5AEDCECE7E832DC8D6403C8EA133"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Shared\\_Layout.cshtml",
+      "Hash": "7A72F4A3B0DCE01F87B0FF09813C7845F41D5A48319A82373564BF9BE3C608D3"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Shared\\_Layout.cshtml.css",
+      "Hash": "A50AD1AF0709E4A2CCA3FED34A257FAD983E2D8A8C344F2B417D6B0C8BA27532"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "Hash": "574F31F5A9A43CD72F4E0BC199FFFDB27204B0D0B537AC9CD5FAD49D8203DFD5"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Views\\Shared\\Error.cshtml",
+      "Hash": "5DBF98B6B9394AD78206EDCE40CAB1D7A238AA69CFEFA41BAB0EBC6AA22488AA"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\Program.cs",
+      "Hash": "1A9F560C8E74F485B1D1E66E42E88EC33D4A4EFCE315CE23FDEAB14D30A718AB"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\PokeVault.Web.csproj",
+      "Hash": "83E7DCCB371E96DA36EC07C46A863D218CC36852ACB9FE2C84C07EE1FBDBC569"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\src\\PokeVault.Web\\wwwroot\\css\\site.css",
+      "Hash": "2992D6F6FA128F989C881BD443338C8F40517FC46939DE2960FB0E7D0736D424"
+    },
+    {
+      "Path": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM\\dev.ps1",
+      "Hash": "422C28989C1C06A31FAFBB1DDA0FDB84538C2431D7D3B2E341ED8953A64B117E"
+    }
+  ]
+}

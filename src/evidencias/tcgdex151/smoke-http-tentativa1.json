@@ -1,0 +1,33 @@
+{
+  "dataUtc": "2026-11-03T22:48:27.5431151Z",
+  "checks": [
+    {
+      "verificacao": "Schema10 pronto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Biblioteca207 e página24",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Filtro número/raridade",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Referência detalhada pt com imagem local",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Imagem cache HTTP200 webp",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Detalhe mostra Cardmarket/EUR TCGplayer/USD e variante real",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Datas, ausente e sem conversão BRL explícitos",
+      "aprovada": false
+    }
+  ]
+}

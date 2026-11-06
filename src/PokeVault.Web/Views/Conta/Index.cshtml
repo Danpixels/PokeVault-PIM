@@ -1,0 +1,8 @@
+@model AlterarSenhaModel
+@{ViewData["Title"]="Minha conta";}
+<section class="panel narrow"><div class="eyebrow">SUA CONTA</div><h1>Minha conta</h1><p>@User.Identity?.Name</p><h2>Alterar senha</h2>
+<form action="/conta/senha" method="post">@Html.AntiForgeryToken()<div asp-validation-summary="All" class="validation" role="alert"></div>
+<label for="SenhaAtual">Senha atual</label><div class="password-field"><input id="SenhaAtual" name="SenhaAtual" type="password" autocomplete="current-password" maxlength="256" required/><partial name="_PasswordToggle" model='@("SenhaAtual")'/></div>
+<label for="NovaSenha">Nova senha</label><div class="password-field"><input id="NovaSenha" name="NovaSenha" type="password" autocomplete="new-password" minlength="6" maxlength="128" required/><partial name="_PasswordToggle" model='@("NovaSenha")'/></div>
+<label for="Confirmacao">Confirmar nova senha</label><div class="password-field"><input id="Confirmacao" name="Confirmacao" type="password" autocomplete="new-password" minlength="6" maxlength="128" required/><partial name="_PasswordToggle" model='@("Confirmacao")'/></div>
+<p><small>Use pelo menos 6 caracteres. Ao salvar, outras sessões desta conta precisarão entrar novamente.</small></p><button type="submit">Salvar nova senha</button></form></section>

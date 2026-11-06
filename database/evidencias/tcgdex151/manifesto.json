@@ -1,0 +1,41 @@
+{
+  "RegistradoEmUtc": "2026-11-03T22:40:21.6726606Z",
+  "Arquivos": [
+    {
+      "Arquivo": "database/019_tcgdex151_schema.sql",
+      "SHA256": "323730C2F7EE7F19F10EA4113F1F6218FA8CA107FEF5EFD9BCC2E39E44EB7AFF"
+    },
+    {
+      "Arquivo": "database/020_tcgdex151_importacao.sql",
+      "SHA256": "7B9CDE7D5A04CD167739A4F0542B98C0564BBD846872E55354D3496719D08189"
+    },
+    {
+      "Arquivo": "database/021_tcgdex151_ofertas.sql",
+      "SHA256": "0CC2DBF18F713687C389C72844ED66DAF9E898A91DA5FA17172C221603647B0F"
+    },
+    {
+      "Arquivo": "database/022_tcgdex151_verificar.sql",
+      "SHA256": "128A3577A37A09D991DB7776925E727CE0CD93C787A912411C402E92272BE19E"
+    },
+    {
+      "Arquivo": "database/023_tcgdex151_preservacao.sql",
+      "SHA256": "AD8CBFBF3AC5FEE591AF863C40015D43ABD4C84237338934BF723ADA300A1E4B"
+    },
+    {
+      "Arquivo": "database/Preparar.ps1",
+      "SHA256": "38FDE8B3F6A2D4EB1EEA6F6FEECA13A916A8BF8065EE3869B1F46E163BFE986A"
+    },
+    {
+      "Arquivo": "database/README.md",
+      "SHA256": "E765181C9286FBF827B58CCC67B8C5565D7F0A4860A52DCB5B333357DBAB947D"
+    },
+    {
+      "Arquivo": "docs/contrato-tcgdex151.md",
+      "SHA256": "26AB1752B476F4F74E3D40AD17683144A8444FD237C9FA07492CCEC8BA54B6EA"
+    },
+    {
+      "Arquivo": "docs/entrega-tcgdex151-banco.md",
+      "SHA256": "61A50E0CCD852AD1574F0AF11BF61076523069C45448C8718C64281CAF150504"
+    }
+  ]
+}

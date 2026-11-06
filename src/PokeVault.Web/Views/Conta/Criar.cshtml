@@ -1,0 +1,8 @@
+@model CriarContaModel
+@{ViewData["Title"]="Criar conta";}
+<section class="panel narrow"><div class="eyebrow">SUA CONTA</div><h1>Criar conta</h1>
+<form action="/criar-conta" method="post">@Html.AntiForgeryToken()<div asp-validation-summary="All" class="validation" role="alert"></div>
+<label asp-for="Email">Email<input asp-for="Email" type="email" autocomplete="username" maxlength="254" required/></label>
+<label for="Senha">Senha</label><div class="password-field"><input id="Senha" name="Senha" type="password" autocomplete="new-password" minlength="6" maxlength="128" required/><partial name="_PasswordToggle" model='@("Senha")'/></div>
+<p><small>Use uma senha com pelo menos 6 caracteres. Sua conta começa com saldo fictício zero.</small></p>
+<button type="submit">Criar conta</button></form><p>Já tem uma conta? <a href="/entrar">Entrar</a></p></section>

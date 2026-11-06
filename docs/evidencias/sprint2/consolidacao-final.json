@@ -1,0 +1,273 @@
+{
+  "cenariosDistintos": 45,
+  "dataUtc": "2026-10-21T18:04:30.6186685Z",
+  "limite": "Consolidacao dos JSONs reais; nao equivale a executar integralmente os36 casos conceituais ou validar sistema inteiro.",
+  "rodadas": [
+    {
+      "arquivo": "rodada01-resultados.json",
+      "executados": 32,
+      "reprovados": 0,
+      "dataUtc": "2026-10-21T17:53:19.148747Z",
+      "aprovados": 32
+    },
+    {
+      "arquivo": "rodada02-resultados.json",
+      "executados": 40,
+      "reprovados": 0,
+      "dataUtc": "2026-10-21T17:55:08.5850304Z",
+      "aprovados": 40
+    },
+    {
+      "arquivo": "rodada03-resultados.json",
+      "executados": 44,
+      "reprovados": 0,
+      "dataUtc": "2026-10-21T17:57:42.8695851Z",
+      "aprovados": 44
+    },
+    {
+      "arquivo": "rodada04-resultados.json",
+      "executados": 45,
+      "reprovados": 1,
+      "dataUtc": "2026-10-21T17:59:04.5394641Z",
+      "aprovados": 44
+    },
+    {
+      "arquivo": "rodada05-reteste-http18.json",
+      "executados": 1,
+      "reprovados": 0,
+      "dataUtc": "2026-10-21T17:59:53.3169397Z",
+      "aprovados": 1
+    }
+  ],
+  "ultimoEstado": [
+    {
+      "status": "aprovado",
+      "id": "HTTP-01/T01,T09",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-02/T03,T05",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-03/T06",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-04/T04",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-05/T36",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-06/T02,T36",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-07/T26",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-08/T07",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-09/T05",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-10/T11,T17,T24,T28",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-11/T27",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-12/S2-edicao-desatualizada",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-13/T01",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-14/S2-valores-catalogo",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-15/S2-ativacao-catalogo",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-16/S2-auditoria",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-17/S2-auditoria-sem-delta",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "HTTP-18/S2-identidade-perfil",
+      "evidencia": "rodada05-reteste-http18.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "MVC-01/S2-telas",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "MVC-02/S2-saldo-conflito",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "MVC-03/S2-cadastro-cliente",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "MVC-04/S2-cadastro-atendente",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "MVC-05/S2-catalogo",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "MVC-06/S2-saldo",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-01/T10,T08",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-02/T13,T14,T15",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-03/T27",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-04/T28,T29,T19",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-05/T21",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-06/T22",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-07/T30",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-08/T20",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-09/T25,T35",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-10/T16",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-11/T23-compra",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-12/T23-estorno",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-13/S2-saldo",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-14/S2-saldo-venda",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-15/S2-estoque-venda",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-16/S2-ajustes-concorrentes",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-17/S2-runtime",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-18/T04-limpeza",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-19/S2-auditoria-sem-delta",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-20/S2-rollback-auditoria",
+      "evidencia": "rodada04-resultados.json"
+    },
+    {
+      "status": "aprovado",
+      "id": "SQL-21/S2-limpeza-final",
+      "evidencia": "rodada04-resultados.json"
+    }
+  ],
+  "aprovadosUltimoEstado": 45,
+  "execucoesHistoricas": 162,
+  "baseSql": "PokeVaultTests",
+  "reprovacoesHistoricasDeRoteiro": 1
+}

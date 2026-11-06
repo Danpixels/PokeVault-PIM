@@ -1,0 +1,109 @@
+{
+  "dataUtc": "2026-11-04T00:30:46.9622266Z",
+  "fuso": "America/Sao_Paulo",
+  "baseSql": "PokeVaultTests",
+  "instancia": ".\\SQLEXPRESS",
+  "rodada": "s216356c7691",
+  "executor": "Codex com apoio de IA",
+  "resultados": [
+    {
+      "id": "CONTA-01",
+      "status": "aprovado",
+      "esperado": "Cadastro p\u00FAblico com email/senha/olho; Minha conta exige login",
+      "observado": {
+        "cadastro": 200,
+        "contaProtegida": 302
+      }
+    },
+    {
+      "id": "CONTA-02",
+      "status": "aprovado",
+      "esperado": "Cadastro sem CSRF e entradas inv\u00E1lidas n\u00E3o criam usu\u00E1rios nem exibem senha",
+      "observado": {
+        "csrf": 400,
+        "validacao": 200,
+        "usuariosCriados": 0
+      }
+    },
+    {
+      "id": "CONTA-03",
+      "status": "aprovado",
+      "esperado": "Cadastro sempre CLIENTE com saldo0/carrinho vazio; inje\u00E7\u00E3o de perfil/ID/saldo ignorada",
+      "observado": {
+        "id": 222,
+        "perfil": "CLIENTE",
+        "saldo": 0,
+        "carrinho": 0,
+        "hashVerificado": true
+      }
+    },
+    {
+      "id": "CONTA-04",
+      "status": "aprovado",
+      "esperado": "Email normalizado duplicado n\u00E3o cria segunda conta",
+      "observado": {
+        "duplicidade": 409,
+        "contas": 1
+      }
+    },
+    {
+      "id": "CONTA-05",
+      "status": "aprovado",
+      "esperado": "Senha atual errada, confirma\u00E7\u00E3o divergente e senha curta n\u00E3o alteram hash",
+      "observado": {
+        "senhaErrada": 400,
+        "confirmacaoRecusada": true,
+        "senhaCurtaRecusada": true,
+        "hashPreservado": true
+      }
+    },
+    {
+      "id": "CONTA-06",
+      "status": "aprovado",
+      "esperado": "Troca sem CSRF recusada; formul\u00E1rio Minha conta com tr\u00EAs controles de olho",
+      "observado": {
+        "csrf": 400,
+        "campos": 3
+      }
+    },
+    {
+      "id": "CONTA-07",
+      "status": "aprovado",
+      "esperado": "Troca pr\u00F3pria ignora ID de outro usu\u00E1rio e preserva papel/saldo; outras sess\u00F5es perdem acesso",
+      "observado": {
+        "troca": 302,
+        "outraSessao": 401,
+        "contaAlheiaPreservada": true
+      }
+    },
+    {
+      "id": "CONTA-08",
+      "status": "aprovado",
+      "esperado": "Login antigo falha e senha nova autentica ap\u00F3s sair",
+      "observado": {
+        "antiga": 401,
+        "nova": 200,
+        "id": 222
+      }
+    },
+    {
+      "id": "CONTA-09",
+      "status": "aprovado",
+      "esperado": "Administrador e atendente tamb\u00E9m alteram a pr\u00F3pria senha",
+      "observado": {
+        "admin": 302,
+        "atendente": 302,
+        "perfisPreservados": true
+      }
+    },
+    {
+      "id": "CONTA-10",
+      "status": "aprovado",
+      "esperado": "Hash esperado impede sobrescrita concorrente de senha",
+      "observado": {
+        "sucessos": 1,
+        "conflitos": 1
+      }
+    }
+  ]
+}

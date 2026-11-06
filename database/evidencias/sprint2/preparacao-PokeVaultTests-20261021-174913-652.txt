@@ -1,0 +1,109 @@
+Servidor Versao
+-------- ------
+DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7
+name
+----
+PokeVault
+SCRIPT=000_preparar_base.sql BANCO=PokeVaultTests UTC=2026-10-21T17:49:13.7549382Z
+Contexto do banco de dados alterado para 'master'.
+Banco VersaoMotor
+----- -----------
+PokeVaultTests 17.0.1000.7
+SCRIPT=001_schema.sql BANCO=PokeVaultTests UTC=2026-10-21T17:49:13.9882374Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+SCRIPT=002_tipos.sql BANCO=PokeVaultTests UTC=2026-10-21T17:49:14.0733360Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+SCRIPT=003_procedures_compra.sql BANCO=PokeVaultTests UTC=2026-10-21T17:49:14.1713335Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+SCRIPT=004_procedures_operacao.sql BANCO=PokeVaultTests UTC=2026-10-21T17:49:14.3251199Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+SCRIPT=005_seed.sql BANCO=PokeVaultTests UTC=2026-10-21T17:49:14.3902993Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+CartaId Numero Nome Conservacao Preco QuantidadeEstoque
+------- ------ ---- ----------- ----- -----------------
+1 025 Pikachu NEAR_MINT 30.00 2
+2 025 Pikachu SLIGHTLY_PLAYED 20.00 3
+3 004 Charmander NEAR_MINT 15.50 1
+SCRIPT=006_permissoes.sql BANCO=PokeVaultTests UTC=2026-10-21T17:49:14.5101942Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+SCRIPT=008_sprint2_versoes.sql BANCO=PokeVaultTests UTC=2026-10-21T17:49:14.5677834Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+SCRIPT=009_sprint2_ajustes.sql BANCO=PokeVaultTests UTC=2026-10-21T17:49:14.7164023Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+SCRIPT=010_sprint2_runtime.sql BANCO=PokeVaultTests UTC=2026-10-21T17:49:14.8406613Z
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+VERIFICACAO=007_verificar.sql BANCO=PokeVaultTests
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+Banco Servidor VersaoMotor Edicao
+----- -------- ----------- ------
+PokeVaultTests DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7 Express Edition (64-bit)
+Versao AplicadaEmUtc
+------ -------------
+1 2026-10-21 17:49:14.066
+2 2026-10-21 17:49:14.701
+3 2026-10-21 17:49:14.828
+name
+----
+usp_AjustarCarta
+usp_AjustarCartaVersionado
+usp_CadastrarCarta
+usp_CancelarCompra
+usp_ConcluirCompra
+usp_CriarUsuario
+usp_DefinirItemCarrinho
+usp_DefinirSaldo
+usp_DefinirSaldoVersionado
+usp_DefinirUsuarioAtivo
+UsuarioId Saldo SaldoPelosMovimentos
+--------- ----- --------------------
+CartaId QuantidadeEstoque EstoquePelosMovimentos
+------- ----------------- ----------------------
+CompraId Total TotalItens
+-------- ----- ----------
+CompraId Status Tipo ValorDelta
+-------- ------ ---- ----------
+CompraId Status ValorDelta
+-------- ------ ----------
+CompraId CartaId Quantidade QuantidadeDelta
+-------- ------- ---------- ---------------
+CompraId CartaId Status QuantidadeDelta
+-------- ------- ------ ---------------
+UsuarioId Codigo Carteira CarrinhoId
+--------- ------ -------- ----------
+VERIFICACAO=011_sprint2_verificar.sql BANCO=PokeVaultTests
+Contexto do banco de dados alterado para 'PokeVaultTests'.
+Banco Servidor VersaoMotor
+----- -------- -----------
+PokeVaultTests DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7
+Versao AplicadaEmUtc
+------ -------------
+1 2026-10-21 17:49:14.066
+2 2026-10-21 17:49:14.701
+3 2026-10-21 17:49:14.828
+Tabela Coluna Tipo max_length is_nullable
+------ ------ ---- ---------- -----------
+SaldoCliente Versao timestamp 8 0
+Carta Versao timestamp 8 0
+ProcedureNome uses_ansi_nulls uses_quoted_identifier
+------------- --------------- ----------------------
+usp_DefinirSaldoVersionado 1 1
+usp_AjustarCartaVersionado 1 1
+PrincipalVerificado CartasLidas
+------------------- -----------
+PokeVaultRuntimeVerificacao 3
+Verificacao ErroEsperado
+----------- ------------
+UPDATE_DIRETO_NEGADO 229
+Verificacao ErroEsperado
+----------- ------------
+INSERT_DIRETO_NEGADO 229
+Verificacao ErroEsperado
+----------- ------------
+DELETE_DIRETO_NEGADO 229
+Verificacao ErroEsperado
+----------- ------------
+AJUSTE_LEGADO_NEGADO 229
+Verificacao ErroEsperado
+----------- ------------
+EXECUTE_VERSIONADO_PERMITIDO_AUTORIZACAO_RECUSADA 51000
+PREPARACAO_CONCLUIDA BANCO=PokeVaultTests UTC=2026-10-21T17:49:15.2260527Z

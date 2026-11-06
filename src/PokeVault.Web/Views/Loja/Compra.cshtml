@@ -1,0 +1,14 @@
+@model PokeVault.Web.Domain.CompraDetalhe
+@using PokeVault.Web.Domain
+@using System.Globalization
+@{ ViewData["Title"] = $"Compra #{Model.Compra.CompraId}"; var moeda=CultureInfo.GetCultureInfo("pt-BR"); }
+<div class="eyebrow">COMPROVANTE DA DEMONSTRAÇÃO</div><h1>Compra #@Model.Compra.CompraId</h1><p><span class="tag">@Model.Compra.Status</span> · @Model.Compra.CriadaEmUtc.ToString("dd/MM/yyyy HH:mm") UTC</p>
+<div class="panel"><ul>@foreach(var item in Model.Itens) { <li><strong>@item.Nome</strong> · @Variantes.Estado(item.Conservacao) · @Variantes.Idioma(item.Idioma) · @Variantes.Acabamento(item.Acabamento) · @item.Quantidade × @item.PrecoUnitario.ToString("C",moeda)</li> }</ul><p class="price">@Model.Compra.Total.ToString("C",moeda)</p><p>Valor original pago com saldo fictício.</p>
+@if(Model.MotivoCancelamento is not null) { <p>Motivo do cancelamento: @Model.MotivoCancelamento</p> }
+</div>
+@if(User.IsInRole("ADMINISTRADOR") && Model.Compra.Status == "CONCLUIDO")
+{
+<section class="panel"><h2>Cancelar integralmente</h2><p>Devolve o valor original ao cliente e as quantidades ao estoque uma única vez.</p>
+<form action="/compras/@Model.Compra.CompraId/cancelamento" method="post">@Html.AntiForgeryToken()<label>Motivo<textarea name="motivo" maxlength="300" required rows="3"></textarea></label><button type="submit" class="danger">Cancelar compra e estornar</button></form></section>
+}
+<p><a href="/compras">← Voltar às compras</a></p>

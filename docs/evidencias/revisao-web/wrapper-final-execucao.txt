@@ -1,0 +1,64 @@
+  Determinando os projetos a serem restaurados...
+C:\Users\Intel\Documents\ChatGPT\PIM\tests\Sprint2\PokeVault.Testes.csproj : warning NU1900: Ocorreu um erro ao obter os dados de vulnerabilidade do pacote: Não é possível carregar o índice de serviço para a origem https://api.nuget.org/v3/index.json.
+  Todos os projetos estão atualizados para restauração.
+C:\Users\Intel\Documents\ChatGPT\PIM\tests\Sprint2\PokeVault.Testes.csproj : warning NU1900: Ocorreu um erro ao obter os dados de vulnerabilidade do pacote: Não é possível carregar o índice de serviço para a origem https://api.nuget.org/v3/index.json.
+  PokeVault.Testes -> C:\Users\Intel\Documents\ChatGPT\PIM\tests\Sprint2\bin\Debug\net10.0\PokeVault.Testes.dll
+
+Compilação com êxito.
+
+C:\Users\Intel\Documents\ChatGPT\PIM\tests\Sprint2\PokeVault.Testes.csproj : warning NU1900: Ocorreu um erro ao obter os dados de vulnerabilidade do pacote: Não é possível carregar o índice de serviço para a origem https://api.nuget.org/v3/index.json.
+    1 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:00.71
+SQL-01/T10,T08: aprovado
+SQL-02/T13,T14,T15: aprovado
+SQL-03/T27: aprovado
+SQL-04/T28,T29,T19: aprovado
+SQL-05/T21: aprovado
+SQL-06/T22: aprovado
+SQL-07/T30: aprovado
+SQL-08/T20: aprovado
+SQL-09/T25,T35: aprovado
+SQL-10/T16: aprovado
+SQL-11/T23-compra: aprovado
+SQL-12/T23-estorno: aprovado
+SQL-13/S2-saldo: aprovado
+SQL-14/S2-saldo-venda: aprovado
+SQL-15/S2-estoque-venda: aprovado
+SQL-16/S2-ajustes-concorrentes: aprovado
+SQL-17/S2-runtime: aprovado
+SQL-18/T04-limpeza: aprovado
+SQL-19/S2-auditoria-sem-delta: aprovado
+SQL-20/S2-rollback-auditoria: aprovado
+SQL-21/S2-limpeza-final: aprovado
+HTTP-01/T01,T09: aprovado
+HTTP-02/T03,T05: aprovado
+HTTP-03/T06: aprovado
+HTTP-04/T04: aprovado
+HTTP-05/T36: aprovado
+HTTP-06/T02,T36: aprovado
+HTTP-07/T26: aprovado
+HTTP-08/T07: aprovado
+HTTP-09/T05: aprovado
+HTTP-10/T11,T17,T24,T28: aprovado
+HTTP-11/T27: aprovado
+HTTP-12/S2-edicao-desatualizada: aprovado
+MVC-01/S2-telas: aprovado
+MVC-02/S2-saldo-conflito: aprovado
+HTTP-14/S2-valores-catalogo: aprovado
+HTTP-15/S2-ativacao-catalogo: aprovado
+HTTP-16/S2-auditoria: aprovado
+MVC-03/S2-cadastro-cliente: aprovado
+MVC-04/S2-cadastro-atendente: aprovado
+MVC-05/S2-catalogo: aprovado
+MVC-06/S2-saldo: aprovado
+HTTP-18/S2-identidade-perfil: aprovado
+HTTP-17/S2-auditoria-sem-delta: aprovado
+HTTP-13/T01: aprovado
+Evidencia salva: C:\Users\Intel\Documents\ChatGPT\PIM\docs\evidencias\revisao-web\wrapper-final\resultados.json; registros=45
+
+aprovados baseSql
+--------- -------
+       45 PokeVaultTests
+

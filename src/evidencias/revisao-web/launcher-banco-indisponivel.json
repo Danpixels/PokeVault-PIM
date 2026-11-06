@@ -1,0 +1,6 @@
+{
+  "cenario": "Banco inacessivel por override somente do processo; servidor real intocado",
+  "exitCode": 1,
+  "portaAuxiliar": 5199,
+  "portaAindaAtiva": false
+}

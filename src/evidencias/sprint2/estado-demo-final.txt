@@ -1,0 +1,13 @@
+Contexto do banco de dados alterado para 'PokeVault'.
+DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7
+1
+2
+3
+4
+1
+cliente@pokevault.local 100.00
+cliente2@pokevault.local 10.00
+025 NEAR_MINT 30.00 2 1
+025 SLIGHTLY_PLAYED 20.00 3 1
+004 NEAR_MINT 15.50 1 1
+6 6

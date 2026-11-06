@@ -1,0 +1,38 @@
+﻿Contexto do banco de dados alterado para 'PokeVault'.
+Banco Servidor VersaoMotor Edicao
+----- -------- ----------- ------
+PokeVault DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7 Express Edition (64-bit)
+Versao AplicadaEmUtc
+------ -------------
+1 2026-10-21 17:17:13.599
+2 2026-10-21 17:49:06.450
+3 2026-10-21 17:49:06.514
+4 2026-10-21 17:54:37.965
+name
+----
+usp_AjustarCarta
+usp_AjustarCartaVersionado
+usp_CadastrarCarta
+usp_CancelarCompra
+usp_ConcluirCompra
+usp_CriarUsuario
+usp_DefinirItemCarrinho
+usp_DefinirSaldo
+usp_DefinirSaldoVersionado
+usp_DefinirUsuarioAtivo
+UsuarioId Saldo SaldoPelosMovimentos
+--------- ----- --------------------
+CartaId QuantidadeEstoque EstoquePelosMovimentos
+------- ----------------- ----------------------
+CompraId Total TotalItens
+-------- ----- ----------
+CompraId Status Tipo ValorDelta
+-------- ------ ---- ----------
+CompraId Status ValorDelta
+-------- ------ ----------
+CompraId CartaId Quantidade QuantidadeDelta
+-------- ------- ---------- ---------------
+CompraId CartaId Status QuantidadeDelta
+-------- ------- ------ ---------------
+UsuarioId Codigo Carteira CarrinhoId
+--------- ------ -------- ----------

@@ -1,0 +1,312 @@
+{
+  "dataUtc": "2026-11-03T22:49:04.2873905Z",
+  "baseSql": "PokeVaultTests",
+  "rodada": "tcg384ade8b6",
+  "resultados": [
+    {
+      "id": "FX-01/alvo-fixo",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:37.5418123Z",
+      "fimUtc": "2026-11-03T22:48:37.5562835Z",
+      "esperado": "ID de outra colecao recusado antes de rede",
+      "observado": {
+        "requisicoes": 0,
+        "recusa": 400
+      }
+    },
+    {
+      "id": "FX-02/indisponivel-sem-cache",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:37.5580314Z",
+      "fimUtc": "2026-11-03T22:48:37.5739637Z",
+      "esperado": "Rede indisponivel sem cache retorna ausencia explicita",
+      "observado": {
+        "ausente": true,
+        "requisicoes": 2
+      }
+    },
+    {
+      "id": "FX-03/timeout-sem-cache",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:37.5739835Z",
+      "fimUtc": "2026-11-03T22:48:37.5759042Z",
+      "esperado": "Timeout controlado sem cache nao inventa referencia/preco",
+      "observado": {
+        "ausente": true,
+        "requisicoes": 2
+      }
+    },
+    {
+      "id": "FX-04/fallback-en-imagem-ausente",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:37.575917Z",
+      "fimUtc": "2026-11-03T22:48:37.6150229Z",
+      "esperado": "PT404/EN200 identifica ingles; erro de imagem preserva metadados",
+      "observado": {
+        "idioma": "en",
+        "imagemLocal": null,
+        "requests": [
+          "https://api.tcgdex.net/v2/pt/cards/sv03.5-025",
+          "https://api.tcgdex.net/v2/en/cards/sv03.5-025",
+          "https://assets.tcgdex.net/en/sv/sv03.5/025/low.webp"
+        ],
+        "fonte": "https://api.tcgdex.net/v2/en/cards/sv03.5-025"
+      }
+    },
+    {
+      "id": "FX-05/cache-preservado",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:37.6150398Z",
+      "fimUtc": "2026-11-03T22:48:37.6312549Z",
+      "esperado": "Falha apos sucesso conserva JSON/cache e retorna Offline/Cache",
+      "observado": {
+        "arquivos": 1,
+        "cache": true,
+        "offline": true,
+        "jsonPreservado": true
+      }
+    },
+    {
+      "id": "FX-06/precos-ausentes",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:37.6312735Z",
+      "fimUtc": "2026-11-03T22:48:37.6364999Z",
+      "esperado": "Pricing ausente resulta lista vazia, nao preco zero",
+      "observado": {
+        "precos": 0,
+        "significado": "indisponivel; nenhum zero sintetico"
+      }
+    },
+    {
+      "id": "FX-07/variante-dinamica-nulo",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:37.6365145Z",
+      "fimUtc": "2026-11-03T22:48:37.6384464Z",
+      "esperado": "Variante nova USD preserva nome,valor9.99 e ausencia null",
+      "observado": {
+        "linhas": [
+          {
+            "Fornecedor": "TCGplayer",
+            "Moeda": "USD",
+            "Variante": "Refer\u00EAncia principal / galaxy-new-holo",
+            "Campo": "marketPrice",
+            "Valor": null,
+            "Atualizado": "2026-11-03T00:00:00Z"
+          },
+          {
+            "Fornecedor": "TCGplayer",
+            "Moeda": "USD",
+            "Variante": "Refer\u00EAncia principal / galaxy-new-holo",
+            "Campo": "lowPrice",
+            "Valor": 9.99,
+            "Atualizado": "2026-11-03T00:00:00Z"
+          }
+        ],
+        "tipo": "fixture sintetica, nao preco atual"
+      }
+    },
+    {
+      "id": "FX-08/precos-reais-gravados",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:37.6384657Z",
+      "fimUtc": "2026-11-03T22:48:37.6426961Z",
+      "esperado": "Amostra real gravada mantem EUR/USD,origem de atualizacao e reverse-holofoil",
+      "observado": {
+        "linhas": 102,
+        "moedas": [
+          "EUR",
+          "USD"
+        ],
+        "reverseHolofoil": true,
+        "fonte": "resposta real gravada por Banco; nao importacao atual"
+      }
+    },
+    {
+      "id": "FX-09/importador-fallback-207",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:37.6430725Z",
+      "fimUtc": "2026-11-03T22:48:37.8621966Z",
+      "esperado": "Importer real com pt404/en200 persiste207 detalhes em manifestoen, sem servidor/SQL de fixture",
+      "observado": {
+        "status": {
+          "EmExecucao": false,
+          "ImportacaoId": 1,
+          "Processados": 207,
+          "Importados": 207,
+          "Ausentes": 0,
+          "ImagensLocais": 0,
+          "FallbackIngles": 207,
+          "ModoOffline": false,
+          "Mensagem": "207 refer\u00EAncias processadas. Pre\u00E7os externos s\u00E3o informativos; estoque e pre\u00E7oBRL preservados.",
+          "InicioUtc": "2026-11-03T22:48:37.6655511Z",
+          "FimUtc": "2026-11-03T22:48:37.8498158Z"
+        },
+        "detalhesGravados": 207,
+        "idiomas": [
+          "en"
+        ],
+        "manifestos": [
+          "pt",
+          "en"
+        ],
+        "mismatch": 0,
+        "requisicoes": 416,
+        "tipo": "Fixture sintetica, importer real em DI de teste"
+      }
+    },
+    {
+      "id": "LIVE-01/perfis-csrf-alvo",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:38.75009Z",
+      "fimUtc": "2026-11-03T22:48:38.8256716Z",
+      "esperado": "Cliente403/anonimo401/CSRF400; alvo arbitrario rejeitado400 sem importacao",
+      "observado": {
+        "cliente": 403,
+        "anonimo": 401,
+        "csrf": 400,
+        "alvoExtra": 400
+      }
+    },
+    {
+      "id": "LIVE-02/importacao-real-preservacao",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:48:38.8257017Z",
+      "fimUtc": "2026-11-03T22:49:02.4514561Z",
+      "esperado": "Importacao real207 detalhes; zero mudanca nos12 hashes comerciais",
+      "observado": {
+        "status": {
+          "emExecucao": false,
+          "importacaoId": 1,
+          "processados": 207,
+          "importados": 207,
+          "ausentes": 0,
+          "imagensLocais": 207,
+          "fallbackIngles": 0,
+          "modoOffline": false,
+          "mensagem": "207 refer\u00EAncias processadas. Pre\u00E7os externos s\u00E3o informativos; estoque e pre\u00E7oBRL preservados.",
+          "inicioUtc": "2026-11-03T22:48:38.885463Z",
+          "fimUtc": "2026-11-03T22:49:01.9639868Z"
+        },
+        "referenciasLogicas": 207,
+        "detalhadas": 207,
+        "traducoes": 207,
+        "tabelasComerciaisIguais": 12
+      }
+    },
+    {
+      "id": "LIVE-03/repeticao-atendente",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:49:02.4516167Z",
+      "fimUtc": "2026-11-03T22:49:03.7643064Z",
+      "esperado": "Reimportacao por atendente preserva207 refs/sem duplicar dados comerciais",
+      "observado": {
+        "status": {
+          "emExecucao": false,
+          "importacaoId": 1,
+          "processados": 207,
+          "importados": 207,
+          "ausentes": 0,
+          "imagensLocais": 207,
+          "fallbackIngles": 0,
+          "modoOffline": false,
+          "mensagem": "207 refer\u00EAncias processadas. Pre\u00E7os externos s\u00E3o informativos; estoque e pre\u00E7oBRL preservados.",
+          "inicioUtc": "2026-11-03T22:49:02.4791027Z",
+          "fimUtc": "2026-11-03T22:49:03.0352889Z"
+        },
+        "linhasAntes": 207,
+        "linhasDepois": 207
+      }
+    },
+    {
+      "id": "LIVE-04/biblioteca-precos-imagens",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:49:03.7643571Z",
+      "fimUtc": "2026-11-03T22:49:04.0019687Z",
+      "esperado": "207 cards em9paginas; imagens locais HTTP e metadados de preco/origem/data medidos",
+      "observado": {
+        "referencias": 207,
+        "imagensLocais": 207,
+        "imagensAusentes": 0,
+        "cardmarket": 207,
+        "tcgplayer": 207,
+        "semPricing": 0,
+        "idiomas": {
+          "pt": 207
+        },
+        "detalheHtml": 200,
+        "limite": "HTTP/HTML; nao visual"
+      }
+    },
+    {
+      "id": "LIVE-05/fallback-imagem",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:49:04.00202Z",
+      "fimUtc": "2026-11-03T22:49:04.0124633Z",
+      "esperado": "Ausencia temporaria da imagem na copia de teste nao quebra detalhe; arquivo restaurado",
+      "observado": {
+        "http": 200,
+        "arquivosTemporariamenteRenomeados": 1,
+        "fallback": true
+      }
+    },
+    {
+      "id": "DB-01/manifesto-idempotente-escopo",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:49:04.0131033Z",
+      "fimUtc": "2026-11-03T22:49:04.0618252Z",
+      "esperado": "Mesmo manifesto/chave retorna mesma importacao; outro set recusado sem cache apagar",
+      "observado": {
+        "importacao": 2,
+        "repetida": true,
+        "referencias": 207,
+        "outroSet": 51020
+      }
+    },
+    {
+      "id": "DB-02/pricing-ausente-cache",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:49:04.0618732Z",
+      "fimUtc": "2026-11-03T22:49:04.1082803Z",
+      "esperado": "Atualizacao sem pricing preserva ultimo JSON/data/origem; lote invalido atomico",
+      "observado": {
+        "referencia": 25,
+        "idioma": "pt",
+        "pricingPreservado": true,
+        "loteInvalido": 51020,
+        "restauracao": "snapshot real anterior reaplicado no finally"
+      }
+    },
+    {
+      "id": "DB-03/vinculo-seguro-compartilhado",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:49:04.1083004Z",
+      "fimUtc": "2026-11-03T22:49:04.153082Z",
+      "esperado": "PikachuNM/SP compartilham referencia sem mudarCarta; identidade divergente recusada",
+      "observado": {
+        "cartas": [
+          1,
+          2
+        ],
+        "referencia": 25,
+        "divergente": 3,
+        "erro": 51022,
+        "camposComerciaisPreservados": true
+      }
+    },
+    {
+      "id": "LIVE-06/prefill-comercio-explicito",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:49:04.153103Z",
+      "fimUtc": "2026-11-03T22:49:04.2866322Z",
+      "esperado": "Metadados locais; camposBRL/estoque/conservacao vazios; cria somente oferta explicitada",
+      "observado": {
+        "cardId": "sv03.5-001",
+        "oferta": 190,
+        "precoBRL": 12.34,
+        "estoque": 2,
+        "criadas": 1,
+        "conservacao": "MINT"
+      }
+    }
+  ]
+}

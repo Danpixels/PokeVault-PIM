@@ -1,0 +1,11 @@
+{
+  "dataUtc": "2026-11-03T22:58:16.2773074Z",
+  "estado": "PRONTO_PARA_TESTES_FINAIS_SCHEMA10",
+  "schema": 10,
+  "dll": "D226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C",
+  "snapshot": "D226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C",
+  "caminhoSnapshot": ".local/testapp",
+  "snapshotAlternativo": ".local/testapp-tcgdex151-final",
+  "api": "/api/v1/gestao/tcgdex151",
+  "observacao": "5188 sem listener, relatórioTestes registrou processos encerrados; snapshot sincronizadoD226 sem recompilar. Retestar rótulohistórico por qualquer diferença de data e cache inválido preservado, além da regressão45. Demo18584 ativa com mesmaDLL."
+}

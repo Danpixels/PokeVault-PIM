@@ -1,0 +1,20 @@
+{
+  "dataUtc": "2026-11-03T22:08:13.4272462Z",
+  "ensaios": [
+    {
+      "observado": "Ha cenarios reprovados/bloqueados/sem status; consultar JSON preservado.",
+      "arquivoHistorico": "docs/evidencias/sprint2/rodada04-resultados.json",
+      "devePassar": false,
+      "passou": false,
+      "correto": true
+    },
+    {
+      "observado": "Cobertura incompleta: 1, minimo 45.",
+      "arquivoHistorico": "docs/evidencias/sprint2/rodada05-reteste-http18.json",
+      "devePassar": false,
+      "passou": false,
+      "correto": true
+    }
+  ],
+  "tipo": "Verificacao real do gate com resultados historicos; nao e regressao do produto atual"
+}

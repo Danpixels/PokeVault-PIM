@@ -1,0 +1,114 @@
+{
+  "dataUtc": "2026-11-03T23:57:45.5642519Z",
+  "fuso": "America/Sao_Paulo",
+  "baseSql": "PokeVaultTests",
+  "instancia": ".\\SQLEXPRESS",
+  "rodada": "s21fc17df916",
+  "executor": "Codex com apoio de IA",
+  "resultados": [
+    {
+      "id": "FLUXO-01",
+      "status": "aprovado",
+      "esperado": "Gest\u00E3o \u00FAnica, 207 cartas naveg\u00E1veis e formul\u00E1rio direto sem motivo/detalhes t\u00E9cnicos",
+      "observado": {
+        "paginas": 9,
+        "totalReferencias": 207
+      }
+    },
+    {
+      "id": "FLUXO-02",
+      "status": "aprovado",
+      "esperado": "Normal e reverse da mesma carta/estado/idioma t\u00EAm IDs e estoques separados",
+      "observado": {
+        "refId": "sv03.5-001",
+        "normal": 226,
+        "reverse": 227,
+        "estoques": [
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "id": "FLUXO-03",
+      "status": "aprovado",
+      "esperado": "Duplicata/variante inv\u00E1lida, CSRF ausente e cliente n\u00E3o alteram estoque",
+      "observado": {
+        "duplicataRecusada": true,
+        "csrf": 400,
+        "cliente": 403
+      }
+    },
+    {
+      "id": "FLUXO-04",
+      "status": "aprovado",
+      "esperado": "Ajuste sem motivo auditado; vers\u00E3o velha n\u00E3o sobrescreve",
+      "observado": {
+        "estoque": 6,
+        "auditoria": 1,
+        "conflitoPreservado": true
+      }
+    },
+    {
+      "id": "FLUXO-05",
+      "status": "aprovado",
+      "esperado": "Vitrine agrupada e detalhe p\u00FAblico listam vers\u00F5es/estoques/pre\u00E7os",
+      "observado": {
+        "vitrine": 200,
+        "detalhe": 200,
+        "agruparPorNumero": true
+      }
+    },
+    {
+      "id": "FLUXO-06",
+      "status": "aprovado",
+      "esperado": "Adicionar soma; concorr\u00EAncia n\u00E3o perde incremento; excesso n\u00E3o altera linha",
+      "observado": {
+        "quantidade": 3,
+        "estoqueSemReserva": 6,
+        "concorrenciaSemPerda": true
+      }
+    },
+    {
+      "id": "FLUXO-07",
+      "status": "aprovado",
+      "esperado": "Carrinho mostra cole\u00E7\u00E3o/n\u00FAmero/estado/idioma/acabamento e linhas separadas",
+      "observado": {
+        "linhas": 2,
+        "total": 9,
+        "metadados": true,
+        "sacola": true
+      }
+    },
+    {
+      "id": "FLUXO-08",
+      "status": "aprovado",
+      "esperado": "Compra selecionada guarda variante e preserva remanescente; replay idempotente",
+      "observado": {
+        "compra": 115,
+        "total": 6,
+        "snapshot": true,
+        "replay": true
+      }
+    },
+    {
+      "id": "FLUXO-09",
+      "status": "aprovado",
+      "esperado": "Estorno devolve s\u00F3 a variante comprada uma vez",
+      "observado": {
+        "estoqueNormal": 6,
+        "estoqueReverse": 4,
+        "saldo": 100
+      }
+    },
+    {
+      "id": "FLUXO-10",
+      "status": "aprovado",
+      "esperado": "Zero estoque exclui da vitrine; edi\u00E7\u00E3o absoluta e remo\u00E7\u00E3o continuam dispon\u00EDveis",
+      "observado": {
+        "estoqueZero": true,
+        "carrinhoVazio": true
+      }
+    }
+  ]
+}

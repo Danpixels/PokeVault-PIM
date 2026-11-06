@@ -1,0 +1,133 @@
+{
+  "dataUtc": "2026-11-03T22:15:10.6548808Z",
+  "escopo": "Leituras e login, sem mudanças em contas, saldo, estoque, carrinho ou compras",
+  "base": "PokeVault",
+  "checks": [
+    {
+      "rota": "/health/ready",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/entrar",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/api/v1/ofertas",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/?nome=zz_revisao_sem_resultado_20261103",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/api/v1/carrinho",
+      "status": 401,
+      "esperado": 401,
+      "aprovado": true
+    },
+    {
+      "rota": "/api/v1/ofertas?pagina=0",
+      "status": 400,
+      "esperado": 400,
+      "aprovado": true
+    },
+    {
+      "rota": "Login de leitura ADMINISTRADOR",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/admin/clientes",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/admin/clientes/novo",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/admin/funcionarios",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/admin/funcionarios/novo",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/gestao/ofertas",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/gestao/ofertas/nova",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/compras",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "Login de leitura ATENDENTE",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/gestao/ofertas",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/gestao/ofertas/nova",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "Login de leitura CLIENTE",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/carrinho",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    },
+    {
+      "rota": "/compras",
+      "status": 200,
+      "esperado": 200,
+      "aprovado": true
+    }
+  ]
+}

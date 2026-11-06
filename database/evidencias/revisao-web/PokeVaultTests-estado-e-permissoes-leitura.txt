@@ -1,0 +1,53 @@
+﻿Contexto do banco de dados alterado para 'PokeVaultTests'.
+ObservadoEmUtc Banco Servidor Motor
+-------------- ----- -------- -----
+2026-11-03 22:09:31.1257442 PokeVaultTests DESKTOP-641C55N\SQLEXPRESS 17.0.1000.7
+Versao AplicadaEmUtc
+------ -------------
+1 2026-10-21 17:49:14.066
+2 2026-10-21 17:49:14.701
+3 2026-10-21 17:49:14.828
+4 2026-10-21 17:54:38.108
+Marcador
+--------
+PIM-2026-Sprint1
+ColunaComplemento ProceduresComplemento ConstraintComplemento VersoesPosteriores
+----------------- --------------------- --------------------- ------------------
+0 0 0 0
+Tabela Coluna Tipo max_length is_nullable
+------ ------ ---- ---------- -----------
+SaldoCliente Versao timestamp 8 0
+Carta Versao timestamp 8 0
+ProcedureNome uses_ansi_nulls uses_quoted_identifier
+------------- --------------- ----------------------
+usp_DefinirSaldoVersionado 1 1
+usp_AjustarCartaVersionado 1 1
+ProcedureNome modify_date
+------------- -----------
+usp_CadastrarCarta 2026-10-21 14:49:14.370
+usp_CancelarCompra 2026-10-21 14:49:14.310
+usp_ConcluirCompra 2026-10-21 14:49:14.307
+usp_DefinirItemCarrinho 2026-10-21 14:49:14.377
+Codigo Usuarios Ativos ComHashArmazenado
+------ -------- ------ -----------------
+ADMINISTRADOR 5 5 5
+ATENDENTE 7 7 7
+CLIENTE 75 75 75
+AdministradoresFixos FixosValidos
+-------------------- ------------
+1 1
+Compras Concluidas Canceladas
+------- ---------- ----------
+60 40 20
+MovimentosSaldo
+---------------
+174
+MovimentosEstoque
+-----------------
+214
+AlteracoesCarta
+---------------
+20
+PrincipalVerificado PodeLerCarta PodeAtualizarCartaDireto PodeInserirSaldoDireto PodeExcluirCompraDireto PodeExecutarSaldoVersionado PodeExecutarCartaVersionada PodeExecutarSaldoLegado PodeExecutarCartaLegada
+------------------- ------------ ------------------------ ---------------------- ----------------------- --------------------------- --------------------------- ----------------------- -----------------------
+PokeVaultRuntimeVerificacao 1 0 0 0 1 1 0 0

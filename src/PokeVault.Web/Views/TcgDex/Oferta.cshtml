@@ -1,0 +1,6 @@
+@model TcgOfertaModel
+@using PokeVault.Web.Domain
+@{var r=(TcgReferencia)ViewBag.Referencia;ViewData["Title"]="Oferta local a partir de referência";}
+<section class="panel narrow"><div class="eyebrow">OFERTA COMERCIAL LOCAL</div><h1>Nova oferta</h1><p>Referência TCGdex151: <strong>@r.Nome</strong> · #@r.Numero · @(r.Raridade??"Não informada (TCGdex)") · @r.Idioma</p><p>Os metadados serão lidos do snapshot local. Informe os três campos comerciais; nenhum preço externo é aplicado automaticamente.</p>
+<form action="/gestao/tcgdex151/@r.Id/oferta" method="post">@Html.AntiForgeryToken()<div asp-validation-summary="All" role="alert" class="validation"></div><label>Conservação<select asp-for="Conservacao" required><option value="">Selecione</option>@foreach(var c in Conservacoes.Todas){<option value="@c">@c.Replace('_',' ')</option>}</select></label>
+<label>Preço de venda local em BRL<input asp-for="Preco" type="number" min="0.01" max="9999999999.99" step="0.01" required/></label><label>Quantidade inicial em estoque<input asp-for="QuantidadeInicial" type="number" min="0" max="2147483647" required/></label><button type="submit">Cadastrar somente esta oferta</button></form><p><a href="/gestao/tcgdex151/@r.Id">Voltar à referência</a></p></section>

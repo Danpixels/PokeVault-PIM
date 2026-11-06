@@ -1,0 +1,78 @@
+{
+  "dataUtc": "2026-11-03T22:14:50.039138Z",
+  "fuso": "America/Sao_Paulo",
+  "baseSql": "PokeVaultTests",
+  "instancia": ".\\SQLEXPRESS",
+  "rodada": "s290f8ddce38",
+  "executor": "Codex com apoio de IA",
+  "resultados": [
+    {
+      "id": "REV-H01/publico-vazio-semantica",
+      "status": "aprovado",
+      "esperado": "Estado vazio e elementos semanticos/viewport presentes; CSS local200",
+      "observado": {
+        "http": 200,
+        "estado": "vazio com orientacao",
+        "lang": "pt-BR",
+        "viewport": true,
+        "linkPularConteudo": true,
+        "css": 200,
+        "limite": "Verificacao de markup/CSS; nao comprova layout/foco visual"
+      }
+    },
+    {
+      "id": "REV-H02/login-rotulos-validacao",
+      "status": "aprovado",
+      "esperado": "Login tem rotulos/senha oculta/autocomplete; erro de autenticacao renderiza alerta sem ecoar senha",
+      "observado": {
+        "status": 200,
+        "alerta": true,
+        "senhaEcoada": false,
+        "limite": "HTML/HTTP; teclado nao executado"
+      }
+    },
+    {
+      "id": "REV-H03/cliente-vazio-rotulos",
+      "status": "aprovado",
+      "esperado": "Cliente novo ve carrinho/historico vazios; linha com controles nomeados",
+      "observado": {
+        "cliente": 111,
+        "carta": 146,
+        "vazios": 2,
+        "controlesNomeados": true,
+        "limite": "Nao e navegacao visual"
+      }
+    },
+    {
+      "id": "REV-H04/navegacao-perfis",
+      "status": "aprovado",
+      "esperado": "Links de navegacao seguem cada perfil sem expor gestao a cliente/anonimo",
+      "observado": {
+        "perfis": 4,
+        "linksCoerentes": true,
+        "limite": "Autorizacao efetiva tambem testada nos45 cenarios"
+      }
+    },
+    {
+      "id": "REV-H05/validacao-formulario",
+      "status": "aprovado",
+      "esperado": "Cadastro MVC invalido apresenta alerta sem criar usuario",
+      "observado": {
+        "http": 200,
+        "usuarioCriado": false,
+        "alerta": true
+      }
+    },
+    {
+      "id": "REV-H06/filtros-paginacao",
+      "status": "aprovado",
+      "esperado": "Filtros combinados e paginas reais de registros proprios sem repeticao",
+      "observado": {
+        "filtro": "s290f8ddce38",
+        "pagina1": 12,
+        "pagina2": 2,
+        "semRepeticao": true
+      }
+    }
+  ]
+}

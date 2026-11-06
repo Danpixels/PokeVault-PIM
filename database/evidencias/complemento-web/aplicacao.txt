@@ -1,0 +1,9 @@
+JanelaVerificadaUtc Estado
+------------------- ------
+2026-11-03 18:14:17.5197712 SEM_REQUISICOES_TRANSACOES_TESTES
+SCRIPT=014_web_colecoes_raridade.sql BANCO=PokeVault UTC=2026-11-03T18:14:17.7787842Z
+Contexto do banco de dados alterado para 'PokeVault'.
+Mensagem 207, Nível 16, Estado 1, Servidor DESKTOP-641C55N\SQLEXPRESS, Linha 22
+Nome de coluna 'QuantidadeTotalCartas' inválido.
+Mensagem 207, Nível 16, Estado 1, Servidor DESKTOP-641C55N\SQLEXPRESS, Linha 22
+Nome de coluna 'QuantidadeTotalCartas' inválido.

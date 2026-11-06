@@ -1,0 +1,53 @@
+{
+  "dataUtc": "2026-11-03T22:50:05.3760659Z",
+  "checks": [
+    {
+      "verificacao": "Schema10 pronto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Biblioteca207 e página24",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Filtro número/raridade",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Referência detalhada pt com imagem local",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Imagem cache HTTP200 webp",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Detalhe mostra Cardmarket/EUR TCGplayer/USD e variante real",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Datas, ausente e sem conversão BRL explícitos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Formulário oferta exige preçoBRL e estoque sem autopreencher preço",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Três ofertas originais têm imagens locais vinculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Biblioteca gestão protegida401",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Importação semCSRF recusada400",
+      "aprovada": true
+    },
+    {
+      "verificacao": "Set externo fora de escopo400",
+      "aprovada": true
+    }
+  ]
+}

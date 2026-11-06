@@ -1,0 +1,7 @@
+@model PokeVault.Web.Domain.TcgImportStatus
+@{ViewData["Title"]="Status TCGdex151";}
+<section class="panel narrow"><div class="eyebrow">IMPORTAÇÃO LOCAL · SV03.5</div><h1>@(Model.EmExecucao?"Importando referências":"Status da biblioteca")</h1><p role="status">@Model.Mensagem</p><dl><dt>Importação SQL</dt><dd>@(Model.ImportacaoId?.ToString()??"Ainda não iniciada")</dd><dt>Processadas nesta execução</dt><dd>@Model.Processados / 207</dd><dt>Atualizadas ou reaplicadas sem duplicação</dt><dd>@Model.Importados</dd><dt>Não atualizadas nesta tentativa</dt><dd>@Model.Ausentes</dd><dt>Com imagem local nesta execução</dt><dd>@Model.ImagensLocais</dd><dt>Fallback de dados ou imagem em inglês</dt><dd>@Model.FallbackIngles</dd><dt>Uso offline detectado</dt><dd>@(Model.ModoOffline?"Sim — cache local preservado":"Não sinalizado; detalhes recentes podem ter vindo do cache")</dd><dt>Início UTC</dt><dd>@Model.InicioUtc?.ToString("dd/MM/yyyy HH:mm:ss")</dd><dt>Fim UTC</dt><dd>@Model.FimUtc?.ToString("dd/MM/yyyy HH:mm:ss")</dd></dl><p><a href="/gestao/tcgdex151/status">Recarregar status</a> · <a href="/gestao/tcgdex151">Abrir biblioteca</a></p><p><small>Ausências/erros não limpam snapshots válidos. A importação não cria207 ofertas nem muda preçoBRL/estoque. Dados da TCGdex; moeda e data de cada fornecedor aparecem no detalhe.</small></p></section>
+@section Scripts {
+@if(Model.EmExecucao){<script>setTimeout(()=>location.reload(),5000);</script>}
+}
+

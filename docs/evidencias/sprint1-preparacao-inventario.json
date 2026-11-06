@@ -1,0 +1,34 @@
+{
+  "Tipo": "Inspecao estatica de arquivos; nao e teste funcional",
+  "RelogioHostUtc": "2026-10-21T17:09:05.4845636Z",
+  "Raiz": "C:\\Users\\Intel\\Documents\\ChatGPT\\PIM",
+  "Arquivos": [
+    {
+      "Caminho": "docs/DECISOES.md",
+      "Existe": true,
+      "SHA256": "84F4C514BFFF819B8DBFBAF6FD071435069A751FF06E06144D8DBDD07E74ED5D"
+    },
+    {
+      "Caminho": "docs/diario-sprints.md",
+      "Existe": true,
+      "SHA256": "4D26175CA134D1D14D8599BA2A96B8C9174AECF0D04FCEAACFDDE5A7066742DF"
+    },
+    {
+      "Caminho": "docs/contrato-sprint1.md",
+      "Existe": true,
+      "SHA256": "C09F327D709EC940133BCCBA17DBB511AECADC3ADFD89BB6CB6BF2147AAECA07"
+    },
+    {
+      "Caminho": "src/PokeVault.Web/PokeVault.Web.csproj",
+      "Existe": true,
+      "SHA256": "16C5F1E33A0AA4339517C28C1232ED191B04D8E9FA24029A83323EA018BB8D58"
+    },
+    {
+      "Caminho": "src/PokeVault.Web/Program.cs",
+      "Existe": true,
+      "SHA256": "053D31F22A6E89E7C21F097AEF4ADDC19CCE96412E075EF5B420F5C406485057"
+    }
+  ],
+  "ScriptsSql": [],
+  "Limite": "Nao conecta SQL, nao inicia app, nao faz restore/build, nao verifica rotas nem executa transacoes. Presenca/hash nao significa contrato aprovado ou funcionamento."
+}

@@ -1,0 +1,13 @@
+@model CadastroCartaModel
+@using PokeVault.Web.Domain
+@{ViewData["Title"]="Cadastrar carta"; var colecoes=(IReadOnlyList<ColecaoGestao>)ViewBag.Colecoes;}
+<section class="panel narrow"><div class="eyebrow">OPERAÇÃO DA LOJA</div><h1>Cadastrar carta</h1><p><a href="/gestao/tcgdex151">Selecionar referência da bibliotecaTCGdex151</a></p><p>Use uma coleção existente. Não cadastre a mesma coleção, número e conservação duas vezes.</p>
+<form action="/gestao/ofertas/nova" method="post">@Html.AntiForgeryToken()<div asp-validation-summary="All" role="alert" class="validation"></div>
+<label>Coleção<select asp-for="ColecaoId" required><option value="">Selecione</option>@foreach(var c in colecoes){<option value="@c.ColecaoId">@c.Codigo · @c.Nome</option>}</select></label>
+<label>Número<input asp-for="Numero" maxlength="20" required/></label><label>Nome<input asp-for="Nome" maxlength="120" required/></label><label>Raridade<input asp-for="Raridade" maxlength="50" required/></label>
+<label>Conservação<select asp-for="Conservacao" required>@foreach(var c in Conservacoes.Todas){<option value="@c">@c.Replace('_',' ')</option>}</select></label>
+<label>Preço em reais<input asp-for="Preco" type="number" min="0.01" max="9999999999.99" step="0.01" required/></label><label>Estoque inicial<input asp-for="QuantidadeInicial" type="number" min="0" max="2147483647" required/></label>
+<p><small>O estoque inicial positivo gera movimento de entrada auditado. A identidade da carta não será editada pela tela de ajustes.</small></p><button type="submit">Cadastrar carta</button></form><p><a href="/gestao/ofertas">Voltar ao catálogo operacional</a></p></section>
+
+
+

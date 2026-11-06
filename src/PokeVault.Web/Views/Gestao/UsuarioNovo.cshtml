@@ -1,0 +1,10 @@
+@model CadastroUsuarioModel
+@{var cliente=(string)ViewBag.Perfil=="CLIENTE"; var rota=cliente?"/admin/clientes":"/admin/funcionarios"; ViewData["Title"]=cliente?"Novo cliente":"Novo atendente";}
+<section class="panel narrow"><div class="eyebrow">ADMINISTRAÇÃO</div><h1>@ViewData["Title"]</h1>
+<form method="post" action="@rota/novo">@Html.AntiForgeryToken()<div asp-validation-summary="All" role="alert" class="validation"></div>
+<label>Nome<input asp-for="Nome" maxlength="120" required autocomplete="off"/></label><label>Email<input asp-for="Email" type="email" maxlength="254" required autocomplete="off"/></label>
+<label for="SenhaInicial">Senha inicial</label><div class="password-field"><input name="SenhaInicial" id="SenhaInicial" type="password" minlength="8" maxlength="128" required autocomplete="new-password"/><partial name="_PasswordToggle" model='@("SenhaInicial")' /></div>
+<p><small>Entre 8 e 128 caracteres. Informe a senha ao titular por um meio local seguro; ela não será exibida novamente.</small></p>
+<button type="submit">Criar conta de @(cliente?"cliente":"atendente")</button></form><p><a href="@rota">Voltar à listagem</a></p></section>
+
+

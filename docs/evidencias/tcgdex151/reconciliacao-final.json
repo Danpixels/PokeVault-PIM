@@ -1,0 +1,69 @@
+{
+  "execucoes": [
+    {
+      "exitCode": 0,
+      "saida": [
+        "Contexto do banco de dados alterado para 'PokeVaultTests'.",
+        "PokeVaultTests DESKTOP-641C55N\\SQLEXPRESS 17.0.1000.7 Express Edition (64-bit)",
+        "1 2026-10-21 17:49:14.066",
+        "2 2026-10-21 17:49:14.701",
+        "3 2026-10-21 17:49:14.828",
+        "4 2026-10-21 17:54:38.108",
+        "8 2026-11-03 22:37:36.264",
+        "9 2026-11-03 22:37:36.341",
+        "10 2026-11-03 22:37:36.445",
+        "usp_AjustarCarta",
+        "usp_AjustarCartaVersionado",
+        "usp_AtualizarReferenciasTCGdex151",
+        "usp_CadastrarCarta",
+        "usp_CadastrarOfertaTCGdex151",
+        "usp_CancelarCompra",
+        "usp_ConcluirCompra",
+        "usp_CriarUsuario",
+        "usp_DefinirItemCarrinho",
+        "usp_DefinirSaldo",
+        "usp_DefinirSaldoVersionado",
+        "usp_DefinirUsuarioAtivo",
+        "usp_IniciarImportacaoTCGdex151",
+        "usp_RegistrarFalhaTCGdex151",
+        "usp_VincularOfertaTCGdex151"
+      ],
+      "arquivo": "database/007_verificar.sql"
+    },
+    {
+      "exitCode": 0,
+      "saida": [
+        "Contexto do banco de dados alterado para 'PokeVaultTests'.",
+        "2026-11-03 22:59:34.1665052 PokeVaultTests DESKTOP-641C55N\\SQLEXPRESS 17.0.1000.7",
+        "1 2026-10-21 17:49:14.066",
+        "2 2026-10-21 17:49:14.701",
+        "3 2026-10-21 17:49:14.828",
+        "4 2026-10-21 17:54:38.108",
+        "8 2026-11-03 22:37:36.264",
+        "9 2026-11-03 22:37:36.341",
+        "10 2026-11-03 22:37:36.445",
+        "207 207 10 7",
+        "usp_IniciarImportacaoTCGdex151 1 1",
+        "usp_AtualizarReferenciasTCGdex151 1 1",
+        "usp_RegistrarFalhaTCGdex151 1 1",
+        "usp_VincularOfertaTCGdex151 1 1",
+        "usp_CadastrarOfertaTCGdex151 1 1",
+        "0 0",
+        "PokeVaultRuntimeVerificacao SELECT_EXECUTE_PERMITIDOS_DML_LEGADO_NEGADOS"
+      ],
+      "arquivo": "database/022_tcgdex151_verificar.sql"
+    },
+    {
+      "exitCode": 1,
+      "saida": [
+        "Mensagem 240, Nível 16, Estado 1, Servidor DESKTOP-641C55N\\SQLEXPRESS, Linha 4",
+        "Os tipos não correspondem entre a âncora e a parte recursiva da coluna \"KeyName\" da consulta recursiva \"Nodes\".",
+        "Mensagem 240, Nível 16, Estado 1, Servidor DESKTOP-641C55N\\SQLEXPRESS, Linha 4",
+        "Os tipos não correspondem entre a âncora e a parte recursiva da coluna \"NodeType\" da consulta recursiva \"Nodes\"."
+      ],
+      "arquivo": "tests/Tcgdex151/Medicao.sql"
+    }
+  ],
+  "base": "PokeVaultTests",
+  "dataUtc": "2026-11-03T22:59:34.2791964Z"
+}

@@ -1,0 +1,21 @@
+{
+  "dataUtc": "2026-11-03T22:53:09.1348169Z",
+  "baseSql": "PokeVaultTests",
+  "rodada": "tcg0b73dbe35",
+  "resultados": [
+    {
+      "id": "HTML-02/precos-historicos-cache",
+      "status": "aprovado",
+      "inicioUtc": "2026-11-03T22:53:07.6763198Z",
+      "fimUtc": "2026-11-03T22:53:09.1317594Z",
+      "esperado": "Novo snapshot sem pricing mostra precos anteriores com rotulo historico,EUR/USD e nao zeros sinteticos",
+      "observado": {
+        "referencia": 25,
+        "historicoIdentificado": true,
+        "fornecedoresMantidos": true,
+        "intervaloColetasSegundos": 54.528,
+        "limite": "Fixture ausencia de pricing; HTML/HTTP; intervalo maior que tolerancia de1s"
+      }
+    }
+  ]
+}
