@@ -104,43 +104,29 @@ O diário registra este trabalho em 03/11/2026 como integração específica da 
 
 Registro: Link/documentacao/exemplos recebidos e autorizacao para tentar apenas151; coordenacao consultou fonteoficial e endpoints reais e registrou recorte. Integracao ainda nao implementada nesta abertura
 
-Resultado/limite: 
-
 ### TCG-R06 — 03/11/2026, acompanhamento22:47UTC
 
 Registro: Importacao real da demonstracao concluiu22:46:20UTC: importacao-resultado.json registra207processados/importados,207imagenslocais,0ausentes e0fallbackingles. ConsultaSQL registra207referenciasdetalhadaspt/importacaoCONCLUIDAsem pendentes e3vinculos. imagens-cache.json registra207arquivos(4017294bytes). preservacao-importacao.json compara12tabelascomerciais comtodascolunas/rowversions/hash/contagens e registraiguais=true. Fonte das evidencias: src/evidencias/tcgdex151/. Confirmadoimportreal,nãoaceitefinaldeoffline/repetição/regressão; Desenvolvimentoverificaessescriterios eTestes segueativoemPokeVaultTests
-
-Resultado/limite: 
 
 ### TCG-R07 — 03/11/2026, acompanhamento22:58UTC
 
 Registro: Versao finalD226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C liberada schema10/snapshot. Devcorrigiu validacaorespostaAPI antesde substituircache (165/207/IDs/precos/URLs) e rotulohistorico compara datas exatamente. Testes preservouidentity01 com1reprovacao de rotulohistorico naA68 e reteste, depoisexecutou finalD226. Coordenacao leu live-final23aprovados, offline-final2aprovados e regressao-final45aprovados; sao conjuntos separados,naosomar repeticoes. Relatoriosfinais/reconciliacao em consolidacao,semnovo bloqueio paraDaniel
 
-Resultado/limite: 
-
 ### TCG-R09 — 03/11/2026, acompanhamento23:08UTC
 
 Registro: Coordenacao leu os tres relatorios finais e snapshots individuais confirmaram chats concluidos. Na DLLD226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C: live-final23aprovados, offline-final2aprovados, regressao-final45aprovados; hashes e versao do produto conferidos. Nenhum resultadoA68 atribuido como aceite daD226
-
-Resultado/limite: 
 
 ### TCG-R12 — 03/11/2026
 
 Registro: Balanco consolidado e automacao de acompanhamento removida apos concluir a entrega; ferramenta confirmoudeleteStatus=deleted. Nao ha nova rodada/mobile iniciada nem verificacoesperiodicas pendentes desta integracao
 
-Resultado/limite: 
-
 ### TCG-R13 — 03/11/2026
 
 Registro: Daniel relata manualmente: “Consegui comprar a carta!”, apos orientacao para cadastrar oferta da bibliotecaTCGdex e comprar como cliente. Compra bem-sucedida relatada pelo usuario; carta/CompraId/quantidade/valores e capturas nao informados, sem atribuir numeros do exemplo como observados ou alegar conferencia independente de saldo/estoque/estorno
 
-Resultado/limite: 
-
 ### TCG-R14 — 03/11/2026
 
 Registro: Apos orientacao de cancelamento administrativo e conferencia de saldo/estoque/historico, Daniel responde “Perfeito! Funcionou! E agora?”. Registrar sucesso do cancelamento conforme relato manual, sem inferir IDs/valores ou nova verificacao independente. Proxima conversa proposta: definir fluxo de compras/UX e revisar backlog das melhorias adiadas; nenhum novo desenvolvimento/mobile autorizado apenas por esta pergunta
-
-Resultado/limite: 
 
 Fonte: docs/diario-sprints.md, entradas identificadas acima; registros originais de 2026.
 
@@ -164,6 +150,6 @@ Fonte: docs/diario-sprints.md, seções “Toques finais da web — fluxo e Gest
 
 Diário integral: docs/diario-sprints.md. Planejamento e decisões: docs/planejamento.md e docs/DECISOES.md. Entregas por frente: docs/entrega-sprint1-{banco,desenvolvimento,testes}.md e docs/entrega-sprint2-{banco,desenvolvimento,testes}.md. Os contratos e resultados referidos nesses documentos permanecem nos caminhos apresentados em A.1 e A.6.
 
-Uso no PIM: seções 5.1–5.5 para acordos, distribuição e acompanhamento; 5.6–5.8 para problemas, correções e critérios de aceite. O planejamento mobile das sprints propostas 3 e 4 não constitui evidência de execução. As atas da equipe e exportações do Trello, quando existentes fora deste acervo, continuam sendo materiais complementares a conferir.
+Uso no PIM: seções 5.1–5.5 para acordos, distribuição e acompanhamento; 5.6–5.8 para problemas, correções e critérios de aceite. O planejamento mobile das sprints propostas 3 e 4 não constitui evidência de execução. Diário integral no commit de referência: https://github.com/Danpixels/PokeVault-PIM/blob/30bf512/docs/diario-sprints.md. As atas da equipe e exportações do Trello, quando existentes fora deste acervo, continuam sendo materiais complementares a conferir.
 
 

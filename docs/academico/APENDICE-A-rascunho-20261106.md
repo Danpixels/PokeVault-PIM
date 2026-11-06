@@ -502,7 +502,7 @@ O sucesso registrado vale para os cenários e versões indicados. A validação 
 
 Raiz local consultada: C:\Users\Intel\Documents\ChatGPT\PIM. Código em src/PokeVault.Web/, SQL em database/, testes em tests/ e relatórios em docs/. Os caminhos relativos permitem transportar o projeto sem depender deste endereço do computador.
 
-PENDENTE — URL do repositório e commit/tag de entrega: não foi encontrada pasta .git na raiz consultada, e não há commit verificado para associar ao rascunho. A menção ao GitHub no PIM não comprova acesso do avaliador. Os SHA256 abaixo identificam os arquivos efetivamente usados nos excertos, em 06/11/2026, e não substituem o versionamento histórico.
+Repositório público para consulta do avaliador: https://github.com/Danpixels/PokeVault-PIM. A publicação foi realizada em 06/11/2026; commit inicial de referência 30bf512, branch main. Essa fotografia inclui código, scripts, harnesses, registros de sprints e evidências. O histórico Git começa na publicação e não comprova commits retroativos de setembro ou outubro. Os SHA256 do Quadro A.7 identificam os bytes das cópias locais transcritas, e não IDs de commit; diferenças de final de linha podem alterar esses hashes sem alterar a lógica do código.
 
 Quadro A.7 – SHA256 dos arquivos transcritos
 
@@ -550,7 +550,7 @@ Quadro A.8 – Pendências explícitas
 | --- | --- |
 | Trello e sprints coletivas | PENDENTE: exportar cartões/backlogs ou capturas legíveis e atas, com datas, responsáveis e aceite reais. As sínteses locais não substituem esses registros. |
 | Capturas da interface | PENDENTE: selecionar telas reais de catálogo, detalhe, carrinho, login e administração; ocultar informações pessoais e relacionar legenda ao fluxo. |
-| Versão de entrega | PENDENTE: confirmar repositório, acesso do avaliador e commit/tag, ou disponibilizar pacote íntegro. Hash de arquivo não comprova commit. |
+| Versão de entrega | DISPONÍVEL: repositório público Danpixels/PokeVault-PIM, branch main, commit inicial de referência 30bf512, publicado em 06/11/2026. O acesso aos arquivos foi verificado sem autenticação; manter essa versão como referência do código e dos registros. |
 | Mobile e infraestrutura | PENDENTE de evidência funcional: manter como planejado/não demonstrado quando não houver código, execução e teste correspondente. Conta SQL externa exclusiva também permanece sem comprovação. |
 | Integração ABNT no PIM | PENDENTE: compatibilizar quadros/listagens com a numeração final, paginação contínua, chamadas no texto e sumário; revisar quebras no PDF. Este rascunho usa Arial 12, texto justificado, entrelinhas 1,5, recuo de 1,25 cm; fontes/quadros/código menores. |
 | Manual acadêmico e acesso aos artefatos | PENDENTE: conferir o manual/enunciado vigente e garantir que os arquivos locais citados acompanhem a entrega. Caminho local não é link de acesso para o avaliador. |
@@ -667,43 +667,29 @@ O diário registra este trabalho em 03/11/2026 como integração específica da 
 
 Registro: Link/documentacao/exemplos recebidos e autorizacao para tentar apenas151; coordenacao consultou fonteoficial e endpoints reais e registrou recorte. Integracao ainda nao implementada nesta abertura
 
-Resultado/limite: 
-
 ### TCG-R06 — 03/11/2026, acompanhamento22:47UTC
 
 Registro: Importacao real da demonstracao concluiu22:46:20UTC: importacao-resultado.json registra207processados/importados,207imagenslocais,0ausentes e0fallbackingles. ConsultaSQL registra207referenciasdetalhadaspt/importacaoCONCLUIDAsem pendentes e3vinculos. imagens-cache.json registra207arquivos(4017294bytes). preservacao-importacao.json compara12tabelascomerciais comtodascolunas/rowversions/hash/contagens e registraiguais=true. Fonte das evidencias: src/evidencias/tcgdex151/. Confirmadoimportreal,nãoaceitefinaldeoffline/repetição/regressão; Desenvolvimentoverificaessescriterios eTestes segueativoemPokeVaultTests
-
-Resultado/limite: 
 
 ### TCG-R07 — 03/11/2026, acompanhamento22:58UTC
 
 Registro: Versao finalD226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C liberada schema10/snapshot. Devcorrigiu validacaorespostaAPI antesde substituircache (165/207/IDs/precos/URLs) e rotulohistorico compara datas exatamente. Testes preservouidentity01 com1reprovacao de rotulohistorico naA68 e reteste, depoisexecutou finalD226. Coordenacao leu live-final23aprovados, offline-final2aprovados e regressao-final45aprovados; sao conjuntos separados,naosomar repeticoes. Relatoriosfinais/reconciliacao em consolidacao,semnovo bloqueio paraDaniel
 
-Resultado/limite: 
-
 ### TCG-R09 — 03/11/2026, acompanhamento23:08UTC
 
 Registro: Coordenacao leu os tres relatorios finais e snapshots individuais confirmaram chats concluidos. Na DLLD226BAE28EB913DE3B0D4490AABAF3018C2C64A7DD855B569E5F3CD30C3BE94C: live-final23aprovados, offline-final2aprovados, regressao-final45aprovados; hashes e versao do produto conferidos. Nenhum resultadoA68 atribuido como aceite daD226
-
-Resultado/limite: 
 
 ### TCG-R12 — 03/11/2026
 
 Registro: Balanco consolidado e automacao de acompanhamento removida apos concluir a entrega; ferramenta confirmoudeleteStatus=deleted. Nao ha nova rodada/mobile iniciada nem verificacoesperiodicas pendentes desta integracao
 
-Resultado/limite: 
-
 ### TCG-R13 — 03/11/2026
 
 Registro: Daniel relata manualmente: “Consegui comprar a carta!”, apos orientacao para cadastrar oferta da bibliotecaTCGdex e comprar como cliente. Compra bem-sucedida relatada pelo usuario; carta/CompraId/quantidade/valores e capturas nao informados, sem atribuir numeros do exemplo como observados ou alegar conferencia independente de saldo/estoque/estorno
 
-Resultado/limite: 
-
 ### TCG-R14 — 03/11/2026
 
 Registro: Apos orientacao de cancelamento administrativo e conferencia de saldo/estoque/historico, Daniel responde “Perfeito! Funcionou! E agora?”. Registrar sucesso do cancelamento conforme relato manual, sem inferir IDs/valores ou nova verificacao independente. Proxima conversa proposta: definir fluxo de compras/UX e revisar backlog das melhorias adiadas; nenhum novo desenvolvimento/mobile autorizado apenas por esta pergunta
-
-Resultado/limite: 
 
 Fonte: docs/diario-sprints.md, entradas identificadas acima; registros originais de 2026.
 
@@ -727,7 +713,7 @@ Fonte: docs/diario-sprints.md, seções “Toques finais da web — fluxo e Gest
 
 Diário integral: docs/diario-sprints.md. Planejamento e decisões: docs/planejamento.md e docs/DECISOES.md. Entregas por frente: docs/entrega-sprint1-{banco,desenvolvimento,testes}.md e docs/entrega-sprint2-{banco,desenvolvimento,testes}.md. Os contratos e resultados referidos nesses documentos permanecem nos caminhos apresentados em A.1 e A.6.
 
-Uso no PIM: seções 5.1–5.5 para acordos, distribuição e acompanhamento; 5.6–5.8 para problemas, correções e critérios de aceite. O planejamento mobile das sprints propostas 3 e 4 não constitui evidência de execução. As atas da equipe e exportações do Trello, quando existentes fora deste acervo, continuam sendo materiais complementares a conferir.
+Uso no PIM: seções 5.1–5.5 para acordos, distribuição e acompanhamento; 5.6–5.8 para problemas, correções e critérios de aceite. O planejamento mobile das sprints propostas 3 e 4 não constitui evidência de execução. Diário integral no commit de referência: https://github.com/Danpixels/PokeVault-PIM/blob/30bf512/docs/diario-sprints.md. As atas da equipe e exportações do Trello, quando existentes fora deste acervo, continuam sendo materiais complementares a conferir.
 
 
 
